@@ -1,0 +1,1425 @@
+{
+  "company": "Maison Nordique",
+  "type": "ecommerce",
+  "currency": "EUR",
+  "description": "Vente en ligne de mobilier et décoration scandinave — ~15 salariés, CA annuel ~3M€",
+  "notes": {
+    "latent_issue": "La catégorie Luminaires est vendue à perte nette depuis juin 2025 une fois les retours (taux ~22%) et les frais logistiques spécifiques (produits fragiles, emballages renforcés) intégrés. La marge brute brute de 38% semble correcte, mais la marge nette réelle est négative (-2% à -5%). Non détecté car le reporting ne descend pas sous la marge brute par catégorie.",
+    "seasonality": "Très forte saisonnalité : Noël (nov-déc) représente 35% du CA annuel. Pic secondaire en janvier (soldes) et en mai (déco printemps). Creux en juillet-août.",
+    "forecast_bias": "Les prévisions 2026 supposent une croissance de 8% et une amélioration des marges Luminaires par renégociation fournisseur — hypothèse non confirmée."
+  },
+  "data": [
+    {
+      "period": "2024-01",
+      "type": "actual",
+      "revenue_total": 185000,
+      "categories": {
+        "furniture": {
+          "revenue": 92000,
+          "cogs": 46000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 6800,
+          "net_margin_pct": 41.8
+        },
+        "textiles": {
+          "revenue": 38000,
+          "cogs": 15200,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 2100,
+          "net_margin_pct": 48.2
+        },
+        "lighting": {
+          "revenue": 28000,
+          "cogs": 17360,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 14.0,
+          "logistics_costs": 3200,
+          "net_margin_pct": 20.6
+        },
+        "accessories": {
+          "revenue": 27000,
+          "cogs": 12150,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 1800,
+          "net_margin_pct": 45.7
+        }
+      },
+      "logistics_costs_total": 13900,
+      "stock_value": 520000,
+      "stock_rotation_days": 82,
+      "cash_available": 218000,
+      "cac": 18.5,
+      "conversion_rate_pct": 2.8,
+      "average_basket": 87,
+      "payroll": 55000
+    },
+    {
+      "period": "2024-02",
+      "type": "actual",
+      "revenue_total": 158000,
+      "categories": {
+        "furniture": {
+          "revenue": 76000,
+          "cogs": 38000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 5700,
+          "net_margin_pct": 41.5
+        },
+        "textiles": {
+          "revenue": 33000,
+          "cogs": 13200,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 1850,
+          "net_margin_pct": 48.0
+        },
+        "lighting": {
+          "revenue": 24000,
+          "cogs": 14880,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 14.5,
+          "logistics_costs": 2800,
+          "net_margin_pct": 20.0
+        },
+        "accessories": {
+          "revenue": 25000,
+          "cogs": 11250,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 1650,
+          "net_margin_pct": 45.8
+        }
+      },
+      "logistics_costs_total": 12000,
+      "stock_value": 498000,
+      "stock_rotation_days": 85,
+      "cash_available": 195000,
+      "cac": 19.0,
+      "conversion_rate_pct": 2.7,
+      "average_basket": 85,
+      "payroll": 55000
+    },
+    {
+      "period": "2024-03",
+      "type": "actual",
+      "revenue_total": 210000,
+      "categories": {
+        "furniture": {
+          "revenue": 102000,
+          "cogs": 51000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.2,
+          "logistics_costs": 7500,
+          "net_margin_pct": 42.3
+        },
+        "textiles": {
+          "revenue": 44000,
+          "cogs": 17600,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2400,
+          "net_margin_pct": 48.7
+        },
+        "lighting": {
+          "revenue": 32000,
+          "cogs": 19840,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 14.0,
+          "logistics_costs": 3600,
+          "net_margin_pct": 20.9
+        },
+        "accessories": {
+          "revenue": 32000,
+          "cogs": 14400,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2100,
+          "net_margin_pct": 46.4
+        }
+      },
+      "logistics_costs_total": 15600,
+      "stock_value": 545000,
+      "stock_rotation_days": 78,
+      "cash_available": 228000,
+      "cac": 17.5,
+      "conversion_rate_pct": 3.1,
+      "average_basket": 91,
+      "payroll": 55000
+    },
+    {
+      "period": "2024-04",
+      "type": "actual",
+      "revenue_total": 225000,
+      "categories": {
+        "furniture": {
+          "revenue": 110000,
+          "cogs": 55000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.2,
+          "logistics_costs": 8000,
+          "net_margin_pct": 42.5
+        },
+        "textiles": {
+          "revenue": 47000,
+          "cogs": 18800,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2550,
+          "net_margin_pct": 48.8
+        },
+        "lighting": {
+          "revenue": 34000,
+          "cogs": 21080,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 14.5,
+          "logistics_costs": 3800,
+          "net_margin_pct": 20.2
+        },
+        "accessories": {
+          "revenue": 34000,
+          "cogs": 15300,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2200,
+          "net_margin_pct": 46.5
+        }
+      },
+      "logistics_costs_total": 16550,
+      "stock_value": 560000,
+      "stock_rotation_days": 76,
+      "cash_available": 248000,
+      "cac": 17.0,
+      "conversion_rate_pct": 3.2,
+      "average_basket": 93,
+      "payroll": 57000
+    },
+    {
+      "period": "2024-05",
+      "type": "actual",
+      "revenue_total": 238000,
+      "categories": {
+        "furniture": {
+          "revenue": 116000,
+          "cogs": 58000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.0,
+          "logistics_costs": 8400,
+          "net_margin_pct": 42.8
+        },
+        "textiles": {
+          "revenue": 50000,
+          "cogs": 20000,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.0,
+          "logistics_costs": 2700,
+          "net_margin_pct": 49.1
+        },
+        "lighting": {
+          "revenue": 36000,
+          "cogs": 22320,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 15.0,
+          "logistics_costs": 4100,
+          "net_margin_pct": 19.7
+        },
+        "accessories": {
+          "revenue": 36000,
+          "cogs": 16200,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2300,
+          "net_margin_pct": 46.4
+        }
+      },
+      "logistics_costs_total": 17500,
+      "stock_value": 575000,
+      "stock_rotation_days": 74,
+      "cash_available": 268000,
+      "cac": 16.5,
+      "conversion_rate_pct": 3.3,
+      "average_basket": 95,
+      "payroll": 57000
+    },
+    {
+      "period": "2024-06",
+      "type": "actual",
+      "revenue_total": 198000,
+      "categories": {
+        "furniture": {
+          "revenue": 95000,
+          "cogs": 47500,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 7000,
+          "net_margin_pct": 41.8
+        },
+        "textiles": {
+          "revenue": 42000,
+          "cogs": 16800,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2300,
+          "net_margin_pct": 48.2
+        },
+        "lighting": {
+          "revenue": 31000,
+          "cogs": 19220,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 15.0,
+          "logistics_costs": 3700,
+          "net_margin_pct": 19.6
+        },
+        "accessories": {
+          "revenue": 30000,
+          "cogs": 13500,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 2000,
+          "net_margin_pct": 45.5
+        }
+      },
+      "logistics_costs_total": 15000,
+      "stock_value": 548000,
+      "stock_rotation_days": 80,
+      "cash_available": 252000,
+      "cac": 18.0,
+      "conversion_rate_pct": 3.0,
+      "average_basket": 90,
+      "payroll": 57000
+    },
+    {
+      "period": "2024-07",
+      "type": "actual",
+      "revenue_total": 168000,
+      "categories": {
+        "furniture": {
+          "revenue": 80000,
+          "cogs": 40000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 5.0,
+          "logistics_costs": 6000,
+          "net_margin_pct": 40.5
+        },
+        "textiles": {
+          "revenue": 36000,
+          "cogs": 14400,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 2000,
+          "net_margin_pct": 47.4
+        },
+        "lighting": {
+          "revenue": 26000,
+          "cogs": 16120,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 16.0,
+          "logistics_costs": 3200,
+          "net_margin_pct": 17.7
+        },
+        "accessories": {
+          "revenue": 26000,
+          "cogs": 11700,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.5,
+          "logistics_costs": 1750,
+          "net_margin_pct": 44.5
+        }
+      },
+      "logistics_costs_total": 12950,
+      "stock_value": 515000,
+      "stock_rotation_days": 89,
+      "cash_available": 234000,
+      "cac": 20.0,
+      "conversion_rate_pct": 2.6,
+      "average_basket": 84,
+      "payroll": 57000
+    },
+    {
+      "period": "2024-08",
+      "type": "actual",
+      "revenue_total": 152000,
+      "categories": {
+        "furniture": {
+          "revenue": 72000,
+          "cogs": 36000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 5.0,
+          "logistics_costs": 5500,
+          "net_margin_pct": 40.3
+        },
+        "textiles": {
+          "revenue": 32000,
+          "cogs": 12800,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.5,
+          "logistics_costs": 1800,
+          "net_margin_pct": 47.1
+        },
+        "lighting": {
+          "revenue": 24000,
+          "cogs": 14880,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 17.0,
+          "logistics_costs": 3100,
+          "net_margin_pct": 15.9
+        },
+        "accessories": {
+          "revenue": 24000,
+          "cogs": 10800,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.5,
+          "logistics_costs": 1650,
+          "net_margin_pct": 44.4
+        }
+      },
+      "logistics_costs_total": 12050,
+      "stock_value": 495000,
+      "stock_rotation_days": 94,
+      "cash_available": 215000,
+      "cac": 21.0,
+      "conversion_rate_pct": 2.5,
+      "average_basket": 82,
+      "payroll": 57000
+    },
+    {
+      "period": "2024-09",
+      "type": "actual",
+      "revenue_total": 215000,
+      "categories": {
+        "furniture": {
+          "revenue": 104000,
+          "cogs": 52000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 7600,
+          "net_margin_pct": 42.0
+        },
+        "textiles": {
+          "revenue": 45000,
+          "cogs": 18000,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2450,
+          "net_margin_pct": 48.5
+        },
+        "lighting": {
+          "revenue": 33000,
+          "cogs": 20460,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 17.0,
+          "logistics_costs": 4200,
+          "net_margin_pct": 15.5
+        },
+        "accessories": {
+          "revenue": 33000,
+          "cogs": 14850,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 2150,
+          "net_margin_pct": 46.2
+        }
+      },
+      "logistics_costs_total": 16400,
+      "stock_value": 560000,
+      "stock_rotation_days": 79,
+      "cash_available": 245000,
+      "cac": 17.5,
+      "conversion_rate_pct": 3.1,
+      "average_basket": 92,
+      "payroll": 58000
+    },
+    {
+      "period": "2024-10",
+      "type": "actual",
+      "revenue_total": 248000,
+      "categories": {
+        "furniture": {
+          "revenue": 120000,
+          "cogs": 60000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.2,
+          "logistics_costs": 8700,
+          "net_margin_pct": 42.6
+        },
+        "textiles": {
+          "revenue": 52000,
+          "cogs": 20800,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.0,
+          "logistics_costs": 2800,
+          "net_margin_pct": 49.1
+        },
+        "lighting": {
+          "revenue": 38000,
+          "cogs": 23560,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 17.5,
+          "logistics_costs": 4900,
+          "net_margin_pct": 14.4
+        },
+        "accessories": {
+          "revenue": 38000,
+          "cogs": 17100,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2450,
+          "net_margin_pct": 46.8
+        }
+      },
+      "logistics_costs_total": 18850,
+      "stock_value": 590000,
+      "stock_rotation_days": 73,
+      "cash_available": 272000,
+      "cac": 16.0,
+      "conversion_rate_pct": 3.4,
+      "average_basket": 98,
+      "payroll": 58000
+    },
+    {
+      "period": "2024-11",
+      "type": "actual",
+      "revenue_total": 395000,
+      "categories": {
+        "furniture": {
+          "revenue": 188000,
+          "cogs": 94000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 5.0,
+          "logistics_costs": 13500,
+          "net_margin_pct": 41.8
+        },
+        "textiles": {
+          "revenue": 82000,
+          "cogs": 32800,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 9.0,
+          "logistics_costs": 4400,
+          "net_margin_pct": 47.8
+        },
+        "lighting": {
+          "revenue": 62000,
+          "cogs": 38440,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 18.0,
+          "logistics_costs": 8200,
+          "net_margin_pct": 12.8
+        },
+        "accessories": {
+          "revenue": 63000,
+          "cogs": 28350,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 7.0,
+          "logistics_costs": 4100,
+          "net_margin_pct": 44.6
+        }
+      },
+      "logistics_costs_total": 30200,
+      "stock_value": 480000,
+      "stock_rotation_days": 44,
+      "cash_available": 312000,
+      "cac": 14.5,
+      "conversion_rate_pct": 4.2,
+      "average_basket": 112,
+      "payroll": 58000
+    },
+    {
+      "period": "2024-12",
+      "type": "actual",
+      "revenue_total": 458000,
+      "categories": {
+        "furniture": {
+          "revenue": 218000,
+          "cogs": 109000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 15500,
+          "net_margin_pct": 40.8
+        },
+        "textiles": {
+          "revenue": 95000,
+          "cogs": 38000,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 10.0,
+          "logistics_costs": 5100,
+          "net_margin_pct": 47.3
+        },
+        "lighting": {
+          "revenue": 72000,
+          "cogs": 44640,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 18.5,
+          "logistics_costs": 9500,
+          "net_margin_pct": 11.8
+        },
+        "accessories": {
+          "revenue": 73000,
+          "cogs": 32850,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 4700,
+          "net_margin_pct": 43.4
+        }
+      },
+      "logistics_costs_total": 34800,
+      "stock_value": 390000,
+      "stock_rotation_days": 31,
+      "cash_available": 358000,
+      "cac": 13.5,
+      "conversion_rate_pct": 4.8,
+      "average_basket": 118,
+      "payroll": 58000
+    },
+    {
+      "period": "2025-01",
+      "type": "actual",
+      "revenue_total": 198000,
+      "categories": {
+        "furniture": {
+          "revenue": 94000,
+          "cogs": 47000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 6900,
+          "net_margin_pct": 42.0
+        },
+        "textiles": {
+          "revenue": 41000,
+          "cogs": 16400,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 2250,
+          "net_margin_pct": 48.3
+        },
+        "lighting": {
+          "revenue": 30000,
+          "cogs": 18600,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 18.0,
+          "logistics_costs": 3800,
+          "net_margin_pct": 11.9
+        },
+        "accessories": {
+          "revenue": 33000,
+          "cogs": 14850,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 2100,
+          "net_margin_pct": 46.2
+        }
+      },
+      "logistics_costs_total": 15050,
+      "stock_value": 435000,
+      "stock_rotation_days": 67,
+      "cash_available": 310000,
+      "cac": 18.0,
+      "conversion_rate_pct": 2.9,
+      "average_basket": 88,
+      "payroll": 58000
+    },
+    {
+      "period": "2025-02",
+      "type": "actual",
+      "revenue_total": 162000,
+      "categories": {
+        "furniture": {
+          "revenue": 77000,
+          "cogs": 38500,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 5700,
+          "net_margin_pct": 41.7
+        },
+        "textiles": {
+          "revenue": 34000,
+          "cogs": 13600,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 1900,
+          "net_margin_pct": 48.1
+        },
+        "lighting": {
+          "revenue": 25000,
+          "cogs": 15500,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 18.5,
+          "logistics_costs": 3300,
+          "net_margin_pct": 10.8
+        },
+        "accessories": {
+          "revenue": 26000,
+          "cogs": 11700,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 1700,
+          "net_margin_pct": 45.9
+        }
+      },
+      "logistics_costs_total": 12600,
+      "stock_value": 418000,
+      "stock_rotation_days": 79,
+      "cash_available": 285000,
+      "cac": 19.0,
+      "conversion_rate_pct": 2.7,
+      "average_basket": 85,
+      "payroll": 58000
+    },
+    {
+      "period": "2025-03",
+      "type": "actual",
+      "revenue_total": 218000,
+      "categories": {
+        "furniture": {
+          "revenue": 105000,
+          "cogs": 52500,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.2,
+          "logistics_costs": 7700,
+          "net_margin_pct": 42.4
+        },
+        "textiles": {
+          "revenue": 45000,
+          "cogs": 18000,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2450,
+          "net_margin_pct": 48.7
+        },
+        "lighting": {
+          "revenue": 33000,
+          "cogs": 20460,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 19.0,
+          "logistics_costs": 4400,
+          "net_margin_pct": 9.8
+        },
+        "accessories": {
+          "revenue": 35000,
+          "cogs": 15750,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2200,
+          "net_margin_pct": 46.6
+        }
+      },
+      "logistics_costs_total": 16750,
+      "stock_value": 455000,
+      "stock_rotation_days": 76,
+      "cash_available": 305000,
+      "cac": 17.5,
+      "conversion_rate_pct": 3.1,
+      "average_basket": 92,
+      "payroll": 60000
+    },
+    {
+      "period": "2025-04",
+      "type": "actual",
+      "revenue_total": 235000,
+      "categories": {
+        "furniture": {
+          "revenue": 113000,
+          "cogs": 56500,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.2,
+          "logistics_costs": 8200,
+          "net_margin_pct": 42.5
+        },
+        "textiles": {
+          "revenue": 49000,
+          "cogs": 19600,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2650,
+          "net_margin_pct": 48.8
+        },
+        "lighting": {
+          "revenue": 36000,
+          "cogs": 22320,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 19.5,
+          "logistics_costs": 4900,
+          "net_margin_pct": 8.9
+        },
+        "accessories": {
+          "revenue": 37000,
+          "cogs": 16650,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2350,
+          "net_margin_pct": 46.5
+        }
+      },
+      "logistics_costs_total": 18100,
+      "stock_value": 478000,
+      "stock_rotation_days": 74,
+      "cash_available": 325000,
+      "cac": 17.0,
+      "conversion_rate_pct": 3.2,
+      "average_basket": 94,
+      "payroll": 60000
+    },
+    {
+      "period": "2025-05",
+      "type": "actual",
+      "revenue_total": 248000,
+      "categories": {
+        "furniture": {
+          "revenue": 119000,
+          "cogs": 59500,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.0,
+          "logistics_costs": 8600,
+          "net_margin_pct": 42.8
+        },
+        "textiles": {
+          "revenue": 52000,
+          "cogs": 20800,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.0,
+          "logistics_costs": 2800,
+          "net_margin_pct": 49.1
+        },
+        "lighting": {
+          "revenue": 38000,
+          "cogs": 23560,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 20.0,
+          "logistics_costs": 5300,
+          "net_margin_pct": 7.7
+        },
+        "accessories": {
+          "revenue": 39000,
+          "cogs": 17550,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2450,
+          "net_margin_pct": 46.6
+        }
+      },
+      "logistics_costs_total": 19150,
+      "stock_value": 492000,
+      "stock_rotation_days": 72,
+      "cash_available": 348000,
+      "cac": 16.5,
+      "conversion_rate_pct": 3.3,
+      "average_basket": 96,
+      "payroll": 60000
+    },
+    {
+      "period": "2025-06",
+      "type": "actual",
+      "revenue_total": 205000,
+      "categories": {
+        "furniture": {
+          "revenue": 97000,
+          "cogs": 48500,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 7100,
+          "net_margin_pct": 41.9
+        },
+        "textiles": {
+          "revenue": 43000,
+          "cogs": 17200,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2350,
+          "net_margin_pct": 48.3
+        },
+        "lighting": {
+          "revenue": 36000,
+          "cogs": 22320,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 22.0,
+          "logistics_costs": 5800,
+          "net_margin_pct": -3.4,
+          "comment": "Première marge nette négative — retours + logistique dépassent la marge brute"
+        },
+        "accessories": {
+          "revenue": 29000,
+          "cogs": 13050,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 1900,
+          "net_margin_pct": 45.6
+        }
+      },
+      "logistics_costs_total": 17150,
+      "stock_value": 465000,
+      "stock_rotation_days": 78,
+      "cash_available": 330000,
+      "cac": 18.0,
+      "conversion_rate_pct": 3.0,
+      "average_basket": 91,
+      "payroll": 60000
+    },
+    {
+      "period": "2025-07",
+      "type": "actual",
+      "revenue_total": 174000,
+      "categories": {
+        "furniture": {
+          "revenue": 82000,
+          "cogs": 41000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 5.0,
+          "logistics_costs": 6100,
+          "net_margin_pct": 40.6
+        },
+        "textiles": {
+          "revenue": 37000,
+          "cogs": 14800,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 2050,
+          "net_margin_pct": 47.6
+        },
+        "lighting": {
+          "revenue": 31000,
+          "cogs": 19220,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 22.5,
+          "logistics_costs": 5200,
+          "net_margin_pct": -5.2
+        },
+        "accessories": {
+          "revenue": 24000,
+          "cogs": 10800,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.5,
+          "logistics_costs": 1600,
+          "net_margin_pct": 44.5
+        }
+      },
+      "logistics_costs_total": 14950,
+      "stock_value": 442000,
+      "stock_rotation_days": 87,
+      "cash_available": 308000,
+      "cac": 20.0,
+      "conversion_rate_pct": 2.6,
+      "average_basket": 84,
+      "payroll": 60000
+    },
+    {
+      "period": "2025-08",
+      "type": "actual",
+      "revenue_total": 158000,
+      "categories": {
+        "furniture": {
+          "revenue": 74000,
+          "cogs": 37000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 5.0,
+          "logistics_costs": 5600,
+          "net_margin_pct": 40.4
+        },
+        "textiles": {
+          "revenue": 33000,
+          "cogs": 13200,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.5,
+          "logistics_costs": 1850,
+          "net_margin_pct": 47.3
+        },
+        "lighting": {
+          "revenue": 29000,
+          "cogs": 17980,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 23.0,
+          "logistics_costs": 5000,
+          "net_margin_pct": -6.8
+        },
+        "accessories": {
+          "revenue": 22000,
+          "cogs": 9900,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.5,
+          "logistics_costs": 1500,
+          "net_margin_pct": 44.2
+        }
+      },
+      "logistics_costs_total": 13950,
+      "stock_value": 428000,
+      "stock_rotation_days": 92,
+      "cash_available": 288000,
+      "cac": 21.0,
+      "conversion_rate_pct": 2.5,
+      "average_basket": 82,
+      "payroll": 60000
+    },
+    {
+      "period": "2025-09",
+      "type": "actual",
+      "revenue_total": 222000,
+      "categories": {
+        "furniture": {
+          "revenue": 106000,
+          "cogs": 53000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 7700,
+          "net_margin_pct": 42.1
+        },
+        "textiles": {
+          "revenue": 46000,
+          "cogs": 18400,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2500,
+          "net_margin_pct": 48.5
+        },
+        "lighting": {
+          "revenue": 35000,
+          "cogs": 21700,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 23.0,
+          "logistics_costs": 6100,
+          "net_margin_pct": -5.7
+        },
+        "accessories": {
+          "revenue": 35000,
+          "cogs": 15750,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 2250,
+          "net_margin_pct": 46.1
+        }
+      },
+      "logistics_costs_total": 18550,
+      "stock_value": 488000,
+      "stock_rotation_days": 80,
+      "cash_available": 315000,
+      "cac": 17.5,
+      "conversion_rate_pct": 3.1,
+      "average_basket": 93,
+      "payroll": 62000
+    },
+    {
+      "period": "2025-10",
+      "type": "actual",
+      "revenue_total": 258000,
+      "categories": {
+        "furniture": {
+          "revenue": 124000,
+          "cogs": 62000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.2,
+          "logistics_costs": 8900,
+          "net_margin_pct": 42.6
+        },
+        "textiles": {
+          "revenue": 54000,
+          "cogs": 21600,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.0,
+          "logistics_costs": 2900,
+          "net_margin_pct": 49.0
+        },
+        "lighting": {
+          "revenue": 40000,
+          "cogs": 24800,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 22.5,
+          "logistics_costs": 7200,
+          "net_margin_pct": -4.5
+        },
+        "accessories": {
+          "revenue": 40000,
+          "cogs": 18000,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2550,
+          "net_margin_pct": 46.7
+        }
+      },
+      "logistics_costs_total": 21550,
+      "stock_value": 525000,
+      "stock_rotation_days": 74,
+      "cash_available": 348000,
+      "cac": 16.0,
+      "conversion_rate_pct": 3.4,
+      "average_basket": 99,
+      "payroll": 62000
+    },
+    {
+      "period": "2025-11",
+      "type": "actual",
+      "revenue_total": 418000,
+      "categories": {
+        "furniture": {
+          "revenue": 198000,
+          "cogs": 99000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 5.0,
+          "logistics_costs": 14200,
+          "net_margin_pct": 41.8
+        },
+        "textiles": {
+          "revenue": 87000,
+          "cogs": 34800,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 9.0,
+          "logistics_costs": 4650,
+          "net_margin_pct": 47.9
+        },
+        "lighting": {
+          "revenue": 66000,
+          "cogs": 40920,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 22.5,
+          "logistics_costs": 11900,
+          "net_margin_pct": -4.1
+        },
+        "accessories": {
+          "revenue": 67000,
+          "cogs": 30150,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 7.0,
+          "logistics_costs": 4300,
+          "net_margin_pct": 44.5
+        }
+      },
+      "logistics_costs_total": 35050,
+      "stock_value": 415000,
+      "stock_rotation_days": 36,
+      "cash_available": 392000,
+      "cac": 14.5,
+      "conversion_rate_pct": 4.3,
+      "average_basket": 115,
+      "payroll": 62000
+    },
+    {
+      "period": "2025-12",
+      "type": "actual",
+      "revenue_total": 482000,
+      "categories": {
+        "furniture": {
+          "revenue": 228000,
+          "cogs": 114000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 16200,
+          "net_margin_pct": 40.9
+        },
+        "textiles": {
+          "revenue": 100000,
+          "cogs": 40000,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 10.0,
+          "logistics_costs": 5350,
+          "net_margin_pct": 47.4
+        },
+        "lighting": {
+          "revenue": 76000,
+          "cogs": 47120,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 23.0,
+          "logistics_costs": 13700,
+          "net_margin_pct": -4.8
+        },
+        "accessories": {
+          "revenue": 78000,
+          "cogs": 35100,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 5000,
+          "net_margin_pct": 43.5
+        }
+      },
+      "logistics_costs_total": 40250,
+      "stock_value": 348000,
+      "stock_rotation_days": 26,
+      "cash_available": 445000,
+      "cac": 13.5,
+      "conversion_rate_pct": 4.9,
+      "average_basket": 122,
+      "payroll": 62000
+    },
+    {
+      "period": "2026-01",
+      "type": "forecast",
+      "revenue_total": 215000,
+      "categories": {
+        "furniture": {
+          "revenue": 102000,
+          "cogs": 51000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 7500,
+          "net_margin_pct": 42.0
+        },
+        "textiles": {
+          "revenue": 44000,
+          "cogs": 17600,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 2400,
+          "net_margin_pct": 48.3
+        },
+        "lighting": {
+          "revenue": 34000,
+          "cogs": 21080,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 20.0,
+          "logistics_costs": 5600,
+          "net_margin_pct": 2.5,
+          "comment": "Le forecast suppose une renégociation fournisseur qui rétablit la marge — hypothèse non confirmée"
+        },
+        "accessories": {
+          "revenue": 35000,
+          "cogs": 15750,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 2250,
+          "net_margin_pct": 46.2
+        }
+      },
+      "logistics_costs_total": 17750,
+      "stock_value": 395000,
+      "stock_rotation_days": 56,
+      "cash_available": 412000,
+      "cac": 17.5,
+      "conversion_rate_pct": 3.0,
+      "average_basket": 90,
+      "payroll": 62000
+    },
+    {
+      "period": "2026-02",
+      "type": "forecast",
+      "revenue_total": 175000,
+      "categories": {
+        "furniture": {
+          "revenue": 82000,
+          "cogs": 41000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 6100,
+          "net_margin_pct": 41.7
+        },
+        "textiles": {
+          "revenue": 36000,
+          "cogs": 14400,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 8.0,
+          "logistics_costs": 2000,
+          "net_margin_pct": 48.1
+        },
+        "lighting": {
+          "revenue": 28000,
+          "cogs": 17360,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 19.0,
+          "logistics_costs": 4500,
+          "net_margin_pct": 3.8
+        },
+        "accessories": {
+          "revenue": 29000,
+          "cogs": 13050,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 6.0,
+          "logistics_costs": 1900,
+          "net_margin_pct": 45.9
+        }
+      },
+      "logistics_costs_total": 14500,
+      "stock_value": 380000,
+      "stock_rotation_days": 63,
+      "cash_available": 385000,
+      "cac": 18.5,
+      "conversion_rate_pct": 2.8,
+      "average_basket": 87,
+      "payroll": 62000
+    },
+    {
+      "period": "2026-03",
+      "type": "forecast",
+      "revenue_total": 232000,
+      "categories": {
+        "furniture": {
+          "revenue": 110000,
+          "cogs": 55000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.2,
+          "logistics_costs": 8000,
+          "net_margin_pct": 42.5
+        },
+        "textiles": {
+          "revenue": 48000,
+          "cogs": 19200,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2600,
+          "net_margin_pct": 48.7
+        },
+        "lighting": {
+          "revenue": 36000,
+          "cogs": 22320,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 18.0,
+          "logistics_costs": 5500,
+          "net_margin_pct": 5.0
+        },
+        "accessories": {
+          "revenue": 38000,
+          "cogs": 17100,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2400,
+          "net_margin_pct": 46.6
+        }
+      },
+      "logistics_costs_total": 18500,
+      "stock_value": 420000,
+      "stock_rotation_days": 66,
+      "cash_available": 405000,
+      "cac": 17.0,
+      "conversion_rate_pct": 3.1,
+      "average_basket": 93,
+      "payroll": 64000
+    },
+    {
+      "period": "2026-04",
+      "type": "forecast",
+      "revenue_total": 252000,
+      "categories": {
+        "furniture": {
+          "revenue": 120000,
+          "cogs": 60000,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.0,
+          "logistics_costs": 8700,
+          "net_margin_pct": 42.8
+        },
+        "textiles": {
+          "revenue": 53000,
+          "cogs": 21200,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.0,
+          "logistics_costs": 2850,
+          "net_margin_pct": 49.1
+        },
+        "lighting": {
+          "revenue": 39000,
+          "cogs": 24180,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 17.5,
+          "logistics_costs": 5800,
+          "net_margin_pct": 6.2
+        },
+        "accessories": {
+          "revenue": 40000,
+          "cogs": 18000,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2550,
+          "net_margin_pct": 46.5
+        }
+      },
+      "logistics_costs_total": 19900,
+      "stock_value": 445000,
+      "stock_rotation_days": 64,
+      "cash_available": 432000,
+      "cac": 16.5,
+      "conversion_rate_pct": 3.2,
+      "average_basket": 96,
+      "payroll": 64000
+    },
+    {
+      "period": "2026-05",
+      "type": "forecast",
+      "revenue_total": 265000,
+      "categories": {
+        "furniture": {
+          "revenue": 127000,
+          "cogs": 63500,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.0,
+          "logistics_costs": 9200,
+          "net_margin_pct": 42.9
+        },
+        "textiles": {
+          "revenue": 56000,
+          "cogs": 22400,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.0,
+          "logistics_costs": 3000,
+          "net_margin_pct": 49.2
+        },
+        "lighting": {
+          "revenue": 42000,
+          "cogs": 26040,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 17.0,
+          "logistics_costs": 6100,
+          "net_margin_pct": 6.9
+        },
+        "accessories": {
+          "revenue": 40000,
+          "cogs": 18000,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.0,
+          "logistics_costs": 2500,
+          "net_margin_pct": 47.2
+        }
+      },
+      "logistics_costs_total": 20800,
+      "stock_value": 462000,
+      "stock_rotation_days": 63,
+      "cash_available": 462000,
+      "cac": 16.0,
+      "conversion_rate_pct": 3.3,
+      "average_basket": 98,
+      "payroll": 64000
+    },
+    {
+      "period": "2026-06",
+      "type": "forecast",
+      "revenue_total": 222000,
+      "categories": {
+        "furniture": {
+          "revenue": 105000,
+          "cogs": 52500,
+          "gross_margin_pct": 50.0,
+          "return_rate_pct": 4.5,
+          "logistics_costs": 7700,
+          "net_margin_pct": 42.0
+        },
+        "textiles": {
+          "revenue": 46000,
+          "cogs": 18400,
+          "gross_margin_pct": 60.0,
+          "return_rate_pct": 7.5,
+          "logistics_costs": 2500,
+          "net_margin_pct": 48.5
+        },
+        "lighting": {
+          "revenue": 37000,
+          "cogs": 22940,
+          "gross_margin_pct": 38.0,
+          "return_rate_pct": 17.0,
+          "logistics_costs": 5500,
+          "net_margin_pct": 7.4
+        },
+        "accessories": {
+          "revenue": 34000,
+          "cogs": 15300,
+          "gross_margin_pct": 55.0,
+          "return_rate_pct": 5.5,
+          "logistics_costs": 2200,
+          "net_margin_pct": 46.4
+        }
+      },
+      "logistics_costs_total": 17900,
+      "stock_value": 448000,
+      "stock_rotation_days": 68,
+      "cash_available": 448000,
+      "cac": 17.5,
+      "conversion_rate_pct": 3.0,
+      "average_basket": 93,
+      "payroll": 64000
+    }
+  ]
+}
