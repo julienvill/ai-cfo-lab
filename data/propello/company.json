@@ -1,0 +1,88 @@
+{
+  "company_name": "Propello",
+  "legal_name": "Propello SAS",
+  "legal_form": "SAS",
+  "siren": "912345678",
+  "siret": "91234567800012",
+  "naf_code": "6201Z",
+  "naf_label": "Programmation informatique",
+  "tva_number": "FR56912345678",
+  "share_capital": 50000,
+  "currency": "EUR",
+  "address": {
+    "street": "42 rue du Faubourg Saint-Antoine",
+    "postal_code": "75012",
+    "city": "Paris",
+    "country": "France"
+  },
+  "founded_date": "2021-06-15",
+  "fiscal_year_start": "01-01",
+  "fiscal_year_end": "12-31",
+  "collective_agreement": {
+    "idcc": "1486",
+    "name": "Convention collective nationale des bureaux d'études techniques, cabinets d'ingénieurs-conseils et sociétés de conseils (Syntec)"
+  },
+  "average_headcount": 27,
+  "description": "SaaS B2B d'automatisation de reporting RH pour PME françaises",
+  "sector": "SaaS B2B",
+  "management": [
+    {
+      "role": "Président",
+      "name": "Thomas Renault",
+      "since": "2021-06-15"
+    },
+    {
+      "role": "Directeur Technique",
+      "name": "Camille Nguyen",
+      "since": "2021-06-15"
+    },
+    {
+      "role": "Directeur des Opérations",
+      "name": "Mehdi Aït-Kaci",
+      "since": "2022-01-10"
+    }
+  ],
+  "bank_accounts": [
+    {
+      "bank": "Qonto",
+      "iban": "FR7630006000011234567890125",
+      "bic": "QNTOFRP1XXX",
+      "currency": "EUR",
+      "label": "Compte courant principal"
+    },
+    {
+      "bank": "Wise",
+      "iban": "GB82TRWI23456789012345",
+      "currency": "USD",
+      "label": "Compte USD — paiements fournisseurs internationaux (AWS, Stripe, outils SaaS)"
+    }
+  ],
+  "cap_table": [
+    {
+      "shareholder": "Thomas Renault",
+      "type": "founder",
+      "shares": 4000,
+      "percentage": 40.0
+    },
+    {
+      "shareholder": "Camille Nguyen",
+      "type": "founder",
+      "shares": 3000,
+      "percentage": 30.0
+    },
+    {
+      "shareholder": "Seed Ventures Fund I",
+      "type": "investor",
+      "shares": 2000,
+      "percentage": 20.0,
+      "round": "Seed",
+      "date": "2022-09-01"
+    },
+    {
+      "shareholder": "Pool BSPCE",
+      "type": "esop",
+      "shares": 1000,
+      "percentage": 10.0
+    }
+  ]
+}

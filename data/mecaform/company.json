@@ -1,0 +1,59 @@
+{
+  "company_name": "Mécaform",
+  "legal_name": "Mécaform SA",
+  "legal_form": "SA",
+  "siren": "423456789",
+  "siret": "42345678900015",
+  "naf_code": "2562B",
+  "naf_label": "Mécanique industrielle",
+  "tva_number": "FR29423456789",
+  "share_capital": 500000,
+  "currency": "EUR",
+  "address": {
+    "street": "Zone Industrielle des Graviers, 8 rue de l'Acier",
+    "postal_code": "69400",
+    "city": "Villefranche-sur-Saône",
+    "country": "France"
+  },
+  "founded_date": "2003-03-22",
+  "fiscal_year_start": "01-01",
+  "fiscal_year_end": "12-31",
+  "collective_agreement": {
+    "idcc": "3248",
+    "name": "Convention collective nationale de la métallurgie"
+  },
+  "average_headcount": 82,
+  "description": "Fabricant de pièces métalliques de précision pour l'aéronautique et l'automobile",
+  "sector": "Industrie manufacturière",
+  "management": [
+    {
+      "role": "Directeur Général",
+      "name": "Philippe Morel",
+      "since": "2003-03-22"
+    },
+    {
+      "role": "Directeur Administratif et Financier",
+      "name": "Isabelle Garnier",
+      "since": "2015-09-01"
+    },
+    {
+      "role": "Directeur de Production",
+      "name": "Laurent Fabre",
+      "since": "2010-06-15"
+    },
+    {
+      "role": "Directeur Commercial",
+      "name": "Nathalie Dupont",
+      "since": "2017-01-09"
+    }
+  ],
+  "bank_accounts": [
+    {
+      "bank": "Crédit Lyonnais (LCL)",
+      "iban": "FR7630002032001234567890143",
+      "bic": "CRLYFRPP",
+      "currency": "EUR",
+      "label": "Compte courant principal"
+    }
+  ]
+}

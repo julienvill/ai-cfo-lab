@@ -1,0 +1,49 @@
+{
+  "company_name": "Maison Nordique",
+  "legal_name": "Maison Nordique SARL",
+  "legal_form": "SARL",
+  "siren": "834567891",
+  "siret": "83456789100018",
+  "naf_code": "4791B",
+  "naf_label": "Vente à distance sur catalogue spécialisé",
+  "tva_number": "FR41834567891",
+  "share_capital": 30000,
+  "currency": "EUR",
+  "address": {
+    "street": "15 rue des Carmes",
+    "postal_code": "44000",
+    "city": "Nantes",
+    "country": "France"
+  },
+  "founded_date": "2019-02-11",
+  "fiscal_year_start": "01-01",
+  "fiscal_year_end": "12-31",
+  "collective_agreement": {
+    "idcc": "2216",
+    "name": "Convention collective nationale du commerce de détail et de gros à prédominance non alimentaire"
+  },
+  "average_headcount": 15,
+  "description": "Vente en ligne de mobilier et décoration d'inspiration scandinave",
+  "sector": "E-commerce B2C",
+  "management": [
+    {
+      "role": "Gérante",
+      "name": "Astrid Lefèvre",
+      "since": "2019-02-11"
+    },
+    {
+      "role": "Co-gérant",
+      "name": "Julien Lefèvre",
+      "since": "2019-02-11"
+    }
+  ],
+  "bank_accounts": [
+    {
+      "bank": "Crédit Mutuel de Bretagne",
+      "iban": "FR7610278036001234567890154",
+      "bic": "CMBRFR2BARK",
+      "currency": "EUR",
+      "label": "Compte courant principal"
+    }
+  ]
+}
