@@ -1,10 +1,12 @@
 "use client"
 
 import { useCompany } from "@/lib/company-context"
+import { useLocale } from "@/lib/locale-context"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function KpisSaasPage() {
   const { company } = useCompany()
+  const { t } = useLocale()
 
   return (
     <div className="space-y-6">
@@ -25,21 +27,21 @@ export default function KpisSaasPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">Évolution MRR</CardTitle>
+            <CardTitle className="text-base">{t("app.kpisSaas.evolutionMrr")}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="h-64 flex items-center justify-center text-[#64748B] text-sm">
-              Graphique MRR à venir
+              {t("app.kpisSaas.mrrPlaceholder")}
             </div>
           </CardContent>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">Churn & Retention</CardTitle>
+            <CardTitle className="text-base">{t("app.kpisSaas.churnRetention")}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="h-64 flex items-center justify-center text-[#64748B] text-sm">
-              Graphique churn à venir
+              {t("app.kpisSaas.churnPlaceholder")}
             </div>
           </CardContent>
         </Card>

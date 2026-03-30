@@ -1,15 +1,23 @@
 "use client"
 
 import { useCompany } from "@/lib/company-context"
+import { useLocale } from "@/lib/locale-context"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function TresoreriePage() {
   const { company } = useCompany()
+  const { t } = useLocale()
+
+  const kpis = [
+    t("app.tresorerie.solde"),
+    t("app.tresorerie.runway"),
+    t("app.tresorerie.burnRate"),
+  ]
 
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {["Solde actuel", "Runway estimé", "Burn rate net"].map((label) => (
+        {kpis.map((label) => (
           <Card key={label}>
             <CardHeader className="pb-2">
               <CardTitle className="text-sm font-medium text-[#64748B]">{label}</CardTitle>
@@ -24,11 +32,11 @@ export default function TresoreriePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">Projection de trésorerie</CardTitle>
+          <CardTitle className="text-base">{t("app.tresorerie.projection")}</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="h-64 flex items-center justify-center text-[#64748B] text-sm">
-            Graphique de projection à venir
+            {t("app.tresorerie.projectionPlaceholder")}
           </div>
         </CardContent>
       </Card>

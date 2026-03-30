@@ -1,4 +1,10 @@
+"use client"
+
+import { useLocale } from "@/lib/locale-context"
+
 export function CTA() {
+  const { t } = useLocale()
+
   return (
     <section
       id="contact"
@@ -6,11 +12,10 @@ export function CTA() {
     >
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-4xl font-extrabold sm:text-5xl">
-          Votre DAF virtuel est prêt.
+          {t("landing.cta.title")}
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg text-muted">
-          Explorez la démo avec des données fictives, ou demandez un accès pour
-          connecter vos propres outils.
+          {t("landing.cta.subtitle")}
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -18,13 +23,13 @@ export function CTA() {
             href="#demo"
             className="inline-flex items-center rounded-lg bg-accent px-8 py-3.5 text-base font-semibold text-white shadow-card transition-all hover:bg-primary-hover hover:shadow-card-hover"
           >
-            Explorer la démo
+            {t("landing.cta.demo")}
           </a>
           <a
             href="mailto:contact@aicfolab.com"
             className="inline-flex items-center rounded-lg border border-border px-8 py-3.5 text-base font-semibold text-primary transition-all hover:bg-surface"
           >
-            Demander un accès
+            {t("landing.cta.access")}
           </a>
         </div>
       </div>

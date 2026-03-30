@@ -16,18 +16,20 @@ import {
 import { CompanySelector } from "./company-selector"
 import { Separator } from "@/components/ui/separator"
 import { cn } from "@/lib/utils"
+import { useLocale } from "@/lib/locale-context"
 
 const navItems = [
-  { href: "/app/synthese", label: "Synthèse du jour", icon: LayoutDashboard },
-  { href: "/app/tresorerie", label: "Trésorerie", icon: TrendingUp },
-  { href: "/app/factures/clients", label: "Factures clients", icon: ArrowRightLeft },
-  { href: "/app/factures/fournisseurs", label: "Factures fournisseurs", icon: Receipt },
-  { href: "/app/kpis-saas", label: "KPIs SaaS", icon: BarChart3 },
-  { href: "/app/cloture", label: "Clôture mensuelle", icon: CheckSquare },
+  { href: "/app/synthese", labelKey: "app.sidebar.synthese", icon: LayoutDashboard },
+  { href: "/app/tresorerie", labelKey: "app.sidebar.tresorerie", icon: TrendingUp },
+  { href: "/app/factures/clients", labelKey: "app.sidebar.facturesClients", icon: ArrowRightLeft },
+  { href: "/app/factures/fournisseurs", labelKey: "app.sidebar.facturesFournisseurs", icon: Receipt },
+  { href: "/app/kpis-saas", labelKey: "app.sidebar.kpisSaas", icon: BarChart3 },
+  { href: "/app/cloture", labelKey: "app.sidebar.cloture", icon: CheckSquare },
 ]
 
 export function Sidebar() {
   const pathname = usePathname()
+  const { t } = useLocale()
 
   return (
     <aside className="flex flex-col w-60 h-screen bg-[#0F1C2E] text-white shrink-0">
@@ -60,7 +62,7 @@ export function Sidebar() {
               )}
             >
               <item.icon className={cn("h-4 w-4", isActive && "text-[#3B82F6]")} strokeWidth={1.5} />
-              {item.label}
+              {t(item.labelKey)}
             </Link>
           )
         })}
@@ -72,11 +74,11 @@ export function Sidebar() {
       <div className="px-3 py-4 space-y-1">
         <button className="flex items-center gap-3 px-3 py-2.5 rounded-md text-sm text-white/60 hover:text-white hover:bg-white/5 w-full">
           <Settings className="h-4 w-4" strokeWidth={1.5} />
-          Paramètres
+          {t("app.sidebar.settings")}
         </button>
         <button className="flex items-center gap-3 px-3 py-2.5 rounded-md text-sm text-white/60 hover:text-white hover:bg-white/5 w-full">
           <HelpCircle className="h-4 w-4" strokeWidth={1.5} />
-          Support
+          {t("app.sidebar.support")}
         </button>
       </div>
     </aside>

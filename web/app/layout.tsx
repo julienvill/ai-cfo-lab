@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Inter, JetBrains_Mono } from "next/font/google"
 import { cn } from "@/lib/utils"
+import { LocaleProvider } from "@/lib/locale-context"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
@@ -19,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={cn(inter.variable, jetbrainsMono.variable)}>
-      <body>{children}</body>
+      <body>
+        <LocaleProvider>{children}</LocaleProvider>
+      </body>
     </html>
   )
 }

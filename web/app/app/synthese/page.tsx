@@ -1,24 +1,33 @@
 "use client"
 
 import { useCompany } from "@/lib/company-context"
+import { useLocale } from "@/lib/locale-context"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Sparkles } from "lucide-react"
 
 export default function SynthesePage() {
   const { company } = useCompany()
+  const { t } = useLocale()
+
+  const kpis = [
+    t("app.synthese.tresorerie"),
+    t("app.synthese.caMois"),
+    t("app.synthese.charges"),
+    t("app.synthese.resultatNet"),
+  ]
 
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {["Trésorerie", "CA du mois", "Charges", "Résultat net"].map((label) => (
+        {kpis.map((label) => (
           <Card key={label}>
             <CardHeader className="pb-2">
               <CardTitle className="text-sm font-medium text-[#64748B]">{label}</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-[#1E3A5F]">—</div>
-              <p className="text-xs text-[#64748B] mt-1">Données à venir</p>
+              <p className="text-xs text-[#64748B] mt-1">{t("app.synthese.dataPlaceholder")}</p>
             </CardContent>
           </Card>
         ))}
@@ -30,10 +39,12 @@ export default function SynthesePage() {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <Badge className="bg-[#7C3AED] text-white text-[10px] px-1.5">AI</Badge>
-              <span className="text-sm font-medium text-[#1E3A5F]">Analyse du jour — {company.name}</span>
+              <span className="text-sm font-medium text-[#1E3A5F]">
+                {t("app.synthese.aiAnalysis")} — {company.name}
+              </span>
             </div>
             <p className="text-sm text-[#64748B]">
-              L&apos;analyse quotidienne sera générée ici par l&apos;IA pour {company.name} ({company.sector}).
+              {t("app.synthese.aiDesc")} {company.name} ({company.sector}).
             </p>
           </div>
         </CardContent>
