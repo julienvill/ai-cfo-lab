@@ -8,13 +8,17 @@ export function middleware(request: NextRequest) {
   if (auth) {
     const [scheme, encoded] = auth.split(" ")
     if (scheme === "Basic" && encoded) {
-      const decoded = atob(encoded)
-      const [user, pass] = decoded.split(":")
-      if (
-        user === process.env.BASIC_AUTH_USER &&
-        pass === process.env.BASIC_AUTH_PASSWORD
-      ) {
-        return NextResponse.next()
+      const decoded = Buffer.from(encoded, "base64").toString("utf-8")
+      const separatorIndex = decoded.indexOf(":")
+      if (separatorIndex !== -1) {
+        const user = decoded.slice(0, separatorIndex)
+        const pass = decoded.slice(separatorIndex + 1)
+        if (
+          user === process.env.BASIC_AUTH_USER &&
+          pass === process.env.BASIC_AUTH_PASSWORD
+        ) {
+          return NextResponse.next()
+        }
       }
     }
   }
