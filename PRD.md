@@ -790,6 +790,7 @@ Gestion du registre des immobilisations : acquisition, amortissement, cession, m
 | Fonctionnalité | Description |
 |---|---|
 | **Registre des immobilisations** | Inventaire complet : date d'acquisition, valeur d'origine, durée d'amortissement, mode (linéaire/dégressif), localisation |
+| **Registre des équipements** | Lien entre immobilisation comptable et actif physique : numéro de série, marque/modèle, employé affectataire (lien avec le registre du personnel), date d'affectation, état (en service / stock / réformé). Permet de réconcilier le registre comptable avec l'inventaire physique et de tracer chaque actif jusqu'à son utilisateur |
 | **Calcul des amortissements** | Dotations mensuelles automatiques (linéaire, dégressif, par composants) |
 | **Écritures automatiques** | Dotations aux amortissements (débit 681x / crédit 28xx), mensuelles |
 | **Cessions et mises au rebut** | Calcul de la plus/moins-value, écritures de sortie |
@@ -855,6 +856,7 @@ Processus de clôture comptable mensuelle automatisé. Checklist de 8 blocs séq
 | **Contrôle de la balance** | Comparaison M vs M-1, détection IA des variations anormales (> seuil configurable) |
 | **Comptes d'attente** | Alerte si soldes résiduels sur les comptes 47x |
 | **Rapprochement inter-modules** | Vérification de cohérence entre AR, AP, banque, paie |
+| **Balance sheet reconciliation** | Rapprochement de chaque compte de bilan : justification des soldes, lettrage, documentation des écarts. Détection automatique d'anomalies par l'IA (soldes inhabituels, écarts vs M-1 au-delà d'un seuil configurable, comptes non mouvementés, soldes inversés, ruptures de séquence). Chaque compte doit être réconcilié avant la validation finale de la clôture |
 | **Génération P&L mensuel** | Compte de résultat mensuel automatique après clôture |
 | **Archivage** | Dossier de clôture archivé (écritures, contrôles, validations, piste d'audit) |
 | **Lock period** | Verrouillage de la période après validation, empêchant toute modification |
@@ -865,6 +867,7 @@ Processus de clôture comptable mensuelle automatisé. Checklist de 8 blocs séq
 |---|---|---|
 | Écritures de cut-off | 🟡 Auto + validation | L'IA génère CCA/PCA/FNP/FAE, le comptable valide |
 | Contrôle de balance | 🟢 100% auto | Détection automatique des anomalies |
+| Balance sheet reconciliation | 🟡 Auto + validation | L'IA prépare la réconciliation par compte, le comptable valide les écarts |
 | P&L mensuel | 🟢 100% auto | Agrégation automatique |
 | Archivage | 🟢 100% auto | Dossier généré et archivé automatiquement |
 | Validation finale | 🔴 Humain requis | Le DAF valide la clôture et verrouille la période |
@@ -1978,3 +1981,532 @@ La plateforme intègre nativement les obligations réglementaires françaises :
 - Facturation électronique (Factur-X, PDP)
 - Loi Waserman (lanceur d'alerte)
 - Loi Sapin II (anti-corruption, bonnes pratiques)
+
+---
+
+## 14. Cartographie des dépendances, entrées et sorties
+
+### Vue d'ensemble
+
+Chaque module consomme des données en entrée et produit des données en sortie. Les sorties d'un module deviennent les entrées d'un autre, créant un graphe de dépendances. Cette section formalise ces flux pour guider l'ordre d'implémentation et la conception des interfaces de données.
+
+### Légende
+
+- **Entrées** : données nécessaires au fonctionnement du module
+- **Sorties** : données produites par le module, consommables par d'autres modules
+- **Dépendances** : modules dont les sorties alimentent ce module
+- **Consommateurs** : modules qui utilisent les sorties de ce module
+
+---
+
+### Module 1 — Daily CFO
+
+| | Détail |
+|---|---|
+| **Entrées** | Soldes bancaires (2b), KPIs financiers (3a), créances en retard (4a), dettes fournisseurs (4b), masse salariale (4c), échéances fiscales (6a/6b/6d), alertes de tous modules |
+| **Sorties** | Brief quotidien (texte IA), score de santé financière (0-100), actions recommandées, alertes priorisées, notifications (email/Slack) |
+| **Dépendances** | 2a, 2b, 3a, 4a, 4b, 4c, 6a, 6d |
+| **Consommateurs** | 9b (Financial Memory), 9e (CFO Twin) |
+
+---
+
+### Module 2 — Cash Management
+
+#### 2a — Cash Forecast
+
+| | Détail |
+|---|---|
+| **Entrées** | Soldes bancaires temps réel (2b), échéancier clients — encaissements prévus (4a), échéancier fournisseurs — décaissements prévus (4b), échéancier paie — salaires nets + charges (4c), échéancier fiscal — TVA, IS, CFE (6a/6b/6d), remboursements d'emprunts (2c), prélèvements récurrents (2b) |
+| **Sorties** | Plan de trésorerie glissant (13 semaines + 12 mois), 3 scénarios (pessimiste/central/optimiste), burn rate net et brut, runway en mois, alertes de seuil, BFR (DSO + DPO + DIO) |
+| **Dépendances** | 2b, 2c, 4a, 4b, 4c, 6a, 6b, 6d |
+| **Consommateurs** | 1 (Daily CFO), 3c (Scenario Planner), 3d (Slide Deck), 9c (Predictive Risk) |
+
+#### 2b — Banque
+
+| | Détail |
+|---|---|
+| **Entrées** | Flux bancaires via connecteurs (Bridge API, Qonto, Revolut), écritures comptables pour rapprochement (4) |
+| **Sorties** | Vue consolidée multi-banques, soldes intra-day, mouvements catégorisés, rapprochements bancaires, anomalies détectées |
+| **Dépendances** | Connecteurs bancaires (Bridge, Qonto, Revolut) |
+| **Consommateurs** | 2a (Cash Forecast), 4g (Clôture — bloc J+1 banque), 4f (Notes de frais) |
+
+#### 2c — Dette & emprunts
+
+| | Détail |
+|---|---|
+| **Entrées** | Contrats d'emprunt (données manuelles ou 7c), données comptables (4), soldes bancaires (2b) |
+| **Sorties** | Tableaux d'amortissement, échéancier de remboursement, suivi des covenants, écritures comptables (intérêts/capital), alertes de covenant |
+| **Dépendances** | 4 (Comptabilité), 7c (Contrats) |
+| **Consommateurs** | 2a (Cash Forecast), 4g (Clôture) |
+
+#### 2d — Relations BPI France
+
+| | Détail |
+|---|---|
+| **Entrées** | Contrats BPI, données financières (4), KPIs (3a), prévisions (3b) |
+| **Sorties** | Dossiers BPI pré-remplis, alertes échéances, reporting BPI |
+| **Dépendances** | 3 (FP&A), 4 (Comptabilité) |
+| **Consommateurs** | 2a (Cash Forecast) |
+
+#### 2e — Affacturage / Dailly
+
+| | Détail |
+|---|---|
+| **Entrées** | Créances clients éligibles (4a), position de trésorerie (2a), conditions contractuelles |
+| **Sorties** | Simulation d'impact trésorerie, suivi des cessions en cours, coût comparatif (affacturage vs découvert vs Dailly), écritures comptables |
+| **Dépendances** | 4a (AR), 2a (Cash Forecast) |
+| **Consommateurs** | 2a (Cash Forecast), 4 (Comptabilité) |
+
+---
+
+### Module 3 — FP&A
+
+#### 3a — KPIs SaaS
+
+| | Détail |
+|---|---|
+| **Entrées** | Données d'abonnement (Stripe, GoCardless), revenus comptabilisés (4a), coûts marketing (4b), effectifs (5c), données clients (CRM ou import) |
+| **Sorties** | MRR, ARR, churn rate (logo + revenue), NRR, GRR, CAC, LTV, ARPU, Rule of 40, burn multiple, magic number, cohort analysis, benchmarks sectoriels, commentaires IA |
+| **Dépendances** | Connecteurs paiement (Stripe, GoCardless), 4a (AR), 4b (AP), 5c (Admin personnel) |
+| **Consommateurs** | 1 (Daily CFO), 3c (Scenario Planner), 3d (Slide Deck), 9c (Predictive Risk) |
+
+#### 3b — Budget, Forecast & Variance Analysis
+
+| | Détail |
+|---|---|
+| **Entrées** | Historique comptable (4), budget N-1, forecast précédent, effectifs prévus (5c), projections de CA (3a), charges prévisionnelles |
+| **Sorties** | Budget annuel approuvé (par ligne P&L, département, projet), forecast glissant, variance analysis (réel vs budget vs forecast), waterfall charts, commentaires IA sur écarts |
+| **Dépendances** | 4 (Comptabilité), 3a (KPIs SaaS), 5c (Admin personnel) |
+| **Consommateurs** | 1 (Daily CFO), 2a (Cash Forecast), 3c (Scenario Planner), 3d (Slide Deck) |
+
+#### 3c — Scenario Planner
+
+| | Détail |
+|---|---|
+| **Entrées** | P&L actuel (4), trésorerie (2a), KPIs SaaS (3a), effectifs (5c), budget (3b), variables utilisateur (langage naturel) |
+| **Sorties** | Scénarios modélisés (impact P&L + trésorerie + runway), analyses de sensibilité, recommandations IA, comparaison jusqu'à 3 scénarios |
+| **Dépendances** | 2a (Cash Forecast), 3a (KPIs SaaS), 3b (Budget), 4 (Comptabilité) |
+| **Consommateurs** | 3d (Slide Deck), 9a (Chat RAG) |
+
+#### 3d — Slide Deck VC
+
+| | Détail |
+|---|---|
+| **Entrées** | KPIs SaaS (3a), P&L et trésorerie (2a, 4), budget et variance (3b), données de clôture (4g), highlights/lowlights (saisie utilisateur ou IA) |
+| **Sorties** | Board pack complet (PDF/PPTX/Google Slides), narratives IA, investor update, historique des packs |
+| **Dépendances** | 2a (Cash Forecast), 3a (KPIs SaaS), 3b (Budget), 4g (Clôture) |
+| **Consommateurs** | 8c (Data Room) |
+
+#### 3e — Comptabilité analytique
+
+| | Détail |
+|---|---|
+| **Entrées** | Écritures comptables (4), règles de ventilation (config utilisateur), clés de répartition, axes analytiques (départements, projets, BU) |
+| **Sorties** | P&L analytique (par département, projet, produit, client), marges par segment, coûts de revient, analyses de rentabilité |
+| **Dépendances** | 4 (Comptabilité) |
+| **Consommateurs** | 3b (Budget — réel analytique vs budget analytique), 1 (Daily CFO) |
+
+---
+
+### Module 4 — Comptabilité
+
+#### 4a — Accounts Receivable (AR)
+
+| | Détail |
+|---|---|
+| **Entrées** | Contrats/abonnements clients, données de facturation (Stripe, GoCardless), encaissements bancaires (2b), règles de lettrage |
+| **Sorties** | Factures émises (Factur-X), balance auxiliaire 411, aging report, DSO, prévision d'encaissements, scoring client, relances automatiques, écritures comptables (produits, créances, encaissements), revenue recognition |
+| **Dépendances** | 2b (Banque), connecteurs paiement (Stripe, GoCardless) |
+| **Consommateurs** | 2a (Cash Forecast), 2e (Affacturage), 3a (KPIs SaaS), 4g (Clôture — bloc J+3 AR), 4i (Facturation électronique), 9c (Predictive Risk) |
+
+#### 4b — Accounts Payable (AP)
+
+| | Détail |
+|---|---|
+| **Entrées** | Factures fournisseurs (email, scan, API), bons de commande, bons de réception, données bancaires pour rapprochement (2b) |
+| **Sorties** | Factures comptabilisées, balance auxiliaire 401, DPO, FNP (factures non parvenues), ordres de paiement SEPA, spend analytics, alertes conformité LME, écritures comptables (charges, dettes) |
+| **Dépendances** | 2b (Banque), connecteurs comptabilité (Pennylane, Sage, Cegid) |
+| **Consommateurs** | 2a (Cash Forecast), 3e (Comptabilité analytique), 4g (Clôture — bloc J+2 AP), 4i (Facturation électronique) |
+
+#### 4c — Paie & charges sociales
+
+| | Détail |
+|---|---|
+| **Entrées** | Données de paie importées (Silae, PayFit, Lucca), registre du personnel (5c), temps de travail et absences (5f), avantages (5i) |
+| **Sorties** | Écritures comptables de paie (salaires bruts 641, charges patronales 645, charges salariales 431/437, nets à payer 421), masse salariale par département, coût chargé par employé, vérification DSN, alertes de cohérence |
+| **Dépendances** | 5c (Admin personnel), 5f (Temps & absences), 5i (Rémunération), connecteurs SIRH (Silae, PayFit, Lucca) |
+| **Consommateurs** | 2a (Cash Forecast), 4d (Provisions CP), 4g (Clôture — bloc J+5 paie), 5j (Index égalité), 6c (CIR), 6e (Participation) |
+
+#### 4d — Provisions congés payés
+
+| | Détail |
+|---|---|
+| **Entrées** | Droits acquis et droits pris (5f), salaires bruts (4c), taux de charges sociales |
+| **Sorties** | OD mensuelle de provision CP, suivi des droits par salarié, reprise de provision, reporting |
+| **Dépendances** | 4c (Paie), 5f (Temps & absences) |
+| **Consommateurs** | 4g (Clôture — bloc J+5 provisions) |
+
+#### 4e — Immobilisations & amortissements
+
+| | Détail |
+|---|---|
+| **Entrées** | Données d'acquisition (factures fournisseurs 4b, production immobilisée 6c), plans d'amortissement, registre des équipements (numéros de série, affectataires — lien 5c) |
+| **Sorties** | Dotations mensuelles aux amortissements (681x/28xx), plus/moins-values de cession, tableau des immobilisations (annexe), registre des équipements avec affectataires, alertes dépréciation (impairment) |
+| **Dépendances** | 4b (AP — factures d'acquisition), 5c (Admin personnel — affectataires), 6c (CIR — production immobilisée) |
+| **Consommateurs** | 4g (Clôture), 4h (États financiers — tableau immobilisations), 6c (CIR — amortissements éligibles) |
+
+#### 4f — Notes de frais
+
+| | Détail |
+|---|---|
+| **Entrées** | Justificatifs numériques (photos, PDF), politique de frais (config), données bancaires pour rapprochement (2b) |
+| **Sorties** | Notes de frais validées, écritures comptables (charges + TVA déductible), remboursements à intégrer au cycle de paiement, rapports de conformité, alertes fraude |
+| **Dépendances** | 2b (Banque), 4c (Paie — intégration remboursement) |
+| **Consommateurs** | 4g (Clôture), 6a (TVA — TVA déductible) |
+
+#### 4g — Clôture mensuelle
+
+| | Détail |
+|---|---|
+| **Entrées** | Rapprochement bancaire (2b), soldes AR (4a), soldes AP (4b), écritures de paie (4c), provisions CP (4d), dotations amortissements (4e), notes de frais (4f), déclarations TVA (6a), provisions IS (6d), balance N et N-1 |
+| **Sorties** | Clôture validée, écritures de cut-off (CCA, PCA, FNP, FAE), balance sheet reconciliation par compte, P&L mensuel, dossier d'archivage, période verrouillée |
+| **Dépendances** | 2b, 4a, 4b, 4c, 4d, 4e, 4f, 6a, 6d |
+| **Consommateurs** | 1 (Daily CFO), 3b (Budget — réel vs budget), 3d (Slide Deck), 4h (États financiers), 9b (Financial Memory) |
+
+#### 4h — Production des états financiers annuels
+
+| | Détail |
+|---|---|
+| **Entrées** | 12 clôtures mensuelles validées (4g), tableau des immobilisations (4e), provisions (4d), données fiscales (6a/6d), résultat fiscal (6d) |
+| **Sorties** | Bilan, compte de résultat, tableau de flux de trésorerie, annexe, liasse fiscale (CERFA 2050-2059), rapport de gestion (assistance IA), exports (PDF, XBRL) |
+| **Dépendances** | 4g (Clôture), 4e (Immobilisations), 6a (TVA), 6d (IS) |
+| **Consommateurs** | 7a (Secrétariat juridique — approbation des comptes), 8b (Relations CAC), 8c (Data Room) |
+
+#### 4i — Facturation électronique
+
+| | Détail |
+|---|---|
+| **Entrées** | Factures émises (4a), factures reçues (4b), plateforme PDP |
+| **Sorties** | Factures Factur-X conformes, statuts de cycle de vie, e-reporting, archivage à valeur probante |
+| **Dépendances** | 4a (AR), 4b (AP) |
+| **Consommateurs** | 8d (Conformité — archivage) |
+
+#### 4j — FEC (Fichier des Écritures Comptables)
+
+| | Détail |
+|---|---|
+| **Entrées** | Grand livre comptable (toutes les écritures de tous les sous-modules 4x) |
+| **Sorties** | Fichier FEC conforme (18 champs obligatoires), rapport d'auto-test, piste d'audit fiable (PAF) |
+| **Dépendances** | 4 (tous les sous-modules comptables) |
+| **Consommateurs** | 4k (Mapping PCG/IFRS), 8b (Relations CAC), 8d (Conformité) |
+
+#### 4k — Mapping PCG / IFRS & consolidation groupe
+
+| | Détail |
+|---|---|
+| **Entrées** | FEC ou grand livre (4j), table de mapping PCG ↔ comptes groupe (config), retraitements IFRS |
+| **Sorties** | Package de consolidation, écritures remappées, reporting au format groupe, réconciliation inter-comptes |
+| **Dépendances** | 4j (FEC) |
+| **Consommateurs** | 8c (Data Room) |
+
+---
+
+### Module 5 — RH
+
+#### 5a — Gestion du CSE
+
+| | Détail |
+|---|---|
+| **Entrées** | Effectifs et registre du personnel (5c), données financières (4 — pour les consultations obligatoires), masse salariale (4c), heures de délégation saisies |
+| **Sorties** | PV de réunions, consultations préparées (stratégie, situation éco/fin, politique sociale), budgets CSE (fonctionnement + ASC), alertes heures de délégation |
+| **Dépendances** | 4 (Comptabilité), 5c (Admin personnel), 4c (Paie) |
+| **Consommateurs** | 5b (BDESE), 5i (Rémunération — accords CSE) |
+
+#### 5b — Reporting BDESE
+
+| | Détail |
+|---|---|
+| **Entrées** | Données comptables (4), données de paie (4c), effectifs et données RH (5c), données fiscales (6), données CSE (5a), formations (5g), temps de travail (5f) |
+| **Sorties** | Rapport BDESE complet (131 indicateurs, 10 rubriques), comparatif N/N-1/N-2, checklist de complétude, exports PDF |
+| **Dépendances** | 4 (Comptabilité), 4c (Paie), 5a (CSE), 5c (Admin personnel), 5f (Temps), 5g (Formation), 6 (Impôts) |
+| **Consommateurs** | 5a (CSE — mise à disposition), 8d (Conformité) |
+
+#### 5c — Administration du personnel
+
+| | Détail |
+|---|---|
+| **Entrées** | Données d'embauche (saisie manuelle ou connecteurs SIRH), contrats, avenants, données de visite médicale |
+| **Sorties** | Dossiers salariés complets, registre unique du personnel, DPAE, contrats de travail générés, organigramme, affiliations mutuelle/prévoyance, documents de fin de contrat |
+| **Dépendances** | Connecteurs SIRH (Lucca, Silae, PayFit) |
+| **Consommateurs** | 4c (Paie), 4e (Immobilisations — affectataires), 5a (CSE), 5b (BDESE), 5d (Recrutement), 5e (Onboarding), 5f (Temps), 5g (Formation), 5h (Entretiens), 5i (Rémunération), 5j (Index égalité), 5k (Santé), 6c (CIR — collaborateurs éligibles) |
+
+#### 5d — Recrutement
+
+| | Détail |
+|---|---|
+| **Entrées** | Besoins de recrutement (saisie), organigramme (5c), budget (3b), CV candidats |
+| **Sorties** | Fiches de poste, pipeline de candidatures, KPIs recrutement (time-to-hire, cost-per-hire), vivier de candidats |
+| **Dépendances** | 5c (Admin personnel), 3b (Budget) |
+| **Consommateurs** | 5e (Onboarding — déclenchement), 5c (Admin personnel — création dossier salarié) |
+
+#### 5e — Onboarding / Offboarding
+
+| | Détail |
+|---|---|
+| **Entrées** | Dossier salarié (5c), checklist d'équipements (4e — registre équipements), accès IT |
+| **Sorties** | Checklists de progression (J+1, S+1, M+1, M+3), rapport d'étonnement, suivi période d'essai, checklist de sortie (restitution matériel, clôture accès), analyses IA des tendances de départ |
+| **Dépendances** | 5c (Admin personnel), 4e (Immobilisations — affectation équipements) |
+| **Consommateurs** | 5c (Admin personnel — mise à jour dossier) |
+
+#### 5f — Gestion des temps & absences
+
+| | Détail |
+|---|---|
+| **Entrées** | Déclarations de présence/congés (saisie ou connecteur Lucca Timmi), données contractuelles (5c — forfait jours, horaire, temps partiel) |
+| **Sorties** | Soldes de congés par salarié (CP acquis/pris/restants, RTT), planning d'équipe, export paie (heures travaillées, absences, HS), taux d'absentéisme, alertes (dépassement forfait jours, contingent HS), CET |
+| **Dépendances** | 5c (Admin personnel), connecteur Lucca |
+| **Consommateurs** | 4c (Paie — éléments variables), 4d (Provisions CP), 6c (CIR — temps R&D) |
+
+#### 5g — Formation & entretiens professionnels
+
+| | Détail |
+|---|---|
+| **Entrées** | Besoins de formation, budget formation (3b), données OPCO, dossiers salariés (5c) |
+| **Sorties** | Plan de formation, rapports d'entretiens professionnels (biennaux), alertes bilan 6 ans, reporting formation (heures, coûts, taux d'accès), demandes OPCO |
+| **Dépendances** | 5c (Admin personnel), 3b (Budget), connecteur OPCO |
+| **Consommateurs** | 5b (BDESE), 4 (Comptabilité — charges de formation) |
+
+#### 5h — Entretiens annuels (performance)
+
+| | Détail |
+|---|---|
+| **Entrées** | Dossiers salariés (5c), objectifs précédents, auto-évaluations |
+| **Sorties** | Rapports d'entretiens, people reviews, plans de développement individuels, analytics de performance |
+| **Dépendances** | 5c (Admin personnel) |
+| **Consommateurs** | 5i (Rémunération — input pour revue salariale), 5d (Recrutement — identification besoins) |
+
+#### 5i — Rémunération & avantages
+
+| | Détail |
+|---|---|
+| **Entrées** | Données de paie (4c), grilles salariales, benchmarks marché, accords CSE (5a), entretiens de performance (5h), conventions collectives (5c) |
+| **Sorties** | Politique de rémunération, simulations d'impact (embauche, augmentation), registre consolidé des avantages, coût total employeur par salarié, NAO préparée, épargne salariale (PEE/PERCOL) |
+| **Dépendances** | 4c (Paie), 5a (CSE), 5c (Admin personnel), 5h (Entretiens) |
+| **Consommateurs** | 4c (Paie — éléments de rémunération), 3b (Budget — prévisions masse salariale), 6e (Participation) |
+
+#### 5j — Index égalité F/H
+
+| | Détail |
+|---|---|
+| **Entrées** | Données de paie par genre (4c), effectifs par catégorie (5c), promotions, augmentations, retours de congé maternité |
+| **Sorties** | Score index (5 indicateurs, /100), objectifs de progression si score < 75, publication obligatoire, historique, simulation d'impact |
+| **Dépendances** | 4c (Paie), 5c (Admin personnel) |
+| **Consommateurs** | 5b (BDESE), 8d (Conformité) |
+
+#### 5k — Santé, sécurité & DUERP
+
+| | Détail |
+|---|---|
+| **Entrées** | Évaluations de risques, données médicales (visites), AT/MP déclarés, postes et unités de travail (5c) |
+| **Sorties** | DUERP documenté et mis à jour, rapports AT/MP, plans de prévention, C2P (Compte Professionnel de Prévention), RPS évalués |
+| **Dépendances** | 5c (Admin personnel) |
+| **Consommateurs** | 5b (BDESE), 8d (Conformité) |
+
+---
+
+### Module 6 — Impôts
+
+#### 6a — TVA
+
+| | Détail |
+|---|---|
+| **Entrées** | Écritures comptables de ventes et achats (4a/4b), TVA sur notes de frais (4f), TVA intracommunautaire |
+| **Sorties** | Déclaration CA3 pré-remplie, TVA collectée/déductible/à reverser, crédit de TVA, alertes échéances, état récapitulatif (DEB/EMEBI) |
+| **Dépendances** | 4a (AR), 4b (AP), 4f (Notes de frais) |
+| **Consommateurs** | 2a (Cash Forecast — décaissements TVA), 4g (Clôture — bloc J+5 impôts) |
+
+#### 6b — CFE / CVAE
+
+| | Détail |
+|---|---|
+| **Entrées** | Valeur ajoutée (4 — données comptables), valeur locative des biens, effectifs |
+| **Sorties** | Calcul CFE et CVAE, plafonnement CET, échéancier (acomptes + solde), déclarations pré-remplies (1447-C, 1330-CVAE) |
+| **Dépendances** | 4 (Comptabilité) |
+| **Consommateurs** | 2a (Cash Forecast), 4g (Clôture) |
+
+#### 6c — CIR (Crédit Impôt Recherche)
+
+| | Détail |
+|---|---|
+| **Entrées** | Suivi des temps R&D par projet (5f), données de paie des chercheurs (4c), amortissements des équipements R&D (4e), contrats de sous-traitance (7c), brevets |
+| **Sorties** | Assiette CIR calculée (personnel + forfait 43% + sous-traitance + amortissements + brevets), formulaire 2069-A pré-rempli, fiches techniques par projet (assistance IA), dossier justificatif complet, alertes de contrôle (cohérence temps, taux > 90%) |
+| **Dépendances** | 4c (Paie), 4e (Immobilisations), 5f (Temps), 7c (Contrats) |
+| **Consommateurs** | 6d (IS — crédit d'impôt à imputer), 4e (Immobilisations — production immobilisée R&D) |
+
+#### 6d — Impôt sur les sociétés (IS)
+
+| | Détail |
+|---|---|
+| **Entrées** | Résultat comptable (4g/4h), retraitements fiscaux (réintégrations/déductions), CIR à imputer (6c), déficits reportables |
+| **Sorties** | Résultat fiscal, IS calculé (taux normal 25% / réduit PME 15%), acomptes trimestriels, provision mensuelle (1/12e), relevé de solde, liasse fiscale (contribution aux CERFA) |
+| **Dépendances** | 4g (Clôture), 4h (États financiers), 6c (CIR) |
+| **Consommateurs** | 2a (Cash Forecast — décaissements IS), 4g (Clôture — provision IS), 4h (États financiers) |
+
+#### 6e — Participation / Intéressement
+
+| | Détail |
+|---|---|
+| **Entrées** | Résultat comptable (4), capitaux propres, masse salariale (4c), accords de participation/intéressement, effectifs (5c) |
+| **Sorties** | Réserve de participation calculée, répartition individuelle, simulation d'impact, forfait social, déclarations, versements (immédiat ou épargne salariale) |
+| **Dépendances** | 4 (Comptabilité), 4c (Paie), 5c (Admin personnel), 5i (Rémunération) |
+| **Consommateurs** | 4g (Clôture — provision participation) |
+
+---
+
+### Module 7 — Juridique / Corporate
+
+#### 7a — Secrétariat juridique
+
+| | Détail |
+|---|---|
+| **Entrées** | États financiers annuels (4h), statuts de la société, calendrier légal, données des dirigeants |
+| **Sorties** | PV d'AG et CA (assistance IA), décisions enregistrées, registres légaux mis à jour, dépôt des comptes au greffe, formalités (modifications statuts, changements dirigeants), alertes réglementaires |
+| **Dépendances** | 4h (États financiers) |
+| **Consommateurs** | 7b (Cap table — opérations sur capital), 8c (Data Room), 8d (Conformité) |
+
+#### 7b — Cap table & BSPCE
+
+| | Détail |
+|---|---|
+| **Entrées** | Décisions AG/CA (7a), contrats BSPCE/BSA/AGA, opérations sur capital, pacte d'associés, valorisations |
+| **Sorties** | Cap table actualisée, simulation de dilution, waterfall analysis, vesting schedules, fiscalité des instruments, exports data room |
+| **Dépendances** | 7a (Secrétariat juridique), 4 (Comptabilité) |
+| **Consommateurs** | 3d (Slide Deck — données investisseurs), 8c (Data Room) |
+
+#### 7c — Contrats & baux
+
+| | Détail |
+|---|---|
+| **Entrées** | Contrats numériques ou scannés, données de sous-traitants, indices d'indexation (baux) |
+| **Sorties** | Registre des contrats, alertes échéances et renouvellements, clauses clés extraites (IA), analyses de risque, vigilance sous-traitants (URSSAF, Kbis, assurance) |
+| **Dépendances** | 8d (Conformité — obligations de vigilance) |
+| **Consommateurs** | 2c (Dette — contrats d'emprunt), 6c (CIR — sous-traitance), 7d (Assurances) |
+
+#### 7d — Assurances
+
+| | Détail |
+|---|---|
+| **Entrées** | Polices d'assurance, historique sinistres, activité de l'entreprise, effectifs (5c), contrats (7c), données immobilisations (4e) |
+| **Sorties** | Registre des polices, alertes échéances, rapports sinistres, analyse de couverture, benchmark, recommandations d'optimisation, checklist investisseurs |
+| **Dépendances** | 5c (Admin personnel), 7a (Secrétariat juridique), 7c (Contrats), 4e (Immobilisations) |
+| **Consommateurs** | 8c (Data Room), 4b (AP — primes d'assurance) |
+
+---
+
+### Module 8 — Audit & Compliance
+
+#### 8a — Contrôle interne
+
+| | Détail |
+|---|---|
+| **Entrées** | Transactions de tous les modules (4, 2), workflows de validation, risques identifiés, habilitations utilisateurs |
+| **Sorties** | Matrice de séparation des tâches, alertes fraude (doublons, factures fictives), cartographie des risques, procédures documentées, rapports d'auto-évaluation |
+| **Dépendances** | 4 (Comptabilité), 2 (Trésorerie) |
+| **Consommateurs** | 8b (Relations CAC), 8d (Conformité) |
+
+#### 8b — Relations CAC
+
+| | Détail |
+|---|---|
+| **Entrées** | Comptabilité complète (4), FEC (4j), grand livre, pièces justificatives, états financiers (4h), contrôle interne (8a) |
+| **Sorties** | Dossier de travail pré-constitué, planning d'intervention, suivi des recommandations, lettre d'affirmation |
+| **Dépendances** | 4 (Comptabilité), 4j (FEC), 4h (États financiers), 8a (Contrôle interne) |
+| **Consommateurs** | 7a (Secrétariat juridique — rapport CAC pour AG) |
+
+#### 8c — Data Room
+
+| | Détail |
+|---|---|
+| **Entrées** | Documents de tous les modules : états financiers (4h), cap table (7b), contrats (7c), PV d'AG (7a), BDESE (5b), polices d'assurance (7d), brevets, slide decks (3d), mapping IFRS (4k) |
+| **Sorties** | Data room virtuelle peuplée, score de complétude par catégorie, Q&A (workflow), exports par lot avec table des matières |
+| **Dépendances** | Tous les modules producteurs de documents |
+| **Consommateurs** | Usage externe (investisseurs, banques, acquéreurs, auditeurs) |
+
+#### 8d — Conformité, gestion des données & RGPD
+
+| | Détail |
+|---|---|
+| **Entrées** | Données personnelles de tous les modules, registre des traitements, consentements, sous-traitants (7c), violations détectées, réglementation en vigueur |
+| **Sorties** | Registre des traitements (article 30), notifications de violation (articles 33-34), rapports PIA/AIPD, tableau de bord conformité global, durées de conservation par catégorie, purge automatique, PAF |
+| **Dépendances** | Tous les modules (données personnelles et financières) |
+| **Consommateurs** | 7c (Contrats — obligations de vigilance), 8a (Contrôle interne) |
+
+---
+
+### Module 9 — Virtual CFO
+
+#### 9a — Chat RAG
+
+| | Détail |
+|---|---|
+| **Entrées** | Questions utilisateur (langage naturel), données de tous les modules (via RAG), mémoire financière (9b) |
+| **Sorties** | Réponses sourcées et tracées, historique des conversations, questions prédéfinies, graphiques et tableaux générés |
+| **Dépendances** | Tous les modules (interrogation via RAG), 9b (Financial Memory) |
+| **Consommateurs** | 9e (CFO Twin), 9d (Autonomous Actions) |
+
+#### 9b — Financial Memory
+
+| | Détail |
+|---|---|
+| **Entrées** | Briefs quotidiens (1), clôtures mensuelles (4g), décisions validées, alertes historiques, commentaires utilisateur |
+| **Sorties** | Contextualisations, recherche sémantique, timeline financière, apprentissage continu |
+| **Dépendances** | 1 (Daily CFO), 4g (Clôture) |
+| **Consommateurs** | 9a (Chat RAG), 9c (Predictive Risk), 9e (CFO Twin) |
+
+#### 9c — Predictive Risk
+
+| | Détail |
+|---|---|
+| **Entrées** | KPIs SaaS et tendances (3a), trésorerie et runway (2a), créances et DSO (4a), BFR, mémoire financière (9b) |
+| **Sorties** | Score de risque (0-100), alertes à 90 jours, signaux faibles croisés, recommandations de mitigation, back-testing |
+| **Dépendances** | 2a (Cash Forecast), 3a (KPIs SaaS), 4a (AR), 9b (Financial Memory) |
+| **Consommateurs** | 1 (Daily CFO), 9a (Chat RAG), 9d (Autonomous Actions) |
+
+#### 9d — Autonomous Actions
+
+| | Détail |
+|---|---|
+| **Entrées** | Périmètre d'autonomie (config utilisateur), déclencheurs (alertes, seuils, calendrier), données des modules concernés |
+| **Sorties** | Actions exécutées (relances, reportings, alertes envoyées), audit trail complet, rapports d'activité |
+| **Dépendances** | Tous les modules (pour exécution), 9c (Predictive Risk — déclencheurs) |
+| **Consommateurs** | 9b (Financial Memory — historique des actions) |
+
+#### 9e — CFO Twin
+
+| | Détail |
+|---|---|
+| **Entrées** | Profil de décision du dirigeant (apprentissage), historique des validations/rejets/commentaires (9b), données des modules (via 9a) |
+| **Sorties** | Recommandations calibrées sur le style du dirigeant, analyses personnalisées, mode "que ferait le DAF ?" |
+| **Dépendances** | 9a (Chat RAG), 9b (Financial Memory) |
+| **Consommateurs** | 1 (Daily CFO — personnalisation du brief) |
+
+---
+
+### Graphe des dépendances — Modules fondations
+
+Les modules suivants n'ont pas de dépendances internes (ils s'alimentent depuis les connecteurs externes ou la saisie). Ce sont les **fondations** à implémenter en premier :
+
+1. **5c — Administration du personnel** → alimente 11 modules
+2. **2b — Banque** → alimente 4a, 4b, 2a, 4g
+3. **Connecteurs SIRH** (Lucca, Silae, PayFit) → alimentent 4c, 5c, 5f
+4. **Connecteurs paiement** (Stripe, GoCardless) → alimentent 3a, 4a
+
+### Graphe des dépendances — Modules hub
+
+Les modules suivants sont les **nœuds centraux** du graphe (le plus de connexions entrantes et sortantes) :
+
+1. **4g — Clôture mensuelle** : 9 entrées, 5 consommateurs — le module le plus connecté
+2. **4c — Paie & charges** : 4 entrées, 6 consommateurs
+3. **5c — Administration du personnel** : 1 entrée (connecteurs), 11 consommateurs
+4. **2a — Cash Forecast** : 7 entrées, 4 consommateurs
+5. **4a — AR** : 2 entrées, 6 consommateurs
