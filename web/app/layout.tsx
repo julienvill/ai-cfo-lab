@@ -1,5 +1,10 @@
 import type { Metadata } from "next"
+import { Inter, JetBrains_Mono } from "next/font/google"
+import { cn } from "@/lib/utils"
 import "./globals.css"
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
+const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
   title: "AI CFO Lab — Votre DAF virtuel",
@@ -13,13 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="fr" className={cn(inter.variable, jetbrainsMono.variable)}>
       <body>{children}</body>
     </html>
   )
