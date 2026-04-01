@@ -1,8 +1,13 @@
 "use client"
 
+import Link from "next/link"
 import { useLocale } from "@/lib/locale-context"
 
-const companyKeys = ["company1", "company2", "company3"] as const
+const companies = [
+  { key: "company1", slug: "propello" },
+  { key: "company2", slug: "maison-nordique" },
+  { key: "company3", slug: "mecaform" },
+] as const
 
 export function Demo() {
   const { t } = useLocale()
@@ -18,9 +23,10 @@ export function Demo() {
         </p>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-3">
-          {companyKeys.map((key) => (
-            <button
+          {companies.map(({ key, slug }) => (
+            <Link
               key={key}
+              href={`/app/synthese?company=${slug}`}
               className="group rounded-xl border border-border bg-surface p-6 text-left shadow-card transition-all hover:border-accent hover:shadow-card-hover"
             >
               <h3 className="text-lg font-bold group-hover:text-accent">
@@ -38,7 +44,7 @@ export function Demo() {
               <div className="mt-4 text-center text-sm font-medium text-accent opacity-0 transition-opacity group-hover:opacity-100">
                 {t("landing.demo.explore")}
               </div>
-            </button>
+            </Link>
           ))}
         </div>
       </div>

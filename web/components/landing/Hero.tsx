@@ -31,7 +31,7 @@ export function Hero() {
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
-            href="#demo"
+            href="/app/synthese"
             className="inline-flex items-center rounded-lg bg-accent px-8 py-3.5 text-base font-semibold text-white shadow-card transition-all hover:bg-primary-hover hover:shadow-card-hover"
           >
             {t("landing.hero.cta1")}

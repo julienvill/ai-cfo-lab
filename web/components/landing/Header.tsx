@@ -32,7 +32,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <LocaleToggle />
           <a
-            href="#demo"
+            href="/app/synthese"
             className="rounded-lg bg-accent px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-hover"
           >
             {t("landing.nav.cta")}
