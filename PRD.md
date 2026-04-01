@@ -484,6 +484,33 @@ Gestion des solutions de financement du BFR : cession Dailly, affacturage. Suivi
 
 ---
 
+### 2f — Cash pooling & centralisation de trésorerie (V3)
+
+#### Description
+
+Centralisation de la trésorerie pour les entreprises multi-entités. Permet d'optimiser les soldes entre les comptes de différentes structures juridiques et de réduire le coût du financement global.
+
+#### Fonctionnalités
+
+| Fonctionnalité | Description |
+|---|---|
+| **Vue consolidée multi-entités** | Soldes de trésorerie agrégés par entité juridique, avec vue groupe |
+| **Équilibrage automatique** | Proposition d'équilibrage des soldes entre entités (zero-balancing, target-balancing) |
+| **Conventions de trésorerie** | Gestion des prêts/emprunts intra-groupe, taux de rémunération, plafonds |
+| **Netting** | Compensation des créances/dettes intercompagnies pour réduire les mouvements |
+| **Reporting groupe** | Reporting consolidé de trésorerie par entité, devise, banque |
+
+#### Automatisation
+
+| Élément | Niveau | Détail |
+|---|---|---|
+| Agrégation des soldes | 🟢 100% auto | Via connecteurs bancaires de chaque entité |
+| Propositions d'équilibrage | 🟡 Auto + validation | L'IA propose, le trésorier valide |
+| Exécution des virements | 🔴 Humain requis | Validation et signature obligatoires |
+| Netting | 🟡 Auto + validation | Calcul automatique, validation avant exécution |
+
+---
+
 ## 5. Module 3 — FP&A
 
 ### Description
@@ -492,13 +519,13 @@ Financial Planning & Analysis — le cerveau analytique de l'entreprise. Ce modu
 
 ---
 
-### 3a — KPIs SaaS
+### 3a — KPIs & Tableaux de bord
 
 #### Description
 
-Tableau de bord des métriques SaaS calculées automatiquement. Chaque KPI est accompagné de sa tendance, d'un benchmark sectoriel et d'un commentaire IA contextualisant la performance.
+Tableau de bord des métriques clés calculées automatiquement, avec deux modes selon le profil de l'entreprise. Chaque KPI est accompagné de sa tendance, d'un benchmark sectoriel et d'un commentaire IA contextualisant la performance.
 
-#### Fonctionnalités
+#### Fonctionnalités — Mode SaaS (entreprises à revenus récurrents)
 
 | Fonctionnalité | Description |
 |---|---|
@@ -507,11 +534,27 @@ Tableau de bord des métriques SaaS calculées automatiquement. Chaque KPI est a
 | **Métriques d'acquisition** | CAC, CAC payback period, nouveaux clients/mois, pipeline conversion |
 | **Unit economics** | LTV, ratio LTV/CAC, ARPU/ARPA |
 | **Métriques d'efficacité** | Rule of 40, burn multiple, magic number, SaaS quick ratio |
+| **Cohort analysis** | Analyse par cohorte de clients (rétention, expansion, revenue par cohorte mensuelle) |
+
+#### Fonctionnalités — Mode PME classique (entreprises hors SaaS)
+
+| Fonctionnalité | Description |
+|---|---|
+| **Chiffre d'affaires** | CA mensuel, cumul YTD, variation N/N-1, répartition par activité/client |
+| **Marges** | Marge brute, marge d'exploitation, EBE (Excédent Brut d'Exploitation) |
+| **Charges** | Charges fixes vs variables, masse salariale, ratio charges/CA |
+| **Rentabilité** | Résultat net, résultat d'exploitation, taux de marge nette |
+| **Activité** | Taux d'utilisation des capacités, carnet de commandes, délais de livraison |
+| **Point mort** | Seuil de rentabilité, marge de sécurité |
+
+#### Fonctionnalités — Communes aux deux modes
+
+| Fonctionnalité | Description |
+|---|---|
 | **Tendances 12 mois** | Sparklines et graphiques de tendance pour chaque KPI |
 | **Benchmark sectoriel** | Positionnement vs. médianes sectorielles (par taille, stade, géographie) |
 | **Commentaire IA par KPI** | Analyse automatique de la tendance, détection des inflexions, recommandations |
-| **Cohort analysis** | Analyse par cohorte de clients (rétention, expansion, revenue par cohorte mensuelle) |
-| **Alertes** | Churn en accélération, CAC payback > 18 mois, LTV/CAC < 3, NRR < 100% |
+| **Alertes** | Seuils configurables par KPI, notifications automatiques sur dégradation |
 
 #### Automatisation
 
@@ -587,23 +630,24 @@ Modélisation financière interactive et conversationnelle. Le dirigeant pose un
 
 ---
 
-### 3d — Slide Deck VC
+### 3d — Reporting investisseurs & board
 
 #### Description
 
-Génération automatique d'un board pack investisseurs complet en un clic. Format standard attendu par les VCs, avec les KPIs, le P&L, la trésorerie et les highlights/lowlights du mois.
+Génération automatique de reportings périodiques à destination des investisseurs, du board ou de la direction. Couvre aussi bien le board pack VC que le reporting de gestion classique d'une PME.
 
 #### Fonctionnalités
 
 | Fonctionnalité | Description |
 |---|---|
-| **Template board pack** | Format standard VC : executive summary, KPIs, P&L, cash, highlights, lowlights, asks |
-| **Agrégation automatique** | Données tirées de tous les modules (KPIs SaaS, trésorerie, budget, clôture) |
+| **Template board pack VC** | Format standard VC : executive summary, KPIs SaaS, P&L, cash, highlights, lowlights, asks |
+| **Template reporting PME** | Format direction/board : P&L commenté, trésorerie, budget vs réel, faits marquants |
+| **Agrégation automatique** | Données tirées de tous les modules (KPIs, trésorerie, budget, clôture) |
 | **Narrative IA** | Résumé exécutif et commentaires générés automatiquement |
-| **Personnalisation par investisseur** | Adaptation du contenu selon le profil (seed, série A, dette) |
+| **Personnalisation par destinataire** | Adaptation du contenu selon le profil (VC seed/série A, banque, board PME, direction groupe) |
 | **Export multi-format** | PDF, PowerPoint, Google Slides |
-| **Historique** | Archive des board packs précédents, comparaison mois par mois |
-| **Calendrier de reporting** | Rappels automatiques des dates d'envoi aux investisseurs |
+| **Historique** | Archive des reportings précédents, comparaison mois par mois |
+| **Calendrier de reporting** | Rappels automatiques des dates d'envoi |
 
 #### Automatisation
 
@@ -642,6 +686,34 @@ Ventilation des charges et produits par axes analytiques (centres de coûts, pro
 | Calcul des marges | 🟢 100% auto | Déterministe |
 | Clés de répartition | 🟡 Auto + paramétrage | L'humain définit les clés, le calcul est automatique |
 | P&L analytique | 🟢 100% auto | Agrégation automatique |
+
+---
+
+### 3f — Pricing & rentabilité (V3)
+
+#### Description
+
+Analyse de rentabilité par produit, client et projet. Permet au dirigeant ou au DAF de comprendre où l'entreprise gagne et perd de l'argent, et d'ajuster sa politique de prix en conséquence.
+
+#### Fonctionnalités
+
+| Fonctionnalité | Description |
+|---|---|
+| **Rentabilité par produit/service** | Marge brute, marge nette et marge de contribution par produit ou ligne de service |
+| **Rentabilité par client** | Chiffre d'affaires, coût de service, marge par client. Identification des clients non rentables |
+| **Rentabilité par projet** | Suivi des coûts (temps passé, achats, sous-traitance) vs budget par projet |
+| **Analyse de prix** | Simulation d'impact d'un changement de prix sur la marge et le volume |
+| **Recommandation IA** | Suggestions d'ajustement de prix basées sur les marges, l'élasticité et le positionnement marché |
+| **Tableau de bord pricing** | Vue synthétique des marges par segment, tendances, alertes sur marges en dégradation |
+
+#### Automatisation
+
+| Élément | Niveau | Détail |
+|---|---|---|
+| Calcul des marges | 🟢 100% auto | Déterministe, depuis la comptabilité analytique (3e) |
+| Analyse par client/produit | 🟢 100% auto | Agrégation automatique |
+| Recommandations prix | 🟡 Auto + validation | L'IA recommande, l'humain décide |
+| Simulation de prix | 🟡 Auto + paramétrage | L'utilisateur entre les hypothèses, l'IA calcule l'impact |
 
 ---
 
@@ -1506,6 +1578,34 @@ Calcul de la participation (obligatoire > 50 salariés) et de l'intéressement (
 
 ---
 
+### 6f — Préparation au contrôle fiscal (V3)
+
+#### Description
+
+Anticipation et accompagnement du contrôle fiscal : préparation du dossier, simulation des points de risque, gestion de la procédure. L'objectif est de ne jamais être pris au dépourvu et de réduire le stress et les redressements.
+
+#### Fonctionnalités
+
+| Fonctionnalité | Description |
+|---|---|
+| **Scoring de risque fiscal** | IA évalue le niveau de risque de redressement par poste (CIR, prix de transfert, TVA intra, provisions) |
+| **Pré-audit interne** | Simulation d'un contrôle : vérification des pièces justificatives, cohérence FEC, documentation des choix fiscaux |
+| **Dossier de contrôle** | Préparation automatique du dossier : FEC certifié, grand livre, balance, pièces justificatives par poste |
+| **Documentation des choix fiscaux** | Registre des options fiscales prises et leur justification (amortissement, provisions, régime TVA) |
+| **Suivi de la procédure** | En cas de contrôle : calendrier, échanges avec le vérificateur, délais de réponse, recours |
+| **Historique des contrôles** | Archive des contrôles passés, points soulevés, redressements, suites données |
+
+#### Automatisation
+
+| Élément | Niveau | Détail |
+|---|---|---|
+| Scoring de risque | 🟢 100% auto | IA analyse en continu |
+| Pré-audit | 🟡 Auto + validation | IA identifie les points faibles, l'expert-comptable valide |
+| Dossier de contrôle | 🟡 Auto + complément | Généré automatiquement, l'humain complète les justificatifs manquants |
+| Suivi procédure | 🔴 Humain requis | Relation directe avec le vérificateur |
+
+---
+
 ## 9. Module 7 — Juridique / Corporate
 
 ### Description
@@ -1648,6 +1748,37 @@ Gestion du portefeuille complet d'assurances de l'entreprise : suivi des polices
 | Analyse de couverture | 🟡 Auto + expert | IA analyse, un courtier ou expert valide |
 | Déclaration sinistre | 🟡 Auto + validation | Formulaire pré-rempli, l'humain complète |
 | Choix des polices | 🔴 Humain requis | Décision de la direction |
+
+---
+
+### 7e — Contentieux & recouvrement (V3)
+
+#### Description
+
+Gestion des litiges commerciaux, sociaux et fiscaux, et des procédures de recouvrement des créances impayées. Dans une PME, le DAF est souvent le premier interlocuteur des avocats et des huissiers.
+
+#### Fonctionnalités
+
+| Fonctionnalité | Description |
+|---|---|
+| **Suivi des litiges** | Registre centralisé de tous les contentieux en cours : commercial, prud'homal, fiscal, pénal |
+| **Provisionnement** | Calcul et suivi des provisions pour risques et charges liées aux litiges |
+| **Recouvrement amiable** | Workflow automatisé de relance : rappel → mise en demeure → dernière relance avant contentieux |
+| **Recouvrement judiciaire** | Suivi des procédures : injonction de payer, assignation, exécution forcée |
+| **Gestion des avocats** | Suivi des mandats, honoraires, budgets par dossier |
+| **Prud'hommes** | Suivi des contentieux salariés : convocation, médiation, jugement, appel |
+| **Analyse du risque contentieux** | IA évalue le risque de perte et le montant probable pour chaque dossier |
+| **KPIs** | Taux de recouvrement, délai moyen, montant des provisions, nombre de litiges actifs |
+
+#### Automatisation
+
+| Élément | Niveau | Détail |
+|---|---|---|
+| Relances amiables | 🟢 100% auto | Séquence automatique avec escalade |
+| Provisionnement | 🟡 Auto + validation | IA calcule, le DAF valide le montant |
+| Analyse de risque | 🟡 Auto + expert | IA évalue, l'avocat confirme |
+| Décision de poursuivre | 🔴 Humain requis | Décision stratégique de la direction |
+| Procédures judiciaires | 🔴 Humain requis | Pilotées par l'avocat |
 
 ---
 

@@ -1,47 +1,76 @@
 # AI CFO Lab
 
-A demo platform showcasing financial automation tools for CFOs and Financial Controllers. Each module is a standalone app targeting a recurring finance task — powered by AI.
+Plateforme d'orchestration IA pour la fonction Finance des TPE/PME françaises. Connecte les outils existants (Pennylane, Silae, Qonto...), ne les remplace pas.
 
-Built by **Julien Villeret** — CFO / VP Finance specialising in AI & financial transformation.
+Construit par **Julien Villeret** — CFO / VP Finance, 15+ ans en direction financière.
 
 ---
 
-## Modules
+## Concept
 
-| # | Module | Directory | Stack | Status |
-|---|--------|-----------|-------|--------|
-| 1 | **Payroll Verification** | `payroll/` | Python, Streamlit | ✅ Live |
-| 2 | **R&D Tax Credit** | `rd-tax-credit/` | TBD | 🚧 Planned |
-| 3 | **Cash Flow Forecast** | `cashflow/` | TBD | 🚧 Planned |
-| 4 | **Investor Reporting** | `slide-deck/` | TBD | 🚧 Planned |
-| 5 | **Month-End Close** | `month-end-close/` | TBD | 🚧 Planned |
-| 6 | **SaaS Metrics** | `saas-metrics/` | TBD | 🚧 Planned |
-| 7 | **AI Data Room** | `data-room/` | TBD | 🚧 Planned |
+> "La visibilité d'un DAF senior au prix d'un assistant comptable, avec supervision humaine experte."
 
-## Portfolio Hub
+AI CFO Lab est une couche intelligente au-dessus de l'écosystème comptable/paie/banque existant. L'IA automatise les processus transverses (clôture, reporting, conformité, déclarations) — l'humain garde le contrôle et la décision.
 
-The main entry point is a Next.js app that links to all modules:
+## Stack technique
 
-- **Directory:** `v0-ai-cfo-portfolio/`
-- **Live:** https://v0-ai-cfo-portfolio-10qppax40-julienvills-projects.vercel.app
-- **Repo:** `github.com/julienvill/v0-ai-cfo-portfolio`
+| Couche | Technologie |
+|--------|------------|
+| Frontend | Next.js 14 (App Router) · TypeScript · Tailwind CSS 4 · shadcn/ui |
+| Charts | Recharts |
+| Tests | Vitest · Playwright |
+| Déploiement | Vercel (auto-deploy sur push main) |
+| IA | Claude API (Anthropic) |
+| Repo | github.com/julienvill/ai-cfo-lab |
 
-## Purpose
-
-This lab serves a dual purpose:
-- **Job search** — demonstrate hands-on AI/Finance expertise to potential employers (CFO / Head of Finance / AI roles)
-- **Freelance** — showcase automation capabilities to prospective clients
-
-## Structure
+## Structure du projet
 
 ```
 AI-CFO-Lab/
-├── v0-ai-cfo-portfolio/   # Hub — Next.js portfolio & launcher
-├── payroll/               # Payroll variance analysis (Streamlit)
-├── rd-tax-credit/         # R&D Tax Credit assistant
-├── cashflow/              # Cash flow forecasting
-├── slide-deck/            # Investor reporting automation
-├── month-end-close/       # Month-end close tracker
-├── saas-metrics/          # SaaS KPI dashboard
-└── data-room/             # AI-generated investor data room
+├── .claude/agents/     # Agents IA (architect, dev-frontend, dev-backend, test-unit, test-e2e, reviewer)
+├── ARCHITECTURE.md     # Architecture technique — connecteurs, stack, flux de données
+├── DESIGN.md           # Specs design — palette, composants, conventions FP&A
+├── PRD.md              # Specs fonctionnelles — 9 modules, ~50 sous-modules
+├── data/               # Données démo JSON (3 entreprises fictives)
+│   ├── propello/       # Startup SaaS B2B
+│   ├── maison-nordique/# PME familiale distribution
+│   └── mecaform/       # TPE services/industrie
+└── web/                # Application Next.js
+    ├── app/            # Pages (App Router)
+    ├── components/     # Composants (landing, app, ui)
+    ├── lib/            # Utilitaires, contextes, traductions
+    └── tests/          # Tests unitaires (Vitest) et E2E (Playwright)
 ```
+
+## Modules
+
+| # | Module | Périmètre |
+|---|--------|-----------|
+| 1 | Daily CFO | Briefing quotidien, KPIs héro, score de santé, alertes |
+| 2 | Cash Management | Trésorerie, forecast 13 semaines, banque, dette, BPI, affacturage |
+| 3 | FP&A | KPIs SaaS, budget/forecast/variance, scénarios, slide deck VC |
+| 4 | Comptabilité | AR, AP, paie, provisions CP, immos, clôture, FEC, facture électronique |
+| 5 | RH | CSE, BDESE, admin personnel, recrutement, formation, rémunération |
+| 6 | Impôts | TVA, IS, CIR, CFE/CVAE, participation/intéressement |
+| 7 | Juridique | Secrétariat juridique, cap table/BSPCE, contrats, assurances |
+| 8 | Audit & Compliance | Contrôle interne, relations CAC, data room, RGPD |
+| 9 | Virtual CFO | Chat RAG, financial memory, predictive risk, CFO Twin |
+
+## Développement local
+
+```bash
+cd web
+npm install
+npm run dev          # http://localhost:3000
+npm run test         # Tests unitaires (Vitest)
+npm run test:e2e     # Tests E2E (Playwright)
+npm run build        # Build production
+```
+
+## Principes fondamentaux
+
+1. **Orchestration, pas remplacement** — connecte les outils existants, ne les concurrence pas
+2. **Augmentation humaine** — une personne augmentée fait le travail de 3
+3. **Traçabilité totale** — chaque calcul et chaque décision IA sont auditables
+4. **Conformité française native** — PCG, CGI, Code du travail, RGPD, EU AI Act
+5. **Séparation calcul / IA** — les chiffres sont déterministes, l'IA contextualise et recommande
