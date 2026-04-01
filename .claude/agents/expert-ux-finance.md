@@ -57,11 +57,11 @@ Transverse — tu interviens sur tous les modules pour valider que l'affichage d
 ```markdown
 ## Review UX Finance: [écran ou composant]
 
-### ✅ Conforme
+### OK
 - [ce qui respecte les conventions]
 
-### ⚠️ À ajuster
+### À ajuster
 - [conventions non respectées, avec la règle applicable]
 
-### Verdict: CONFORME / À AJUSTER
+### Verdict: CONFORME / À CORRIGER
 ```
