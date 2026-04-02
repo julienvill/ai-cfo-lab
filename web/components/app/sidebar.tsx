@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import {
@@ -12,6 +13,8 @@ import {
   Sparkles,
   Settings,
   HelpCircle,
+  Menu,
+  X,
 } from "lucide-react"
 import { CompanySelector } from "./company-selector"
 import { Separator } from "@/components/ui/separator"
@@ -27,16 +30,60 @@ const navItems = [
   { href: "/app/cloture", labelKey: "app.sidebar.cloture", icon: CheckSquare },
 ]
 
+export function SidebarToggle({ onClick }: { onClick: () => void }) {
+  return (
+    <button
+      onClick={onClick}
+      className="lg:hidden fixed top-4 left-4 z-50 p-2 rounded-md bg-[#0F1C2E] text-white shadow-lg"
+      aria-label="Ouvrir le menu"
+    >
+      <Menu className="h-5 w-5" strokeWidth={1.5} />
+    </button>
+  )
+}
+
 export function Sidebar() {
   const pathname = usePathname()
   const { t } = useLocale()
+  const [mobileOpen, setMobileOpen] = useState(false)
+
+  // Fermer la sidebar mobile quand on change de page
+  useEffect(() => {
+    setMobileOpen(false)
+  }, [pathname])
 
   return (
-    <aside className="flex flex-col w-60 h-screen bg-[#0F1C2E] text-white shrink-0">
-      {/* Logo */}
-      <div className="flex items-center gap-2 px-5 h-[72px]">
-        <Sparkles className="h-5 w-5 text-[#7C3AED]" strokeWidth={1.5} />
-        <span className="font-semibold text-lg tracking-tight">AI CFO Lab</span>
+    <>
+      {/* Overlay mobile */}
+      {mobileOpen && (
+        <div
+          className="lg:hidden fixed inset-0 bg-black/50 z-40"
+          onClick={() => setMobileOpen(false)}
+        />
+      )}
+
+      {/* Bouton hamburger mobile */}
+      {!mobileOpen && <SidebarToggle onClick={() => setMobileOpen(true)} />}
+
+      <aside className={cn(
+        "flex flex-col w-60 h-screen bg-[#0F1C2E] text-white shrink-0",
+        "fixed lg:relative z-40",
+        "transition-transform duration-200 ease-in-out",
+        mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+      )}>
+      {/* Logo + close button mobile */}
+      <div className="flex items-center justify-between px-5 h-[72px]">
+        <div className="flex items-center gap-2">
+          <Sparkles className="h-5 w-5 text-[#7C3AED]" strokeWidth={1.5} />
+          <span className="font-semibold text-lg tracking-tight">AI CFO Lab</span>
+        </div>
+        <button
+          onClick={() => setMobileOpen(false)}
+          className="lg:hidden p-1 rounded-md hover:bg-white/10"
+          aria-label="Fermer le menu"
+        >
+          <X className="h-5 w-5" strokeWidth={1.5} />
+        </button>
       </div>
 
       {/* Company Selector */}
@@ -82,5 +129,6 @@ export function Sidebar() {
         </button>
       </div>
     </aside>
+    </>
   )
 }
