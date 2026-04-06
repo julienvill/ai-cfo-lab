@@ -204,11 +204,27 @@ export const fr: Record<string, string> = {
 
   // ── App: Sidebar ──
   "app.sidebar.synthese": "Synthèse du jour",
+  "app.sidebar.comptabilite": "Comptabilité",
   "app.sidebar.tresorerie": "Trésorerie",
-  "app.sidebar.facturesClients": "Factures clients",
-  "app.sidebar.facturesFournisseurs": "Factures fournisseurs",
   "app.sidebar.kpisSaas": "KPIs SaaS",
+  "app.sidebar.virtualCfo": "Virtual CFO",
+  "app.sidebar.facturesClients": "Clients",
+  "app.sidebar.facturesFournisseurs": "Fournisseurs",
   "app.sidebar.cloture": "Clôture mensuelle",
+  "app.sidebar.fec": "FEC",
+  "app.sidebar.immobilisations": "Immobilisations",
+  "app.comptabilite.title": "Comptabilité",
+  "app.comptabilite.subtitle": "Gérez l'ensemble de vos opérations comptables",
+  "app.comptabilite.ar.title": "Clients",
+  "app.comptabilite.ar.desc": "Suivi des créances, aging report, DSO, relances",
+  "app.comptabilite.ap.title": "Fournisseurs",
+  "app.comptabilite.ap.desc": "Suivi des dettes, DPO, spend analytics, conformité LME",
+  "app.comptabilite.cloture.title": "Clôture mensuelle",
+  "app.comptabilite.cloture.desc": "Checklist de clôture, cut-off, P&L mensuel",
+  "app.comptabilite.fec.title": "FEC",
+  "app.comptabilite.fec.desc": "Fichier des Écritures Comptables, tests de conformité",
+  "app.comptabilite.immo.title": "Immobilisations",
+  "app.comptabilite.immo.desc": "Registre, plans d'amortissement, dotations",
   "app.sidebar.settings": "Paramètres",
   "app.sidebar.support": "Support",
 
@@ -230,6 +246,19 @@ export const fr: Record<string, string> = {
   "app.header.cloture.title": "Clôture mensuelle",
   "app.header.cloture.subtitle":
     "Checklist et suivi de la clôture comptable",
+  "app.header.fec.title": "FEC — Fichier des Écritures Comptables",
+  "app.header.fec.subtitle":
+    "Visualisation, tests de conformité et export",
+  "app.header.immobilisations.title": "Immobilisations & Amortissements",
+  "app.header.immobilisations.subtitle":
+    "Registre des actifs et plan d'amortissement",
+  "app.header.virtualCfo.title": "Virtual CFO",
+  "app.header.virtualCfo.subtitle":
+    "DAF virtuel — chat financier et scoring de risque à 90 jours",
+  "app.header.askCfo.button": "Ask CFO",
+  "app.header.askCfo.drawerTitle": "Ask CFO — Assistant financier",
+  "app.header.askCfo.viewFull": "Voir le tableau de bord complet →",
+  "app.header.askCfo.close": "Fermer",
 
   // ── App: Synthèse ──
   "app.synthese.tresorerie": "Trésorerie",

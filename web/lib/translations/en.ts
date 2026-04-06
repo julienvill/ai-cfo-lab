@@ -201,11 +201,27 @@ export const en: Record<string, string> = {
 
   // ── App: Sidebar ──
   "app.sidebar.synthese": "Daily overview",
+  "app.sidebar.comptabilite": "Accounting",
   "app.sidebar.tresorerie": "Cash & runway",
-  "app.sidebar.facturesClients": "Client invoices",
-  "app.sidebar.facturesFournisseurs": "Supplier invoices",
   "app.sidebar.kpisSaas": "SaaS KPIs",
+  "app.sidebar.virtualCfo": "Virtual CFO",
+  "app.sidebar.facturesClients": "Clients",
+  "app.sidebar.facturesFournisseurs": "Suppliers",
   "app.sidebar.cloture": "Monthly close",
+  "app.sidebar.fec": "FEC",
+  "app.sidebar.immobilisations": "Fixed assets",
+  "app.comptabilite.title": "Accounting",
+  "app.comptabilite.subtitle": "Manage all your accounting operations",
+  "app.comptabilite.ar.title": "Clients",
+  "app.comptabilite.ar.desc": "Receivables tracking, aging report, DSO, reminders",
+  "app.comptabilite.ap.title": "Suppliers",
+  "app.comptabilite.ap.desc": "Payables tracking, DPO, spend analytics, LME compliance",
+  "app.comptabilite.cloture.title": "Monthly close",
+  "app.comptabilite.cloture.desc": "Closing checklist, cut-off, monthly P&L",
+  "app.comptabilite.fec.title": "FEC",
+  "app.comptabilite.fec.desc": "General ledger entries, compliance tests",
+  "app.comptabilite.immo.title": "Fixed assets",
+  "app.comptabilite.immo.desc": "Asset register, depreciation schedules",
   "app.sidebar.settings": "Settings",
   "app.sidebar.support": "Support",
 
@@ -227,6 +243,19 @@ export const en: Record<string, string> = {
   "app.header.cloture.title": "Monthly close",
   "app.header.cloture.subtitle":
     "Checklist and accounting close tracking",
+  "app.header.fec.title": "FEC — Accounting Entries File",
+  "app.header.fec.subtitle":
+    "Visualization, conformity tests, and export",
+  "app.header.immobilisations.title": "Fixed Assets & Depreciation",
+  "app.header.immobilisations.subtitle":
+    "Asset register and depreciation schedule",
+  "app.header.virtualCfo.title": "Virtual CFO",
+  "app.header.virtualCfo.subtitle":
+    "Virtual CFO — financial chat and 90-day risk scoring",
+  "app.header.askCfo.button": "Ask CFO",
+  "app.header.askCfo.drawerTitle": "Ask CFO — Financial assistant",
+  "app.header.askCfo.viewFull": "View full dashboard →",
+  "app.header.askCfo.close": "Close",
 
   // ── App: Synthèse ──
   "app.synthese.tresorerie": "Cash",

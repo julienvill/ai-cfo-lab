@@ -6,10 +6,8 @@ import { usePathname } from "next/navigation"
 import {
   LayoutDashboard,
   TrendingUp,
-  ArrowRightLeft,
-  Receipt,
+  BookOpen,
   BarChart3,
-  CheckSquare,
   Sparkles,
   Settings,
   HelpCircle,
@@ -23,11 +21,9 @@ import { useLocale } from "@/lib/locale-context"
 
 const navItems = [
   { href: "/app/synthese", labelKey: "app.sidebar.synthese", icon: LayoutDashboard },
+  { href: "/app/comptabilite", labelKey: "app.sidebar.comptabilite", icon: BookOpen },
   { href: "/app/tresorerie", labelKey: "app.sidebar.tresorerie", icon: TrendingUp },
-  { href: "/app/factures/clients", labelKey: "app.sidebar.facturesClients", icon: ArrowRightLeft },
-  { href: "/app/factures/fournisseurs", labelKey: "app.sidebar.facturesFournisseurs", icon: Receipt },
   { href: "/app/kpis-saas", labelKey: "app.sidebar.kpisSaas", icon: BarChart3 },
-  { href: "/app/cloture", labelKey: "app.sidebar.cloture", icon: CheckSquare },
 ]
 
 export function SidebarToggle({ onClick }: { onClick: () => void }) {
@@ -73,10 +69,10 @@ export function Sidebar() {
       )}>
       {/* Logo + close button mobile */}
       <div className="flex items-center justify-between px-5 h-[72px]">
-        <div className="flex items-center gap-2">
+        <Link href="/app/synthese" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <Sparkles className="h-5 w-5 text-[#7C3AED]" strokeWidth={1.5} />
           <span className="font-semibold text-lg tracking-tight">AI CFO Lab</span>
-        </div>
+        </Link>
         <button
           onClick={() => setMobileOpen(false)}
           className="lg:hidden p-1 rounded-md hover:bg-white/10"
@@ -96,7 +92,11 @@ export function Sidebar() {
       {/* Navigation */}
       <nav className="flex-1 px-3 py-4 space-y-1">
         {navItems.map((item) => {
-          const isActive = pathname === item.href || pathname.startsWith(item.href + "/")
+          const comptaSubPaths = ["/app/factures", "/app/cloture", "/app/fec", "/app/immobilisations"]
+          const isActive =
+            pathname === item.href ||
+            pathname.startsWith(item.href + "/") ||
+            (item.href === "/app/comptabilite" && comptaSubPaths.some((p) => pathname.startsWith(p)))
           return (
             <Link
               key={item.href}
