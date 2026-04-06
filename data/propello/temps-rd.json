@@ -1,0 +1,3094 @@
+{
+  "metadata": {
+    "company": "Propello SAS",
+    "exercice": "2025",
+    "description": "Feuilles de temps R&D pour le CIR — repartition temps eligible/non-eligible par developpeur et par mois",
+    "projets_rd": [
+      {
+        "code": "PRJ-AI",
+        "label": "IA predictive RH (NLP turnover/absenteisme)",
+        "eligible_cir": true
+      },
+      {
+        "code": "PRJ-CONN",
+        "label": "Connecteurs SIRH universels (API unifiee)",
+        "eligible_cir": true
+      },
+      {
+        "code": "PRJ-BDESE",
+        "label": "Generation automatique BDESE",
+        "eligible_cir": true
+      },
+      {
+        "code": "PRJ-MAINT",
+        "label": "Maintenance corrective et evolutive",
+        "eligible_cir": false
+      },
+      {
+        "code": "PRJ-INFRA",
+        "label": "Infrastructure et DevOps",
+        "eligible_cir": false
+      }
+    ]
+  },
+  "employees": [
+    {
+      "id": "PR-002",
+      "name": "Camille Nguyen",
+      "title": "CTO — Directrice Technique",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 83,
+          "heures_non_rd": 82,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 75,
+          "heures_non_rd": 75,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 26
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 19
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 83,
+          "heures_non_rd": 82,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 71,
+          "heures_non_rd": 71.5,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 28
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 25
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 18
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 83,
+          "heures_non_rd": 82,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 79,
+          "heures_non_rd": 78.5,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 28
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 83,
+          "heures_non_rd": 82,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 26,
+          "heures_non_rd": 26.5,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 10
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 9
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 7
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 79,
+          "heures_non_rd": 78.5,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 28
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 83,
+          "heures_non_rd": 82,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 79,
+          "heures_non_rd": 78.5,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 28
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 64,
+          "heures_non_rd": 63.5,
+          "ratio_rd": 0.5,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 26
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 22
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 16
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 888,
+        "ratio_rd": 0.5,
+        "cout_salarial_rd": 39132.2
+      }
+    },
+    {
+      "id": "PR-004",
+      "name": "Alexandre Morin",
+      "title": "Lead Développeur Backend",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 90,
+          "heures_non_rd": 60,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 86,
+          "heures_non_rd": 56.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 34
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 95,
+          "heures_non_rd": 62.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 38
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 24
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 32,
+          "heures_non_rd": 20.5,
+          "ratio_rd": 0.61,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 13
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 11
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 8
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 95,
+          "heures_non_rd": 62.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 38
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 24
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 95,
+          "heures_non_rd": 62.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 38
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 24
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 77,
+          "heures_non_rd": 50.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 27
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 19
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 1065,
+        "ratio_rd": 0.6,
+        "cout_salarial_rd": 37545.76
+      }
+    },
+    {
+      "id": "PR-005",
+      "name": "Sarah Cohen",
+      "title": "Lead Développeuse Frontend",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 90,
+          "heures_non_rd": 60,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 86,
+          "heures_non_rd": 56.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 34
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 95,
+          "heures_non_rd": 62.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 38
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 24
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 32,
+          "heures_non_rd": 20.5,
+          "ratio_rd": 0.61,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 13
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 11
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 8
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 95,
+          "heures_non_rd": 62.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 38
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 24
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 99,
+          "heures_non_rd": 66,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 95,
+          "heures_non_rd": 62.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 38
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 24
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 77,
+          "heures_non_rd": 50.5,
+          "ratio_rd": 0.6,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 27
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 19
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 1065,
+        "ratio_rd": 0.6,
+        "cout_salarial_rd": 36101.69
+      }
+    },
+    {
+      "id": "PR-006",
+      "name": "Romain Legrand",
+      "title": "Développeur Fullstack",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 83,
+          "heures_non_rd": 67,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 78,
+          "heures_non_rd": 64.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 27
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 29,
+          "heures_non_rd": 23.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 12
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 10
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 7
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 70,
+          "heures_non_rd": 57.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 28
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 25
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 18
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 976,
+        "ratio_rd": 0.55,
+        "cout_salarial_rd": 29114.58
+      }
+    },
+    {
+      "id": "PR-007",
+      "name": "Inès Belhaj",
+      "title": "Développeuse Backend",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 83,
+          "heures_non_rd": 67,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 78,
+          "heures_non_rd": 64.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 27
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 29,
+          "heures_non_rd": 23.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 12
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 10
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 7
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 70,
+          "heures_non_rd": 57.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 28
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 25
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 18
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 976,
+        "ratio_rd": 0.55,
+        "cout_salarial_rd": 27791.19
+      }
+    },
+    {
+      "id": "PR-008",
+      "name": "Lucas Petit",
+      "title": "Développeur Frontend",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 83,
+          "heures_non_rd": 67,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 78,
+          "heures_non_rd": 64.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 27
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 29,
+          "heures_non_rd": 23.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 12
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 10
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 7
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 70,
+          "heures_non_rd": 57.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 28
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 25
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 18
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 976,
+        "ratio_rd": 0.55,
+        "cout_salarial_rd": 27129.49
+      }
+    },
+    {
+      "id": "PR-009",
+      "name": "Maxime Durand",
+      "title": "Développeur Fullstack",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 83,
+          "heures_non_rd": 67,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 78,
+          "heures_non_rd": 64.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 27
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 29,
+          "heures_non_rd": 23.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 12
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 10
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 7
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 70,
+          "heures_non_rd": 57.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 28
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 25
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 18
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 976,
+        "ratio_rd": 0.55,
+        "cout_salarial_rd": 25806.1
+      }
+    },
+    {
+      "id": "PR-010",
+      "name": "Chloé Lambert",
+      "title": "Développeuse Frontend",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 83,
+          "heures_non_rd": 67,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 33
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 29
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 21
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 78,
+          "heures_non_rd": 64.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 27
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 29,
+          "heures_non_rd": 23.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 12
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 10
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 7
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 91,
+          "heures_non_rd": 74,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 32
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 23
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 87,
+          "heures_non_rd": 70.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 30
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 70,
+          "heures_non_rd": 57.5,
+          "ratio_rd": 0.55,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 28
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 25
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 18
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 976,
+        "ratio_rd": 0.55,
+        "cout_salarial_rd": 24482.71
+      }
+    },
+    {
+      "id": "PR-011",
+      "name": "Adrien Fournier",
+      "title": "Data Engineer",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 115,
+          "heures_non_rd": 50,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 46
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 29
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 105,
+          "heures_non_rd": 45,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 42
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 37
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 26
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 115,
+          "heures_non_rd": 50,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 46
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 29
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 100,
+          "heures_non_rd": 42.5,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 35
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 25
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 115,
+          "heures_non_rd": 50,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 46
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 29
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 110,
+          "heures_non_rd": 47.5,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 44
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 39
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 28
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 115,
+          "heures_non_rd": 50,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 46
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 29
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 37,
+          "heures_non_rd": 15.5,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 15
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 13
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 9
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 110,
+          "heures_non_rd": 47.5,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 44
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 39
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 28
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 115,
+          "heures_non_rd": 50,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 46
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 40
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 29
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 110,
+          "heures_non_rd": 47.5,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 44
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 39
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 28
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 89,
+          "heures_non_rd": 38.5,
+          "ratio_rd": 0.7,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 36
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 31
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 22
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 1236,
+        "ratio_rd": 0.7,
+        "cout_salarial_rd": 37708.47
+      }
+    },
+    {
+      "id": "PR-012",
+      "name": "Élodie Simon",
+      "title": "Ingénieure DevOps / SRE",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 66,
+          "heures_non_rd": 99,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 26
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 60,
+          "heures_non_rd": 90,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 18
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 24
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 18
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 66,
+          "heures_non_rd": 99,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 26
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 57,
+          "heures_non_rd": 85.5,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 17
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 23
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 17
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 66,
+          "heures_non_rd": 99,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 26
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 63,
+          "heures_non_rd": 94.5,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 19
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 25
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 19
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 66,
+          "heures_non_rd": 99,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 26
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 21,
+          "heures_non_rd": 31.5,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 6
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 8
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 6
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 63,
+          "heures_non_rd": 94.5,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 19
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 25
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 19
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 66,
+          "heures_non_rd": 99,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 26
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 20
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 63,
+          "heures_non_rd": 94.5,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 19
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 25
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 19
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 51,
+          "heures_non_rd": 76.5,
+          "ratio_rd": 0.4,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 15
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 15
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 708,
+        "ratio_rd": 0.4,
+        "cout_salarial_rd": 23040
+      }
+    },
+    {
+      "id": "PR-013",
+      "name": "Nathan Blanc",
+      "title": "Développeur alternant",
+      "monthly": [
+        {
+          "period": "2025-01",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 50,
+          "heures_non_rd": 115,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 15
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 15
+            }
+          ]
+        },
+        {
+          "period": "2025-02",
+          "jours_ouvres": 20,
+          "heures_travaillees": 150,
+          "heures_rd": 45,
+          "heures_non_rd": 105,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 14
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 18
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 14
+            }
+          ]
+        },
+        {
+          "period": "2025-03",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 50,
+          "heures_non_rd": 115,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 15
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 15
+            }
+          ]
+        },
+        {
+          "period": "2025-04",
+          "jours_ouvres": 19,
+          "heures_travaillees": 142.5,
+          "heures_rd": 43,
+          "heures_non_rd": 99.5,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 13
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 17
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 13
+            }
+          ]
+        },
+        {
+          "period": "2025-05",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 50,
+          "heures_non_rd": 115,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 15
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 15
+            }
+          ]
+        },
+        {
+          "period": "2025-06",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 47,
+          "heures_non_rd": 110.5,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 14
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 19
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 14
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 50,
+          "heures_non_rd": 115,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 15
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 15
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "jours_ouvres": 7,
+          "heures_travaillees": 52.5,
+          "heures_rd": 16,
+          "heures_non_rd": 36.5,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 5
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 6
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 5
+            }
+          ]
+        },
+        {
+          "period": "2025-09",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 47,
+          "heures_non_rd": 110.5,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 14
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 19
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 14
+            }
+          ]
+        },
+        {
+          "period": "2025-10",
+          "jours_ouvres": 22,
+          "heures_travaillees": 165,
+          "heures_rd": 50,
+          "heures_non_rd": 115,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 15
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 20
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 15
+            }
+          ]
+        },
+        {
+          "period": "2025-11",
+          "jours_ouvres": 21,
+          "heures_travaillees": 157.5,
+          "heures_rd": 47,
+          "heures_non_rd": 110.5,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 14
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 19
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 14
+            }
+          ]
+        },
+        {
+          "period": "2025-12",
+          "jours_ouvres": 17,
+          "heures_travaillees": 127.5,
+          "heures_rd": 38,
+          "heures_non_rd": 89.5,
+          "ratio_rd": 0.3,
+          "projets": [
+            {
+              "code": "PRJ-AI",
+              "heures": 11
+            },
+            {
+              "code": "PRJ-CONN",
+              "heures": 15
+            },
+            {
+              "code": "PRJ-BDESE",
+              "heures": 11
+            }
+          ]
+        }
+      ],
+      "annual_total": {
+        "heures_travaillees": 1770,
+        "heures_rd": 533,
+        "ratio_rd": 0.3,
+        "cout_salarial_rd": 5058.98
+      }
+    }
+  ],
+  "monthly_totals": [],
+  "annual_summary": {
+    "total_heures_travaillees": 19470,
+    "total_heures_rd": 10375,
+    "total_heures_non_rd": 9095,
+    "ratio_rd_global": 0.53,
+    "cout_salarial_rd_eligible": 312911.17,
+    "charges_patronales_rd": 140810.03,
+    "assiette_cir": 453721.2,
+    "cir_estime": 136116.36
+  }
+}

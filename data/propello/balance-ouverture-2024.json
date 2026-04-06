@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "company": "Propello SAS",
+    "siren": "912345678",
+    "date": "2024-12-31",
+    "type": "balance_ouverture",
+    "description": "Bilan d'ouverture au 31/12/2024 — base de depart pour le FEC 2025. SaaS B2B en annee 4 post-seed, ARR ~2.5M EUR, 27 salaries.",
+    "note": "Tous les montants en EUR avec 2 decimales. Les amortissements sont presentes en negatif (comptes 28x) pour obtenir les VNC."
+  },
+  "actif": {
+    "immobilisations_incorporelles": {
+      "label": "Immobilisations incorporelles",
+      "comptes": [
+        { "compte": "203100", "libelle": "Frais de R&D actives", "debit": 780000.00, "credit": 0.00 },
+        { "compte": "205100", "libelle": "Concessions, brevets, licences", "debit": 24000.00, "credit": 0.00 },
+        { "compte": "280310", "libelle": "Amort. frais de R&D", "debit": 0.00, "credit": 313333.33 },
+        { "compte": "280510", "libelle": "Amort. concessions, brevets", "debit": 0.00, "credit": 12000.00 }
+      ],
+      "total_net": 478666.67
+    },
+    "immobilisations_corporelles": {
+      "label": "Immobilisations corporelles",
+      "comptes": [
+        { "compte": "218300", "libelle": "Materiel de bureau et informatique", "debit": 52052.00, "credit": 0.00 },
+        { "compte": "218400", "libelle": "Mobilier", "debit": 30800.00, "credit": 0.00 },
+        { "compte": "281830", "libelle": "Amort. materiel informatique", "debit": 0.00, "credit": 25077.78 },
+        { "compte": "281840", "libelle": "Amort. mobilier", "debit": 0.00, "credit": 9861.67 }
+      ],
+      "total_net": 47912.55
+    },
+    "creances": {
+      "label": "Creances",
+      "comptes": [
+        { "compte": "411000", "libelle": "Clients — factures non encaissees", "debit": 62400.00, "credit": 0.00 },
+        { "compte": "445660", "libelle": "TVA deductible sur ABS", "debit": 8200.00, "credit": 0.00 },
+        { "compte": "445670", "libelle": "Credit de TVA", "debit": 0.00, "credit": 0.00 },
+        { "compte": "448600", "libelle": "CIR — credit d'impot a recevoir", "debit": 52000.00, "credit": 0.00 },
+        { "compte": "486000", "libelle": "Charges constatees d'avance", "debit": 14500.00, "credit": 0.00 }
+      ],
+      "total_net": 137100.00
+    },
+    "tresorerie": {
+      "label": "Tresorerie",
+      "comptes": [
+        { "compte": "512100", "libelle": "Banque Qonto EUR", "debit": 1354000.00, "credit": 0.00 },
+        { "compte": "512200", "libelle": "Banque Wise USD", "debit": 35000.00, "credit": 0.00 },
+        { "compte": "530000", "libelle": "Caisse", "debit": 0.00, "credit": 0.00 }
+      ],
+      "total_net": 1389000.00
+    },
+    "total_actif": 2052679.22
+  },
+  "passif": {
+    "capitaux_propres": {
+      "label": "Capitaux propres",
+      "comptes": [
+        { "compte": "101300", "libelle": "Capital social", "debit": 0.00, "credit": 50000.00 },
+        { "compte": "104100", "libelle": "Prime d'emission (levee seed)", "debit": 0.00, "credit": 750000.00 },
+        { "compte": "106100", "libelle": "Reserve legale", "debit": 0.00, "credit": 0.00 },
+        { "compte": "119000", "libelle": "Report a nouveau debiteur (pertes cumulees)", "debit": 485000.00, "credit": 0.00 },
+        { "compte": "120000", "libelle": "Resultat de l'exercice 2024", "debit": 0.00, "credit": 78500.00 }
+      ],
+      "total_net": 393500.00
+    },
+    "provisions": {
+      "label": "Provisions pour risques et charges",
+      "comptes": [
+        { "compte": "153000", "libelle": "Provisions pour charges — conges payes", "debit": 0.00, "credit": 68000.00 }
+      ],
+      "total_net": 68000.00
+    },
+    "dettes_financieres": {
+      "label": "Dettes financieres",
+      "comptes": [
+        { "compte": "164100", "libelle": "Emprunt BPI (pret d'amorcage)", "debit": 0.00, "credit": 120000.00 }
+      ],
+      "total_net": 120000.00
+    },
+    "dettes_fournisseurs": {
+      "label": "Dettes fournisseurs",
+      "comptes": [
+        { "compte": "401000", "libelle": "Fournisseurs", "debit": 0.00, "credit": 85400.00 },
+        { "compte": "408000", "libelle": "Fournisseurs — factures non parvenues", "debit": 0.00, "credit": 12000.00 }
+      ],
+      "total_net": 97400.00
+    },
+    "dettes_fiscales_sociales": {
+      "label": "Dettes fiscales et sociales",
+      "comptes": [
+        { "compte": "421000", "libelle": "Personnel — remunerations dues", "debit": 0.00, "credit": 142000.00 },
+        { "compte": "431000", "libelle": "URSSAF", "debit": 0.00, "credit": 86000.00 },
+        { "compte": "437100", "libelle": "Retraite complementaire AGIRC-ARRCO", "debit": 0.00, "credit": 28000.00 },
+        { "compte": "437300", "libelle": "Mutuelle / Prevoyance", "debit": 0.00, "credit": 4800.00 },
+        { "compte": "442100", "libelle": "Etat — impot sur les societes", "debit": 0.00, "credit": 0.00 },
+        { "compte": "445510", "libelle": "TVA a decaisser", "debit": 0.00, "credit": 28500.00 },
+        { "compte": "445800", "libelle": "TVA a regulariser", "debit": 0.00, "credit": 0.00 }
+      ],
+      "total_net": 289300.00
+    },
+    "autres_dettes": {
+      "label": "Autres dettes",
+      "comptes": [
+        { "compte": "467000", "libelle": "Produits constates d'avance (abonnements prepaid annuels)", "debit": 0.00, "credit": 72000.00 },
+        { "compte": "455000", "libelle": "Comptes courants d'associes", "debit": 0.00, "credit": 12479.22 }
+      ],
+      "total_net": 84479.22
+    },
+    "total_passif": 2052679.22
+  },
+  "controle_equilibre": {
+    "total_actif": 2052679.22,
+    "total_passif": 2052679.22,
+    "ecart": 0.00,
+    "equilibre": true
+  }
+}

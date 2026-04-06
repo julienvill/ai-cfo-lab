@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "bank": "Qonto",
+    "iban": "FR7630006000011234567890125",
+    "bic": "QNTOFRP1XXX",
+    "compte": "Propello SAS — Compte courant principal",
+    "periode": "2025-01",
+    "devise": "EUR"
+  },
+  "solde_debut": 1354000,
+  "solde_fin": 1185628.69,
+  "mouvements": [
+    {
+      "date": "20250103",
+      "libelle": "Virement salaires decembre 2024",
+      "reference": "BQ-01-SAL-N1",
+      "debit": 142000,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250105",
+      "libelle": "Remboursement pret BPI Janvier",
+      "reference": "BQ-01-BPI",
+      "debit": 3750,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250110",
+      "libelle": "Paiement fournisseurs decembre 2024",
+      "reference": "BQ-01-FRN-N1",
+      "debit": 85400,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250115",
+      "libelle": "Paiement URSSAF decembre 2024",
+      "reference": "BQ-01-URSSAF-N1",
+      "debit": 86000,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250115",
+      "libelle": "Paiement AGIRC-ARRCO decembre 2024",
+      "reference": "BQ-01-RET-N1",
+      "debit": 28000,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250115",
+      "libelle": "Paiement mutuelle/prevoyance decembre 2024",
+      "reference": "BQ-01-PREV-N1",
+      "debit": 4800,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250120",
+      "libelle": "Encaissements clients Janvier 2025",
+      "reference": "BQ-01-ENC",
+      "debit": 0,
+      "credit": 321960,
+      "type": "credit",
+      "reconciled": true
+    },
+    {
+      "date": "20250120",
+      "libelle": "Paiement TVA decembre 2024",
+      "reference": "BQ-01-TVA-N1",
+      "debit": 28500,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250125",
+      "libelle": "Paiement fournisseurs Janvier 2025",
+      "reference": "BQ-01-FRN",
+      "debit": 34668,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250131",
+      "libelle": "Virement salaires Janvier 2025",
+      "reference": "BQ-01-SAL",
+      "debit": 77213.31,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    }
+  ],
+  "rapprochement": {
+    "total_mouvements": 10,
+    "mouvements_rapproches": 10,
+    "mouvements_non_rapproches": 0,
+    "ecart_rapprochement": 0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "bank": "Qonto",
+    "iban": "FR7630006000011234567890125",
+    "bic": "QNTOFRP1XXX",
+    "compte": "Propello SAS — Compte courant principal",
+    "periode": "2025-08",
+    "devise": "EUR"
+  },
+  "solde_debut": 2642151.03,
+  "solde_fin": 2746763.42,
+  "mouvements": [
+    {
+      "date": "20250805",
+      "libelle": "Remboursement pret BPI Aout",
+      "reference": "BQ-08-BPI",
+      "debit": 3750,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250815",
+      "libelle": "Paiement URSSAF Juillet 2025",
+      "reference": "BQ-08-URSSAF",
+      "debit": 49016.39,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250815",
+      "libelle": "Paiement AGIRC-ARRCO Juillet 2025",
+      "reference": "BQ-08-RET",
+      "debit": 13512.64,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250815",
+      "libelle": "Paiement mutuelle/prevoyance Juillet 2025",
+      "reference": "BQ-08-PREV",
+      "debit": 4355,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250815",
+      "libelle": "Paiement PAS Juillet 2025",
+      "reference": "BQ-08-PAS",
+      "debit": 8210.27,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250820",
+      "libelle": "Encaissements clients Aout 2025",
+      "reference": "BQ-08-ENC",
+      "debit": 0,
+      "credit": 341880,
+      "type": "credit",
+      "reconciled": true
+    },
+    {
+      "date": "20250820",
+      "libelle": "Paiement TVA Juillet 2025",
+      "reference": "BQ-08-TVA",
+      "debit": 53470,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250825",
+      "libelle": "Paiement fournisseurs Aout 2025",
+      "reference": "BQ-08-FRN",
+      "debit": 27740,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250831",
+      "libelle": "Virement salaires Aout 2025",
+      "reference": "BQ-08-SAL",
+      "debit": 77213.31,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    }
+  ],
+  "rapprochement": {
+    "total_mouvements": 9,
+    "mouvements_rapproches": 9,
+    "mouvements_non_rapproches": 0,
+    "ecart_rapprochement": 0
+  }
+}

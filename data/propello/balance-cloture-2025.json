@@ -1,0 +1,423 @@
+{
+  "metadata": {
+    "company": "Propello SAS",
+    "siren": "912345678",
+    "date": "2025-12-31",
+    "type": "balance_cloture",
+    "description": "Bilan de cloture au 31/12/2025 — resultat de l'ouverture + FEC 2025"
+  },
+  "resultat_exercice": {
+    "produits": 3485000,
+    "charges": 2486557.08,
+    "resultat": 998442.92,
+    "type": "benefice"
+  },
+  "comptes": [
+    {
+      "compte": "101300",
+      "libelle": "Capital social",
+      "total_debit": 0,
+      "total_credit": 50000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 50000
+    },
+    {
+      "compte": "104100",
+      "libelle": "Prime d'emission (levee seed)",
+      "total_debit": 0,
+      "total_credit": 750000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 750000
+    },
+    {
+      "compte": "119000",
+      "libelle": "Report a nouveau debiteur (pertes cumulees)",
+      "total_debit": 485000,
+      "total_credit": 78500,
+      "solde_debiteur": 406500,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "120000",
+      "libelle": "Resultat de l'exercice 2024",
+      "total_debit": 78500,
+      "total_credit": 78500,
+      "solde_debiteur": 0,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "153000",
+      "libelle": "Provisions pour charges — conges payes",
+      "total_debit": 0,
+      "total_credit": 75000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 75000
+    },
+    {
+      "compte": "164100",
+      "libelle": "Emprunt BPI (pret d'amorcage)",
+      "total_debit": 39999.96,
+      "total_credit": 120000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 80000.04
+    },
+    {
+      "compte": "203100",
+      "libelle": "Frais de R&D actives",
+      "total_debit": 1060000,
+      "total_credit": 0,
+      "solde_debiteur": 1060000,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "205100",
+      "libelle": "Concessions, brevets, licences",
+      "total_debit": 24000,
+      "total_credit": 0,
+      "solde_debiteur": 24000,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "218300",
+      "libelle": "Materiel de bureau et informatique",
+      "total_debit": 52052,
+      "total_credit": 0,
+      "solde_debiteur": 52052,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "218400",
+      "libelle": "Mobilier",
+      "total_debit": 30800,
+      "total_credit": 0,
+      "solde_debiteur": 30800,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "280310",
+      "libelle": "Amort. frais de R&D",
+      "total_debit": 0,
+      "total_credit": 533333.29,
+      "solde_debiteur": 0,
+      "solde_crediteur": 533333.29
+    },
+    {
+      "compte": "280510",
+      "libelle": "Amort. concessions, brevets",
+      "total_debit": 0,
+      "total_credit": 20000.04,
+      "solde_debiteur": 0,
+      "solde_crediteur": 20000.04
+    },
+    {
+      "compte": "281830",
+      "libelle": "Amort. materiel informatique",
+      "total_debit": 0,
+      "total_credit": 40730.1,
+      "solde_debiteur": 0,
+      "solde_crediteur": 40730.1
+    },
+    {
+      "compte": "281840",
+      "libelle": "Amort. mobilier",
+      "total_debit": 0,
+      "total_credit": 16021.63,
+      "solde_debiteur": 0,
+      "solde_crediteur": 16021.63
+    },
+    {
+      "compte": "401000",
+      "libelle": "Fournisseurs",
+      "total_debit": 513654,
+      "total_credit": 513654,
+      "solde_debiteur": 0,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "408000",
+      "libelle": "Fournisseurs — factures non parvenues",
+      "total_debit": 12000,
+      "total_credit": 27000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 15000
+    },
+    {
+      "compte": "411000",
+      "libelle": "Clients — factures non encaissees",
+      "total_debit": 3924000,
+      "total_credit": 3924000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "421000",
+      "libelle": "Personnel — remunerations dues",
+      "total_debit": 1072569.84,
+      "total_credit": 1072569.84,
+      "solde_debiteur": 0,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "431000",
+      "libelle": "URSSAF",
+      "total_debit": 627003.93,
+      "total_credit": 676628.2,
+      "solde_debiteur": 0,
+      "solde_crediteur": 49624.27
+    },
+    {
+      "compte": "437100",
+      "libelle": "Retraite complementaire AGIRC-ARRCO",
+      "total_debit": 177034.89,
+      "total_credit": 190679.48,
+      "solde_debiteur": 0,
+      "solde_crediteur": 13644.59
+    },
+    {
+      "compte": "437300",
+      "libelle": "Mutuelle / Prevoyance",
+      "total_debit": 52948,
+      "total_credit": 57384,
+      "solde_debiteur": 0,
+      "solde_crediteur": 4436
+    },
+    {
+      "compte": "442100",
+      "libelle": "Etat — prelevement a la source",
+      "total_debit": 90312.97,
+      "total_credit": 98523.24,
+      "solde_debiteur": 0,
+      "solde_crediteur": 8210.27
+    },
+    {
+      "compte": "445510",
+      "libelle": "TVA a decaisser",
+      "total_debit": 575376,
+      "total_credit": 632306,
+      "solde_debiteur": 0,
+      "solde_crediteur": 56930
+    },
+    {
+      "compte": "445660",
+      "libelle": "TVA deductible sur ABS",
+      "total_debit": 85892,
+      "total_credit": 77692,
+      "solde_debiteur": 8200,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "445710",
+      "libelle": "TVA collectee 20%",
+      "total_debit": 681498,
+      "total_credit": 681498,
+      "solde_debiteur": 0,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "448600",
+      "libelle": "CIR — credit d'impot a recevoir",
+      "total_debit": 136000,
+      "total_credit": 52000,
+      "solde_debiteur": 84000,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "455000",
+      "libelle": "Comptes courants d'associes",
+      "total_debit": 0,
+      "total_credit": 1012479.22,
+      "solde_debiteur": 0,
+      "solde_crediteur": 1012479.22
+    },
+    {
+      "compte": "467000",
+      "libelle": "Produits constates d'avance (abonnements prepaid annuels)",
+      "total_debit": 72000,
+      "total_credit": 157000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 85000
+    },
+    {
+      "compte": "486000",
+      "libelle": "Charges constatees d'avance",
+      "total_debit": 30700,
+      "total_credit": 14500,
+      "solde_debiteur": 16200,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "512100",
+      "libelle": "Banque Qonto EUR",
+      "total_debit": 6330000,
+      "total_credit": 3153899.63,
+      "solde_debiteur": 3176100.37,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "512200",
+      "libelle": "Banque Wise USD",
+      "total_debit": 35000,
+      "total_credit": 0,
+      "solde_debiteur": 35000,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "611100",
+      "libelle": "Sous-traitance / Prestations externes",
+      "total_debit": 31200,
+      "total_credit": 12000,
+      "solde_debiteur": 19200,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "613200",
+      "libelle": "Locations immobilieres (WeWork)",
+      "total_debit": 110500,
+      "total_credit": 8500,
+      "solde_debiteur": 102000,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "613500",
+      "libelle": "Hebergement cloud AWS",
+      "total_debit": 40250,
+      "total_credit": 0,
+      "solde_debiteur": 40250,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "622600",
+      "libelle": "Honoraires avocat — revue BSPCE pool",
+      "total_debit": 50500,
+      "total_credit": 0,
+      "solde_debiteur": 50500,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "622700",
+      "libelle": "Commissions Stripe sur encaissements",
+      "total_debit": 56150,
+      "total_credit": 0,
+      "solde_debiteur": 56150,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "623400",
+      "libelle": "Google Ads + Workspace",
+      "total_debit": 69000,
+      "total_credit": 0,
+      "solde_debiteur": 69000,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "641000",
+      "libelle": "Remunerations du personnel",
+      "total_debit": 1319200,
+      "total_credit": 0,
+      "solde_debiteur": 1319200,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "641200",
+      "libelle": "Conges payes — dotation provision",
+      "total_debit": 7000,
+      "total_credit": 0,
+      "solde_debiteur": 7000,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "645100",
+      "libelle": "Cotisations URSSAF patronales",
+      "total_debit": 380319.08,
+      "total_credit": 0,
+      "solde_debiteur": 380319.08,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "645200",
+      "libelle": "Cotisations retraite patronales AGIRC-ARRCO",
+      "total_debit": 99957.68,
+      "total_credit": 0,
+      "solde_debiteur": 99957.68,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "645300",
+      "libelle": "Cotisations prevoyance et mutuelle patronales",
+      "total_debit": 35508,
+      "total_credit": 0,
+      "solde_debiteur": 35508,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "645400",
+      "libelle": "Mutuelle collective Alan",
+      "total_debit": 26100,
+      "total_credit": 0,
+      "solde_debiteur": 26100,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "651100",
+      "libelle": "Abonnements logiciels",
+      "total_debit": 34260,
+      "total_credit": 7700,
+      "solde_debiteur": 26560,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "661100",
+      "libelle": "Interets des emprunts",
+      "total_debit": 5000.04,
+      "total_credit": 0,
+      "solde_debiteur": 5000.04,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "681120",
+      "libelle": "Dotations aux amortissements des immobilisations",
+      "total_debit": 249812.28,
+      "total_credit": 0,
+      "solde_debiteur": 249812.28,
+      "solde_crediteur": 0
+    },
+    {
+      "compte": "699500",
+      "libelle": "CIR — produit d'impot",
+      "total_debit": 0,
+      "total_credit": 84000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 84000
+    },
+    {
+      "compte": "706100",
+      "libelle": "Prestations de services — Abonnements SaaS",
+      "total_debit": 85000,
+      "total_credit": 3290000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 3205000
+    },
+    {
+      "compte": "721000",
+      "libelle": "Production immobilisee — immobilisations incorporelles",
+      "total_debit": 0,
+      "total_credit": 280000,
+      "solde_debiteur": 0,
+      "solde_crediteur": 280000
+    },
+    {
+      "compte": "890000",
+      "libelle": "Bilan d'ouverture (contrepartie)",
+      "total_debit": 915579.22,
+      "total_credit": 1915579.22,
+      "solde_debiteur": 0,
+      "solde_crediteur": 1000000
+    }
+  ],
+  "controle": {
+    "total_actif_bilan": 4892852.37,
+    "total_passif_bilan": 2810409.45,
+    "resultat_a_affecter": 998442.92,
+    "note": "Le resultat de l'exercice doit etre affecte au passif (compte 120000 ou 129000) pour equilibrer le bilan"
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "metadata": {
+    "company": "Propello",
+    "generated_at": "2025-12-31",
+    "description": "Fichier fournisseurs — 15 fournisseurs principaux couvrant hebergement, outils SaaS, freelances, services professionnels, locaux"
+  },
+  "fournisseurs": [
+    {
+      "id": "FRN-001",
+      "company_name": "Amazon Web Services",
+      "legal_name": "Amazon Web Services EMEA SARL",
+      "siren": null,
+      "siret": null,
+      "tva_number": "LU26888236",
+      "iban": null,
+      "address": {
+        "street": "38 avenue John F. Kennedy",
+        "postal_code": "L-1855",
+        "city": "Luxembourg",
+        "country": "Luxembourg"
+      },
+      "category": "hebergement_cloud",
+      "payment_terms_days": 30,
+      "payment_method": "carte",
+      "monthly_average_ht": 3200,
+      "compte_auxiliaire": "401AWS",
+      "notes": "Infrastructure cloud principale — EC2, RDS, S3, CloudFront. Facture mensuelle en USD convertie EUR."
+    },
+    {
+      "id": "FRN-002",
+      "company_name": "Stripe",
+      "legal_name": "Stripe Payments Europe Ltd",
+      "siren": null,
+      "siret": null,
+      "tva_number": "IE3206488LH",
+      "iban": null,
+      "address": {
+        "street": "1 Grand Canal Street Lower",
+        "postal_code": "D02 H210",
+        "city": "Dublin",
+        "country": "Ireland"
+      },
+      "category": "paiement",
+      "payment_terms_days": 0,
+      "payment_method": "prelevement_automatique",
+      "monthly_average_ht": 4500,
+      "compte_auxiliaire": "401STR",
+      "notes": "Commissions prelevees directement sur les encaissements (1.4% + 0.25 EUR par transaction carte EU). ~4-5K/mois de frais."
+    },
+    {
+      "id": "FRN-003",
+      "company_name": "Slack Technologies",
+      "legal_name": "Slack Technologies LLC",
+      "siren": null,
+      "siret": null,
+      "tva_number": "EU372035872",
+      "iban": null,
+      "address": {
+        "street": "500 Howard Street",
+        "postal_code": "94105",
+        "city": "San Francisco, CA",
+        "country": "USA"
+      },
+      "category": "outil_saas",
+      "payment_terms_days": 0,
+      "payment_method": "carte",
+      "monthly_average_ht": 420,
+      "compte_auxiliaire": "401SLA",
+      "notes": "Slack Business+ — 28 licences x 15 EUR/mois"
+    },
+    {
+      "id": "FRN-004",
+      "company_name": "GitHub",
+      "legal_name": "GitHub Inc.",
+      "siren": null,
+      "siret": null,
+      "tva_number": "EU826010755",
+      "iban": null,
+      "address": {
+        "street": "88 Colin P Kelly Jr St",
+        "postal_code": "94107",
+        "city": "San Francisco, CA",
+        "country": "USA"
+      },
+      "category": "outil_saas",
+      "payment_terms_days": 0,
+      "payment_method": "carte",
+      "monthly_average_ht": 350,
+      "compte_auxiliaire": "401GIT",
+      "notes": "GitHub Team — 15 seats developpeurs"
+    },
+    {
+      "id": "FRN-005",
+      "company_name": "Notion Labs",
+      "legal_name": "Notion Labs Inc.",
+      "siren": null,
+      "siret": null,
+      "tva_number": "EU528014459",
+      "iban": null,
+      "address": {
+        "street": "2300 Harrison Street",
+        "postal_code": "94110",
+        "city": "San Francisco, CA",
+        "country": "USA"
+      },
+      "category": "outil_saas",
+      "payment_terms_days": 0,
+      "payment_method": "carte",
+      "monthly_average_ht": 280,
+      "compte_auxiliaire": "401NOT",
+      "notes": "Notion Team — 28 seats"
+    },
+    {
+      "id": "FRN-006",
+      "company_name": "Figma",
+      "legal_name": "Figma Inc.",
+      "siren": null,
+      "siret": null,
+      "tva_number": "EU372008651",
+      "iban": null,
+      "address": {
+        "street": "760 Market Street",
+        "postal_code": "94102",
+        "city": "San Francisco, CA",
+        "country": "USA"
+      },
+      "category": "outil_saas",
+      "payment_terms_days": 0,
+      "payment_method": "carte",
+      "monthly_average_ht": 180,
+      "compte_auxiliaire": "401FIG",
+      "notes": "Figma Professional — 5 editors (design + produit)"
+    },
+    {
+      "id": "FRN-007",
+      "company_name": "HubSpot",
+      "legal_name": "HubSpot Ireland Ltd",
+      "siren": null,
+      "siret": null,
+      "tva_number": "IE9849783F",
+      "iban": null,
+      "address": {
+        "street": "2nd Floor, 30 North Wall Quay",
+        "postal_code": "D01 V6R6",
+        "city": "Dublin",
+        "country": "Ireland"
+      },
+      "category": "outil_saas",
+      "payment_terms_days": 0,
+      "payment_method": "carte",
+      "monthly_average_ht": 800,
+      "compte_auxiliaire": "401HUB",
+      "notes": "HubSpot Marketing Hub Pro + Sales Hub Pro — CRM, marketing automation, pipeline sales"
+    },
+    {
+      "id": "FRN-008",
+      "company_name": "Alan",
+      "legal_name": "Alan SA",
+      "siren": "814628193",
+      "siret": "81462819300012",
+      "tva_number": "FR12814628193",
+      "iban": "FR7630001007941234567890145",
+      "address": {
+        "street": "12 rue Drouot",
+        "postal_code": "75009",
+        "city": "Paris",
+        "country": "France"
+      },
+      "category": "mutuelle",
+      "payment_terms_days": 30,
+      "payment_method": "prelevement",
+      "monthly_average_ht": 2200,
+      "compte_auxiliaire": "401ALA",
+      "notes": "Mutuelle entreprise collective obligatoire — cotisation employeur 60%"
+    },
+    {
+      "id": "FRN-009",
+      "company_name": "Wework (Spaces Paris 12)",
+      "legal_name": "The We Company France SAS",
+      "siren": "830682519",
+      "siret": "83068251900025",
+      "tva_number": "FR45830682519",
+      "iban": "FR7630004028371234567890178",
+      "address": {
+        "street": "33 rue de Lyon",
+        "postal_code": "75012",
+        "city": "Paris",
+        "country": "France"
+      },
+      "category": "locaux",
+      "payment_terms_days": 0,
+      "payment_method": "prelevement",
+      "monthly_average_ht": 8500,
+      "compte_auxiliaire": "401WEW",
+      "notes": "Espace de coworking — 30 postes + 2 salles de reunion. Charge mensuelle fixe."
+    },
+    {
+      "id": "FRN-010",
+      "company_name": "Cabinet Deloitte",
+      "legal_name": "Deloitte & Associes SAS",
+      "siren": "572028041",
+      "siret": "57202804100055",
+      "tva_number": "FR81572028041",
+      "iban": "FR7630056009271234567890189",
+      "address": {
+        "street": "6 place de la Pyramide",
+        "postal_code": "92800",
+        "city": "Puteaux",
+        "country": "France"
+      },
+      "category": "expert_comptable",
+      "payment_terms_days": 30,
+      "payment_method": "virement",
+      "monthly_average_ht": 2500,
+      "compte_auxiliaire": "401DEL",
+      "notes": "Mission EC : tenue comptable, declarations fiscales, cloture annuelle. Honoraires forfaitaires trimestriels."
+    },
+    {
+      "id": "FRN-011",
+      "company_name": "Cabinet Veil Jourde",
+      "legal_name": "Veil Jourde AARPI",
+      "siren": "342567891",
+      "siret": "34256789100023",
+      "tva_number": "FR56342567891",
+      "iban": "FR7630001007941234567890201",
+      "address": {
+        "street": "2 rue de Villiers",
+        "postal_code": "92300",
+        "city": "Levallois-Perret",
+        "country": "France"
+      },
+      "category": "avocat",
+      "payment_terms_days": 30,
+      "payment_method": "virement",
+      "monthly_average_ht": 1500,
+      "compte_auxiliaire": "401VEI",
+      "notes": "Conseil juridique corporate + droit social. Missions ponctuelles (BSPCE, contrats, contentieux). ~18K/an."
+    },
+    {
+      "id": "FRN-012",
+      "company_name": "Silae",
+      "legal_name": "Silae SAS",
+      "siren": "479634538",
+      "siret": "47963453800034",
+      "tva_number": "FR12479634538",
+      "iban": "FR7630003033001234567890212",
+      "address": {
+        "street": "100 rue de la Gare",
+        "postal_code": "92300",
+        "city": "Levallois-Perret",
+        "country": "France"
+      },
+      "category": "logiciel_paie",
+      "payment_terms_days": 30,
+      "payment_method": "prelevement",
+      "monthly_average_ht": 350,
+      "compte_auxiliaire": "401SIL",
+      "notes": "Logiciel de paie Silae — licence + maintenance. ~28 bulletins/mois."
+    },
+    {
+      "id": "FRN-013",
+      "company_name": "Google Ireland",
+      "legal_name": "Google Ireland Ltd",
+      "siren": null,
+      "siret": null,
+      "tva_number": "IE6388047V",
+      "iban": null,
+      "address": {
+        "street": "Gordon House, Barrow Street",
+        "postal_code": "D04 E5W5",
+        "city": "Dublin",
+        "country": "Ireland"
+      },
+      "category": "marketing_digital",
+      "payment_terms_days": 0,
+      "payment_method": "carte",
+      "monthly_average_ht": 3500,
+      "compte_auxiliaire": "401GOO",
+      "notes": "Google Ads (SEA) + Google Workspace. Budget publicitaire ~3K/mois + Workspace ~500/mois."
+    },
+    {
+      "id": "FRN-014",
+      "company_name": "LinkedIn Ireland",
+      "legal_name": "LinkedIn Ireland Unlimited Company",
+      "siren": null,
+      "siret": null,
+      "tva_number": "IE9740425P",
+      "iban": null,
+      "address": {
+        "street": "Wilton Place",
+        "postal_code": "D02 Y066",
+        "city": "Dublin",
+        "country": "Ireland"
+      },
+      "category": "marketing_digital",
+      "payment_terms_days": 0,
+      "payment_method": "carte",
+      "monthly_average_ht": 2500,
+      "compte_auxiliaire": "401LIN",
+      "notes": "LinkedIn Ads + Sales Navigator Team (4 licences). Budget pub LinkedIn ~2K/mois + SN 500/mois."
+    },
+    {
+      "id": "FRN-015",
+      "company_name": "Dev-Connect",
+      "legal_name": "Dev-Connect EURL",
+      "siren": "853197426",
+      "siret": "85319742600011",
+      "tva_number": "FR78853197426",
+      "iban": "FR7630003033001234567890234",
+      "address": {
+        "street": "14 rue de Paradis",
+        "postal_code": "75010",
+        "city": "Paris",
+        "country": "France"
+      },
+      "category": "freelance_dev",
+      "payment_terms_days": 30,
+      "payment_method": "virement",
+      "monthly_average_ht": 5000,
+      "compte_auxiliaire": "401DEV",
+      "notes": "Freelance senior fullstack — missions ponctuelles Q1-Q2 2025 pour renforcement equipe avant recrutement Elodie Simon. TJM 600 EUR."
+    }
+  ]
+}

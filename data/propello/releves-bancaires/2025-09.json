@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "bank": "Qonto",
+    "iban": "FR7630006000011234567890125",
+    "bic": "QNTOFRP1XXX",
+    "compte": "Propello SAS — Compte courant principal",
+    "periode": "2025-09",
+    "devise": "EUR"
+  },
+  "solde_debut": 2746763.42,
+  "solde_fin": 2838507.28,
+  "mouvements": [
+    {
+      "date": "20250905",
+      "libelle": "Remboursement pret BPI Septembre",
+      "reference": "BQ-09-BPI",
+      "debit": 3750,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250915",
+      "libelle": "Paiement URSSAF Aout 2025",
+      "reference": "BQ-09-URSSAF",
+      "debit": 49016.39,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250915",
+      "libelle": "Paiement AGIRC-ARRCO Aout 2025",
+      "reference": "BQ-09-RET",
+      "debit": 13512.64,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250915",
+      "libelle": "Paiement mutuelle/prevoyance Aout 2025",
+      "reference": "BQ-09-PREV",
+      "debit": 4355,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250915",
+      "libelle": "Paiement PAS Aout 2025",
+      "reference": "BQ-09-PAS",
+      "debit": 8210.27,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250920",
+      "libelle": "Encaissements clients Septembre 2025",
+      "reference": "BQ-09-ENC",
+      "debit": 0,
+      "credit": 350520,
+      "type": "credit",
+      "reconciled": true
+    },
+    {
+      "date": "20250920",
+      "libelle": "Paiement TVA Aout 2025",
+      "reference": "BQ-09-TVA",
+      "debit": 54770,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250922",
+      "libelle": "Remb. note de frais Thomas Renault — SaaStr Paris",
+      "reference": "NDF-TR-09",
+      "debit": 856,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": false
+    },
+    {
+      "date": "20250925",
+      "libelle": "Paiement fournisseurs Septembre 2025",
+      "reference": "BQ-09-FRN",
+      "debit": 46090,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250930",
+      "libelle": "Virement salaires Septembre 2025",
+      "reference": "BQ-09-SAL",
+      "debit": 78215.84,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    }
+  ],
+  "rapprochement": {
+    "total_mouvements": 10,
+    "mouvements_rapproches": 9,
+    "mouvements_non_rapproches": 1,
+    "ecart_rapprochement": -856
+  }
+}

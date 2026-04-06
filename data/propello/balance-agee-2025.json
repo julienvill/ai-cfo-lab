@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "company": "Propello SAS",
+    "date": "2025-12-31",
+    "description": "Balance agee clients et fournisseurs au 31/12/2025"
+  },
+  "clients": {
+    "total": 220176,
+    "tranches": {
+      "0_30j": 165132,
+      "31_60j": 33026.4,
+      "61_90j": 15412.32,
+      "plus_90j": 6605.28
+    },
+    "detail": [
+      {
+        "client_id": "CLI-001",
+        "client_name": "Groupe Altimeo",
+        "compte_auxiliaire": "411ALT",
+        "solde": 1198.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-002",
+        "client_name": "TechVision",
+        "compte_auxiliaire": "411TEC",
+        "solde": 1198.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-003",
+        "client_name": "BioNature Labs",
+        "compte_auxiliaire": "411BIO",
+        "solde": 1198.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-004",
+        "client_name": "NordExpress Logistics",
+        "compte_auxiliaire": "411NOR",
+        "solde": 2397.6,
+        "tranche": "31_60j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-11-20"
+      },
+      {
+        "client_id": "CLI-005",
+        "client_name": "Meridian Finance",
+        "compte_auxiliaire": "411MER",
+        "solde": 1198.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-006",
+        "client_name": "GreenTech Solutions",
+        "compte_auxiliaire": "411GRE",
+        "solde": 1198.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-007",
+        "client_name": "Innov'RH",
+        "compte_auxiliaire": "411INN",
+        "solde": 1198.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-008",
+        "client_name": "DataPulse",
+        "compte_auxiliaire": "411DAT",
+        "solde": 1198.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-009",
+        "client_name": "Axiome Consulting",
+        "compte_auxiliaire": "411AXI",
+        "solde": 598.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-010",
+        "client_name": "MediaSphere",
+        "compte_auxiliaire": "411MED",
+        "solde": 598.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-011",
+        "client_name": "Nexus Pharma",
+        "compte_auxiliaire": "411NEX",
+        "solde": 1197.6,
+        "tranche": "31_60j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-11-20"
+      },
+      {
+        "client_id": "CLI-012",
+        "client_name": "UrbanCraft",
+        "compte_auxiliaire": "411URB",
+        "solde": 598.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-013",
+        "client_name": "Voltaire Education",
+        "compte_auxiliaire": "411VOL",
+        "solde": 598.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-014",
+        "client_name": "Artisan Digital",
+        "compte_auxiliaire": "411ART",
+        "solde": 598.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-015",
+        "client_name": "Pragma Avocats",
+        "compte_auxiliaire": "411PRA",
+        "solde": 1197.6,
+        "tranche": "31_60j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-11-20"
+      },
+      {
+        "client_id": "CLI-016",
+        "client_name": "CloudFactory",
+        "compte_auxiliaire": "411CLO",
+        "solde": 598.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-017",
+        "client_name": "Finastra Group",
+        "compte_auxiliaire": "411FIN",
+        "solde": 2397.6,
+        "tranche": "31_60j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-11-20"
+      },
+      {
+        "client_id": "CLI-018",
+        "client_name": "EcoMotion",
+        "compte_auxiliaire": "411ECO",
+        "solde": 238.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      },
+      {
+        "client_id": "CLI-020",
+        "client_name": "Sparkline Analytics",
+        "compte_auxiliaire": "411SPA",
+        "solde": 598.8,
+        "tranche": "0_30j",
+        "derniere_facture": "2025-12-05",
+        "dernier_paiement": "2025-12-20"
+      }
+    ]
+  },
+  "fournisseurs": {
+    "total": 42000,
+    "tranches": {
+      "0_30j": 35700,
+      "31_60j": 4200,
+      "61_90j": 2100,
+      "plus_90j": 0
+    },
+    "detail": []
+  }
+}

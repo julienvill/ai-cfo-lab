@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "company": "Propello SAS",
+    "exercice": "2025",
+    "description": "Production immobilisee 2025 — detail des couts R&D actives en immobilisation incorporelle sur l'exercice. Concerne le developpement de la plateforme Propello v5.0 (evolutions majeures).",
+    "referentiel_comptable": "PCG — Art. 212-3 / IAS 38 (phase de developpement)",
+    "compte_immobilisation": "203100",
+    "compte_production_immobilisee": "721000",
+    "methode_valorisation": "Cout direct (salaires + charges patronales) des heures R&D sur projets eligibles en phase de developpement, hors phase de recherche exploratoire"
+  },
+  "projets_actives": [
+    {
+      "code": "PRJ-AI",
+      "label": "IA predictive RH (NLP turnover/absenteisme) — module v5.0",
+      "phase": "developpement",
+      "criteres_ias38": {
+        "faisabilite_technique": true,
+        "intention_achever": true,
+        "capacite_utiliser_vendre": true,
+        "avantages_economiques_futurs": true,
+        "ressources_disponibles": true,
+        "evaluation_fiable_couts": true
+      },
+      "date_debut_activation": "2025-01-01",
+      "date_fin_activation": "2025-12-31"
+    },
+    {
+      "code": "PRJ-CONN",
+      "label": "Connecteurs SIRH universels (API unifiee) — extension v5.0",
+      "phase": "developpement",
+      "criteres_ias38": {
+        "faisabilite_technique": true,
+        "intention_achever": true,
+        "capacite_utiliser_vendre": true,
+        "avantages_economiques_futurs": true,
+        "ressources_disponibles": true,
+        "evaluation_fiable_couts": true
+      },
+      "date_debut_activation": "2025-01-01",
+      "date_fin_activation": "2025-12-31"
+    },
+    {
+      "code": "PRJ-BDESE",
+      "label": "Generation automatique BDESE — finalisation v5.0",
+      "phase": "developpement",
+      "criteres_ias38": {
+        "faisabilite_technique": true,
+        "intention_achever": true,
+        "capacite_utiliser_vendre": true,
+        "avantages_economiques_futurs": true,
+        "ressources_disponibles": true,
+        "evaluation_fiable_couts": true
+      },
+      "date_debut_activation": "2025-01-01",
+      "date_fin_activation": "2025-12-31"
+    }
+  ],
+  "detail_par_employe": [
+    {
+      "employee_id": "PR-002",
+      "name": "Camille Nguyen",
+      "title": "CTO — Directrice Technique",
+      "heures_rd_eligibles": 1285,
+      "taux_horaire_charge": 59.70,
+      "cout_active": 76714.50,
+      "repartition_projets": {
+        "PRJ-AI": 42.0,
+        "PRJ-CONN": 36.0,
+        "PRJ-BDESE": 22.0
+      }
+    },
+    {
+      "employee_id": "PR-004",
+      "name": "Alexandre Morin",
+      "title": "Lead Developpeur Backend",
+      "heures_rd_eligibles": 1190,
+      "taux_horaire_charge": 47.75,
+      "cout_active": 56822.50,
+      "repartition_projets": {
+        "PRJ-AI": 35.0,
+        "PRJ-CONN": 45.0,
+        "PRJ-BDESE": 20.0
+      }
+    },
+    {
+      "employee_id": "PR-005",
+      "name": "Sarah Cohen",
+      "title": "Lead Developpeuse Frontend",
+      "heures_rd_eligibles": 1120,
+      "taux_horaire_charge": 45.91,
+      "cout_active": 51419.20,
+      "repartition_projets": {
+        "PRJ-AI": 25.0,
+        "PRJ-CONN": 30.0,
+        "PRJ-BDESE": 45.0
+      }
+    },
+    {
+      "employee_id": "PR-006",
+      "name": "Romain Legrand",
+      "title": "Developpeur Fullstack",
+      "heures_rd_eligibles": 945,
+      "taux_horaire_charge": 40.40,
+      "cout_active": 38178.00,
+      "repartition_projets": {
+        "PRJ-AI": 30.0,
+        "PRJ-CONN": 40.0,
+        "PRJ-BDESE": 30.0
+      }
+    },
+    {
+      "employee_id": "PR-007",
+      "name": "Ines Belhaj",
+      "title": "Developpeuse Backend",
+      "heures_rd_eligibles": 995,
+      "taux_horaire_charge": 38.56,
+      "cout_active": 38367.20,
+      "repartition_projets": {
+        "PRJ-AI": 55.0,
+        "PRJ-CONN": 35.0,
+        "PRJ-BDESE": 10.0
+      }
+    },
+    {
+      "employee_id": "PR-008",
+      "name": "Lucas Petit",
+      "title": "Developpeur Frontend",
+      "heures_rd_eligibles": 840,
+      "taux_horaire_charge": 37.64,
+      "cout_active": 31617.60,
+      "repartition_projets": {
+        "PRJ-AI": 20.0,
+        "PRJ-CONN": 25.0,
+        "PRJ-BDESE": 55.0
+      }
+    },
+    {
+      "employee_id": "PR-009",
+      "name": "Maxime Durand",
+      "title": "Developpeur Fullstack",
+      "heures_rd_eligibles": 770,
+      "taux_horaire_charge": 35.80,
+      "cout_active": 27566.00,
+      "repartition_projets": {
+        "PRJ-AI": 40.0,
+        "PRJ-CONN": 30.0,
+        "PRJ-BDESE": 30.0
+      }
+    },
+    {
+      "employee_id": "PR-010",
+      "name": "Chloe Lambert",
+      "title": "Developpeuse Frontend",
+      "heures_rd_eligibles": 665,
+      "taux_horaire_charge": 33.96,
+      "cout_active": 22583.40,
+      "repartition_projets": {
+        "PRJ-AI": 15.0,
+        "PRJ-CONN": 20.0,
+        "PRJ-BDESE": 65.0
+      }
+    },
+    {
+      "employee_id": "PR-011",
+      "name": "Adrien Fournier",
+      "title": "Data Engineer",
+      "heures_rd_eligibles": 875,
+      "taux_horaire_charge": 41.32,
+      "cout_active": 36155.00,
+      "repartition_projets": {
+        "PRJ-AI": 75.0,
+        "PRJ-CONN": 20.0,
+        "PRJ-BDESE": 5.0
+      }
+    }
+  ],
+  "repartition_par_projet": {
+    "PRJ-AI": {
+      "heures": 3510,
+      "cout_active": 142450.00,
+      "pct_total": 37.9
+    },
+    "PRJ-CONN": {
+      "heures": 2790,
+      "cout_active": 112680.00,
+      "pct_total": 29.9
+    },
+    "PRJ-BDESE": {
+      "heures": 2385,
+      "cout_active": 121293.40,
+      "pct_total": 32.2
+    }
+  },
+  "totaux": {
+    "heures_rd_eligibles_actives": 8685,
+    "cout_salaires_brut_active": 261700.00,
+    "charges_patronales_active": 117723.40,
+    "cout_total_active": 379423.40,
+    "quote_part_activable_ias38": 0.74,
+    "cout_active_final": 280773.32,
+    "arrondi_comptable": 281000.00
+  },
+  "ecriture_comptable": {
+    "date": "2025-12-31",
+    "libelle": "Production immobilisee — Propello v5.0 (exercice 2025)",
+    "lignes": [
+      {
+        "compte": "203100",
+        "libelle": "Frais de developpement — Propello v5.0",
+        "debit": 281000.00,
+        "credit": 0.00
+      },
+      {
+        "compte": "721000",
+        "libelle": "Production immobilisee — incorporelle",
+        "debit": 0.00,
+        "credit": 281000.00
+      }
+    ]
+  },
+  "nouvelle_immobilisation_creee": {
+    "id_immobilisation": "IMM-013",
+    "label": "R&D activee — Propello v5.0 (IA v2 + connecteurs etendus + BDESE finalise)",
+    "valeur_brute": 281000.00,
+    "date_mise_en_service": "2026-01-01",
+    "duree_amortissement_mois": 36,
+    "methode": "lineaire",
+    "dotation_annuelle_2026": 93666.67,
+    "fin_amortissement": "2028-12-31"
+  },
+  "notes": [
+    "Seuls les heures sur projets eligibles CIR en phase de developpement sont activables (IAS 38).",
+    "Les heures sur PRJ-MAINT (maintenance) et PRJ-INFRA sont exclues de l'activation.",
+    "Quote-part 74% appliquee pour tenir compte de la phase recherche exploratoire non activable (26% des heures eligibles CIR).",
+    "Les personnes PR-012 (DevOps/SRE) et PR-013 (alternant) sont affectees a des taches non activables ou avec ratio R&D faible.",
+    "Charges patronales calculees a 45% du salaire brut (taux moyen PME Syntec 2025).",
+    "La mise en service est fixee au 01/01/2026 — la plateforme v5.0 est livree en production debut 2026."
+  ]
+}

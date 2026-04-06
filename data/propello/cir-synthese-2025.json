@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "company": "Propello SAS",
+    "siren": "912345678",
+    "exercice": "2025",
+    "description": "Synthese du calcul du Credit Impot Recherche (CIR) 2025 — assiette, taux, credit calcule et traitement fiscal.",
+    "declaration_fiscale": {
+      "formulaire": "2069-A-SD",
+      "date_depot_prevue": "2026-05-05",
+      "joint_a_liasse_fiscale": true
+    },
+    "agrement_msri": "Non agree MSRI — declaration simple en regime PME",
+    "regime": "PME communautaire (effectif < 250, CA < 50 M EUR)"
+  },
+  "projets_rd_declares": [
+    {
+      "code": "PRJ-AI",
+      "label": "IA predictive RH — modele NLP turnover/absenteisme",
+      "nature": "Developpement experimental",
+      "eligible": true,
+      "indicateurs_eligibilite": [
+        "Etat de l'art documente",
+        "Incertitude scientifique/technique identifiee",
+        "Demarche experimentale iterative",
+        "Verrous technologiques lies au traitement NLP multilingue sur donnees RH"
+      ],
+      "heures_rd_declarees": 4210,
+      "cout_personnel_net": 193450.00
+    },
+    {
+      "code": "PRJ-CONN",
+      "label": "Connecteurs SIRH universels (API unifiee)",
+      "nature": "Developpement experimental",
+      "eligible": true,
+      "indicateurs_eligibilite": [
+        "Problematique d'heterogeneite des SIRH documentee",
+        "Incertitude sur la modelisation semantique unifiee",
+        "Prototypage et tests de non-regression iteratifs"
+      ],
+      "heures_rd_declarees": 3330,
+      "cout_personnel_net": 149980.00
+    },
+    {
+      "code": "PRJ-BDESE",
+      "label": "Generation automatique BDESE (Base de Donnees Economiques, Sociales, Environnementales)",
+      "nature": "Developpement experimental",
+      "eligible": true,
+      "indicateurs_eligibilite": [
+        "Complexite reglementaire multi-conventions collectives",
+        "Difficulte d'interpretation automatique des textes legaux",
+        "Travaux de R&D sur l'extraction semantique"
+      ],
+      "heures_rd_declarees": 2835,
+      "cout_personnel_net": 110291.17
+    }
+  ],
+  "assiette_cir": {
+    "A_depenses_personnel_rd": {
+      "salaires_bruts_chercheurs": 312911.17,
+      "charges_patronales": 140810.03,
+      "sous_total": 453721.20,
+      "commentaire": "Personnel directement affecte aux travaux de R&D eligibles (hors maintenance et infrastructure). Temps declares selon feuilles de temps mensuelles — voir fichier temps-rd.json."
+    },
+    "B_jeunes_docteurs": {
+      "montant": 0.00,
+      "commentaire": "Aucun jeune docteur employe sur l'exercice — coefficient x2 non applicable."
+    },
+    "C_forfait_frais_fonctionnement": {
+      "base_personnel": 453721.20,
+      "taux": 0.43,
+      "montant": 195100.12,
+      "commentaire": "Forfait de 43% applique aux depenses de personnel R&D (art. 244 quater B CGI, regime depuis 2020)."
+    },
+    "D_dotations_amortissements_biens_rd": {
+      "materiel_informatique_affecte_rd": 8420.00,
+      "logiciels_rd": 0.00,
+      "sous_total": 8420.00,
+      "taux_majoration": 0.75,
+      "montant_apres_majoration": 14735.00,
+      "commentaire": "Materiels informatiques affectes R&D (quote-part 45% des lots MacBook M3 Max + ecrans 2024). Exclusion des dotations sur R&D activee (compte 203100) pour eviter doublon avec activation."
+    },
+    "E_sous_traitance_rd": {
+      "prestataires_agrees": 0.00,
+      "prestataires_non_agrees": 0.00,
+      "montant": 0.00,
+      "plafond_applicable": 2000000.00,
+      "commentaire": "Aucune sous-traitance R&D en 2025 — tous les travaux realises en interne."
+    },
+    "F_veille_technologique": {
+      "montant": 5800.00,
+      "plafond": 60000.00,
+      "commentaire": "Abonnements veille technique (IEEE, ACM Digital Library), participations conferences techniques (DevoxxFR, NLP Summit)."
+    },
+    "G_brevets_et_pi": {
+      "depot_brevets": 0.00,
+      "defense_brevets": 0.00,
+      "taxes_maintenance": 0.00,
+      "amortissement_certificats": 0.00,
+      "montant": 0.00,
+      "commentaire": "Aucun depot de brevet en 2025 — protection par secret technique et droit d'auteur sur code source."
+    },
+    "H_normalisation": {
+      "montant": 0.00,
+      "commentaire": "Non applicable."
+    },
+    "I_dotations_immobilisations_incorporelles_rd": {
+      "montant": 0.00,
+      "commentaire": "Exclusion volontaire des dotations sur frais de developpement actives (comptes 203100) pour eviter double emploi avec les depenses de personnel deja incluses."
+    },
+    "total_assiette_brute": 668556.32,
+    "subventions_publiques_a_deduire": {
+      "subventions_remboursables": 0.00,
+      "subventions_non_remboursables": 0.00,
+      "montant_deduit": 0.00,
+      "commentaire": "Aucune subvention publique R&D percue sur l'exercice 2025."
+    },
+    "depenses_prestataires_conseils_cir_a_deduire": {
+      "honoraires_cabinet_conseil": 12000.00,
+      "commentaire": "Honoraires cabinet conseil CIR a deduire de l'assiette (art. 244 quater B CGI)."
+    },
+    "assiette_cir_nette": 656556.32
+  },
+  "calcul_credit": {
+    "tranche_1": {
+      "seuil_min": 0.00,
+      "seuil_max": 100000000.00,
+      "taux": 0.30,
+      "assiette_tranche": 656556.32,
+      "credit": 196966.90
+    },
+    "tranche_2": {
+      "seuil_min": 100000000.00,
+      "seuil_max": null,
+      "taux": 0.05,
+      "assiette_tranche": 0.00,
+      "credit": 0.00
+    },
+    "credit_cir_total": 196966.90
+  },
+  "imputation_et_remboursement": {
+    "is_exercice_2025_estime": 48000.00,
+    "imputation_sur_is": 48000.00,
+    "credit_restant_apres_imputation": 148966.90,
+    "regime_pme_communautaire": {
+      "eligible": true,
+      "remboursement_immediat": true,
+      "demande_n2072_prevue": true,
+      "montant_a_rembourser": 148966.90
+    },
+    "commentaire": "Propello etant PME communautaire, demande de remboursement immediat du credit non impute sur l'IS (CERFA 2573-SD)."
+  },
+  "comparatif_historique": [
+    {
+      "exercice": "2022",
+      "assiette": 285400.00,
+      "credit_cir": 85620.00
+    },
+    {
+      "exercice": "2023",
+      "assiette": 412750.00,
+      "credit_cir": 123825.00
+    },
+    {
+      "exercice": "2024",
+      "assiette": 547330.00,
+      "credit_cir": 164199.00
+    },
+    {
+      "exercice": "2025",
+      "assiette": 656556.32,
+      "credit_cir": 196966.90
+    }
+  ],
+  "dossier_justificatif": {
+    "statut": "constitue_en_interne",
+    "pieces": [
+      "Note methodologique de calcul",
+      "Fiches techniques par projet R&D (3 fiches)",
+      "Etats des depenses de personnel detaillees",
+      "Feuilles de temps validees par les managers",
+      "Releves d'abonnements veille technologique",
+      "Organigramme R&D et CV des chercheurs"
+    ],
+    "date_cloture_dossier": "2026-03-31"
+  },
+  "risques_et_points_attention": [
+    "Securiser la documentation des verrous scientifiques/techniques pour chaque projet (controle fiscal potentiel a J+3 ans).",
+    "Justifier la quote-part temps R&D des profils mixtes (CTO, Lead Dev) avec comptes-rendus mensuels detailles.",
+    "Conserver les CV et diplomes des chercheurs pour demontrer les qualifications.",
+    "Arbitrage activation vs CIR : les depenses activees en compte 203 ne doivent pas faire doublon dans l'assiette CIR."
+  ]
+}

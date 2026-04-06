@@ -1,7 +1,7 @@
 {
   "company": "Mécaform",
-  "last_updated": "2025-12-31",
-  "detailed_employees": [
+  "last_updated": "2026-04-05",
+  "employees": [
     {
       "id": "MF-001",
       "first_name": "Philippe",
@@ -21,12 +21,21 @@
       "annual_days": 218,
       "base_salary_monthly": 8500,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 110 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 110
+        },
         "tickets_restaurant": null,
         "transport": null,
-        "vehicle": { "type": "véhicule de fonction", "monthly_value": 450 }
+        "vehicle": {
+          "type": "véhicule de fonction",
+          "monthly_value": 450
+        }
       },
-      "annual_bonus": { "type": "prime_annuelle", "amount": 15000 }
+      "annual_bonus": {
+        "type": "prime_annuelle",
+        "amount": 15000
+      }
     },
     {
       "id": "MF-002",
@@ -47,12 +56,22 @@
       "annual_days": 218,
       "base_salary_monthly": 6200,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 95 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 95
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_annuelle", "amount": 8000 }
+      "annual_bonus": {
+        "type": "prime_annuelle",
+        "amount": 8000
+      }
     },
     {
       "id": "MF-003",
@@ -73,12 +92,22 @@
       "annual_days": 218,
       "base_salary_monthly": 5800,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 95 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 95
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_annuelle", "amount": 6000 }
+      "annual_bonus": {
+        "type": "prime_annuelle",
+        "amount": 6000
+      }
     },
     {
       "id": "MF-004",
@@ -99,12 +128,25 @@
       "annual_days": 218,
       "base_salary_monthly": 5500,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 95 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 95
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
-        "vehicle": { "type": "véhicule de fonction", "monthly_value": 380 }
+        "vehicle": {
+          "type": "véhicule de fonction",
+          "monthly_value": 380
+        }
       },
-      "annual_bonus": { "type": "commission", "target_annual": 20000 }
+      "annual_bonus": {
+        "type": "commission",
+        "target_annual": 20000
+      }
     },
     {
       "id": "MF-005",
@@ -125,12 +167,22 @@
       "annual_days": 218,
       "base_salary_monthly": 4200,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 85 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 85
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_annuelle", "amount": 3000 }
+      "annual_bonus": {
+        "type": "prime_annuelle",
+        "amount": 3000
+      }
     },
     {
       "id": "MF-006",
@@ -151,12 +203,22 @@
       "annual_days": 218,
       "base_salary_monthly": 4500,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 85 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 85
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_annuelle", "amount": 3000 }
+      "annual_bonus": {
+        "type": "prime_annuelle",
+        "amount": 3000
+      }
     },
     {
       "id": "MF-007",
@@ -177,12 +239,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 3400,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 75 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 75
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_production", "amount": 2400 }
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 2400
+      }
     },
     {
       "id": "MF-008",
@@ -203,12 +275,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 3300,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 75 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 75
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_production", "amount": 2400 }
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 2400
+      }
     },
     {
       "id": "MF-009",
@@ -229,12 +311,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 3200,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 75 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 75
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_production", "amount": 2400 }
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 2400
+      }
     },
     {
       "id": "MF-010",
@@ -255,12 +347,22 @@
       "annual_days": 218,
       "base_salary_monthly": 4600,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 85 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 85
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_annuelle", "amount": 3500 }
+      "annual_bonus": {
+        "type": "prime_annuelle",
+        "amount": 3500
+      }
     },
     {
       "id": "MF-011",
@@ -281,12 +383,22 @@
       "annual_days": 218,
       "base_salary_monthly": 3800,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 85 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 85
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-012",
@@ -306,12 +418,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2800,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-013",
@@ -331,12 +453,22 @@
       "working_time": "35h",
       "base_salary_monthly": 3100,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-014",
@@ -357,12 +489,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 3500,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 75 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 75
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_astreinte", "amount": 3600 }
+      "annual_bonus": {
+        "type": "prime_astreinte",
+        "amount": 3600
+      }
     },
     {
       "id": "MF-015",
@@ -383,12 +525,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 2700,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_astreinte", "amount": 2400 }
+      "annual_bonus": {
+        "type": "prime_astreinte",
+        "amount": 2400
+      }
     },
     {
       "id": "MF-016",
@@ -409,12 +561,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 2600,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_astreinte", "amount": 2400 }
+      "annual_bonus": {
+        "type": "prime_astreinte",
+        "amount": 2400
+      }
     },
     {
       "id": "MF-017",
@@ -435,12 +597,25 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 2900,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 75 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 75
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
-        "vehicle": { "type": "véhicule de service", "monthly_value": 350 }
+        "vehicle": {
+          "type": "véhicule de service",
+          "monthly_value": 350
+        }
       },
-      "annual_bonus": { "type": "commission", "target_annual": 12000 }
+      "annual_bonus": {
+        "type": "commission",
+        "target_annual": 12000
+      }
     },
     {
       "id": "MF-018",
@@ -461,12 +636,25 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 2800,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 75 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 75
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
-        "vehicle": { "type": "véhicule de service", "monthly_value": 350 }
+        "vehicle": {
+          "type": "véhicule de service",
+          "monthly_value": 350
+        }
       },
-      "annual_bonus": { "type": "commission", "target_annual": 12000 }
+      "annual_bonus": {
+        "type": "commission",
+        "target_annual": 12000
+      }
     },
     {
       "id": "MF-019",
@@ -486,12 +674,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2400,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-020",
@@ -511,12 +709,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2650,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-021",
@@ -536,12 +744,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2800,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-022",
@@ -561,12 +779,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2200,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 55 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-023",
@@ -586,12 +814,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2500,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-024",
@@ -612,12 +850,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 3100,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 75 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 75
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-025",
@@ -637,12 +885,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2100,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 55 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-026",
@@ -663,12 +921,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 2800,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_production", "amount": 1800 }
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
     },
     {
       "id": "MF-027",
@@ -689,12 +957,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 2500,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_production", "amount": 1800 }
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
     },
     {
       "id": "MF-028",
@@ -715,12 +993,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 2600,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_production", "amount": 1800 }
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
     },
     {
       "id": "MF-029",
@@ -741,12 +1029,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 2200,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 55 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_production", "amount": 1200 }
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1200
+      }
     },
     {
       "id": "MF-030",
@@ -767,12 +1065,22 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 2150,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 55 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_production", "amount": 1200 }
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1200
+      }
     },
     {
       "id": "MF-031",
@@ -792,12 +1100,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2600,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": "prime_annuelle", "amount": 1500 }
+      "annual_bonus": {
+        "type": "prime_annuelle",
+        "amount": 1500
+      }
     },
     {
       "id": "MF-032",
@@ -817,12 +1135,22 @@
       "working_time": "35h",
       "base_salary_monthly": 1100,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 55 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 15 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 15
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-033",
@@ -842,12 +1170,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2000,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 55 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-034",
@@ -867,12 +1205,22 @@
       "working_time": "35h",
       "base_salary_monthly": 2600,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 65 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 65
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
         "transport": null,
         "vehicle": null
       },
-      "annual_bonus": { "type": null, "amount": null }
+      "annual_bonus": {
+        "type": null,
+        "amount": null
+      }
     },
     {
       "id": "MF-035",
@@ -893,44 +1241,1717 @@
       "heures_supp_structurelles": 4,
       "base_salary_monthly": 3000,
       "benefits": {
-        "mutuelle": { "employer_pct": 60, "monthly_total": 75 },
-        "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 },
-        "transport": null,
-        "vehicle": { "type": "véhicule de service", "monthly_value": 350 }
-      },
-      "annual_bonus": { "type": "commission", "target_annual": 12000 }
-    }
-  ],
-  "workforce_summary": {
-    "total_headcount": 82,
-    "detailed_above": 35,
-    "remaining_production_operators": {
-      "count": 47,
-      "department": "Production",
-      "typical_profile": {
-        "contract_type": "CDI",
-        "status": "non_cadre",
-        "classification_range": "A2 à C7",
-        "coefficient_range": "25-45",
-        "working_time": "39h",
-        "heures_supp_structurelles": 4,
-        "salary_range_monthly": { "min": 1900, "max": 2800 },
-        "average_salary_monthly": 2300,
-        "benefits": {
-          "mutuelle": { "employer_pct": 60, "monthly_total": 55 },
-          "tickets_restaurant": { "face_value": 8.00, "employer_pct": 60, "days_per_month": 20 }
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 75
         },
-        "annual_bonus": { "type": "prime_production", "range": "1000-1800" },
-        "average_seniority_years": 8
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": {
+          "type": "véhicule de service",
+          "monthly_value": 350
+        }
       },
-      "roles_breakdown": [
-        { "role": "Opérateur régleur CNC", "count": 14 },
-        { "role": "Opérateur usinage conventionnel", "count": 10 },
-        { "role": "Soudeur TIG/MIG", "count": 8 },
-        { "role": "Opérateur assemblage", "count": 6 },
-        { "role": "Opérateur contrôle / finition", "count": 5 },
-        { "role": "Manutentionnaire / cariste", "count": 4 }
-      ]
+      "annual_bonus": {
+        "type": "commission",
+        "target_annual": 12000
+      }
+    },
+    {
+      "id": "MF-036",
+      "first_name": "Thierry",
+      "last_name": "Garcia",
+      "date_of_birth": "1969-09-17",
+      "social_security_number": "1690969234100",
+      "hire_date": "2015-11-18",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 42,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2650,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1550
+      }
+    },
+    {
+      "id": "MF-037",
+      "first_name": "Philippe",
+      "last_name": "Masson",
+      "date_of_birth": "1964-08-04",
+      "social_security_number": "1640869234101",
+      "hire_date": "2014-04-23",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 42,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2700,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1600
+      }
+    },
+    {
+      "id": "MF-038",
+      "first_name": "Christine",
+      "last_name": "Girard",
+      "date_of_birth": "1987-07-24",
+      "social_security_number": "2870769234102",
+      "hire_date": "2015-04-05",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 42,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2650,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1550
+      }
+    },
+    {
+      "id": "MF-039",
+      "first_name": "Mustapha",
+      "last_name": "Ferreira",
+      "date_of_birth": "1972-10-09",
+      "social_security_number": "1721069234103",
+      "hire_date": "2020-05-06",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 38,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2500,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1250
+      }
+    },
+    {
+      "id": "MF-040",
+      "first_name": "Antonio",
+      "last_name": "Garcia",
+      "date_of_birth": "1981-03-01",
+      "social_security_number": "1810369234104",
+      "hire_date": "2020-09-08",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 38,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2500,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1250
+      }
+    },
+    {
+      "id": "MF-041",
+      "first_name": "Corinne",
+      "last_name": "Henry",
+      "date_of_birth": "1962-03-08",
+      "social_security_number": "2620369234105",
+      "hire_date": "2011-02-17",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 44,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2750,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1750
+      }
+    },
+    {
+      "id": "MF-042",
+      "first_name": "Mohamed",
+      "last_name": "Henry",
+      "date_of_birth": "1988-05-23",
+      "social_security_number": "1880569234106",
+      "hire_date": "2012-09-09",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 44,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2750,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1700
+      }
+    },
+    {
+      "id": "MF-043",
+      "first_name": "Abdelkader",
+      "last_name": "Benali",
+      "date_of_birth": "1984-12-11",
+      "social_security_number": "1841269234107",
+      "hire_date": "2004-03-20",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 45,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2800,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
+    },
+    {
+      "id": "MF-044",
+      "first_name": "Laurent",
+      "last_name": "Rolland",
+      "date_of_birth": "1980-03-19",
+      "social_security_number": "1800369234108",
+      "hire_date": "2019-11-22",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 39,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2550,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1300
+      }
+    },
+    {
+      "id": "MF-045",
+      "first_name": "Laurent",
+      "last_name": "Ferreira",
+      "date_of_birth": "2002-04-10",
+      "social_security_number": "1020469234109",
+      "hire_date": "2022-11-10",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 37,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2450,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1150
+      }
+    },
+    {
+      "id": "MF-046",
+      "first_name": "Vincent",
+      "last_name": "Michel",
+      "date_of_birth": "2002-08-14",
+      "social_security_number": "1020869234110",
+      "hire_date": "2024-11-20",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 36,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2400,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1050
+      }
+    },
+    {
+      "id": "MF-047",
+      "first_name": "Nathalie",
+      "last_name": "Lambert",
+      "date_of_birth": "1963-05-09",
+      "social_security_number": "2630569234111",
+      "hire_date": "2018-11-10",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 40,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2600,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1350
+      }
+    },
+    {
+      "id": "MF-048",
+      "first_name": "Saïd",
+      "last_name": "Benali",
+      "date_of_birth": "1971-04-23",
+      "social_security_number": "1710469234112",
+      "hire_date": "2025-01-25",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 35,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2400,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1000
+      }
+    },
+    {
+      "id": "MF-049",
+      "first_name": "Laurent",
+      "last_name": "Lambert",
+      "date_of_birth": "1998-01-23",
+      "social_security_number": "1980169234113",
+      "hire_date": "2020-01-08",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur régleur CNC",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 38,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2500,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1250
+      }
+    },
+    {
+      "id": "MF-050",
+      "first_name": "Laurent",
+      "last_name": "Leroy",
+      "date_of_birth": "1970-08-06",
+      "social_security_number": "1700869234114",
+      "hire_date": "2025-04-02",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 28,
+      "classification": "B4",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2100,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1000
+      }
+    },
+    {
+      "id": "MF-051",
+      "first_name": "Saïd",
+      "last_name": "Thomas",
+      "date_of_birth": "1973-04-02",
+      "social_security_number": "1730469234115",
+      "hire_date": "2018-03-26",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 33,
+      "classification": "B4",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2250,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1350
+      }
+    },
+    {
+      "id": "MF-052",
+      "first_name": "Céline",
+      "last_name": "Dupuis",
+      "date_of_birth": "1968-01-08",
+      "social_security_number": "2680169234116",
+      "hire_date": "2022-06-07",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 30,
+      "classification": "B4",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2150,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1150
+      }
+    },
+    {
+      "id": "MF-053",
+      "first_name": "Philippe",
+      "last_name": "Lambert",
+      "date_of_birth": "1968-10-05",
+      "social_security_number": "1681069234117",
+      "hire_date": "2004-12-25",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 38,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2400,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
+    },
+    {
+      "id": "MF-054",
+      "first_name": "Hervé",
+      "last_name": "Gauthier",
+      "date_of_birth": "1991-04-03",
+      "social_security_number": "1910469234118",
+      "hire_date": "2019-04-10",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 32,
+      "classification": "B4",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2200,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1300
+      }
+    },
+    {
+      "id": "MF-055",
+      "first_name": "Dragan",
+      "last_name": "Robert",
+      "date_of_birth": "1965-09-23",
+      "social_security_number": "1650969234119",
+      "hire_date": "2005-01-17",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 38,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2400,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
+    },
+    {
+      "id": "MF-056",
+      "first_name": "Anthony",
+      "last_name": "Bonnet",
+      "date_of_birth": "1978-11-05",
+      "social_security_number": "1781169234120",
+      "hire_date": "2010-10-20",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 38,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2400,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
+    },
+    {
+      "id": "MF-057",
+      "first_name": "Maxime",
+      "last_name": "Robert",
+      "date_of_birth": "1965-11-06",
+      "social_security_number": "1651169234121",
+      "hire_date": "2013-03-02",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 36,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2350,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1650
+      }
+    },
+    {
+      "id": "MF-058",
+      "first_name": "Miguel",
+      "last_name": "Amrani",
+      "date_of_birth": "1994-09-12",
+      "social_security_number": "1940969234122",
+      "hire_date": "2023-06-08",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 29,
+      "classification": "B4",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2150,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1100
+      }
+    },
+    {
+      "id": "MF-059",
+      "first_name": "Florian",
+      "last_name": "Gonzalez",
+      "date_of_birth": "1982-11-28",
+      "social_security_number": "1821169234123",
+      "hire_date": "2003-04-27",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur usinage conventionnel",
+      "department": "Production",
+      "manager_id": "MF-007",
+      "status": "non_cadre",
+      "coefficient": 38,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2400,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
+    },
+    {
+      "id": "MF-060",
+      "first_name": "Julien",
+      "last_name": "Da Silva",
+      "date_of_birth": "2002-08-01",
+      "social_security_number": "1020869234124",
+      "hire_date": "2022-07-15",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Soudeur TIG/MIG",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 34,
+      "classification": "B5",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2300,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1150
+      }
+    },
+    {
+      "id": "MF-061",
+      "first_name": "Carlos",
+      "last_name": "Vincent",
+      "date_of_birth": "1963-09-28",
+      "social_security_number": "1630969234125",
+      "hire_date": "2006-11-26",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Soudeur TIG/MIG",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 42,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2600,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
+    },
+    {
+      "id": "MF-062",
+      "first_name": "Nathalie",
+      "last_name": "David",
+      "date_of_birth": "1959-03-02",
+      "social_security_number": "2590369234126",
+      "hire_date": "2011-04-25",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Soudeur TIG/MIG",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 41,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2600,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1750
+      }
+    },
+    {
+      "id": "MF-063",
+      "first_name": "Nadia",
+      "last_name": "Costa",
+      "date_of_birth": "1968-06-26",
+      "social_security_number": "2680669234127",
+      "hire_date": "2017-02-18",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Soudeur TIG/MIG",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 37,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2450,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1450
+      }
+    },
+    {
+      "id": "MF-064",
+      "first_name": "Olivier",
+      "last_name": "Michel",
+      "date_of_birth": "1964-08-08",
+      "social_security_number": "1640869234128",
+      "hire_date": "2013-03-27",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Soudeur TIG/MIG",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 40,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2550,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1650
+      }
+    },
+    {
+      "id": "MF-065",
+      "first_name": "Saïd",
+      "last_name": "Rousseau",
+      "date_of_birth": "1978-02-06",
+      "social_security_number": "1780269234129",
+      "hire_date": "2013-07-05",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Soudeur TIG/MIG",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 40,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2550,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1650
+      }
+    },
+    {
+      "id": "MF-066",
+      "first_name": "Miguel",
+      "last_name": "Popescu",
+      "date_of_birth": "1993-02-25",
+      "social_security_number": "1930269234130",
+      "hire_date": "2011-11-21",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Soudeur TIG/MIG",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 41,
+      "classification": "C7",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2600,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1750
+      }
+    },
+    {
+      "id": "MF-067",
+      "first_name": "Bernard",
+      "last_name": "Vincent",
+      "date_of_birth": "1972-05-08",
+      "social_security_number": "1720569234131",
+      "hire_date": "2018-06-08",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Soudeur TIG/MIG",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 37,
+      "classification": "B5",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2400,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1350
+      }
+    },
+    {
+      "id": "MF-068",
+      "first_name": "Julien",
+      "last_name": "Bertrand",
+      "date_of_birth": "1976-07-09",
+      "social_security_number": "1760769234132",
+      "hire_date": "2022-12-21",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur assemblage",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 27,
+      "classification": "A2",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2100,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1150
+      }
+    },
+    {
+      "id": "MF-069",
+      "first_name": "Philippe",
+      "last_name": "Bertrand",
+      "date_of_birth": "1983-08-21",
+      "social_security_number": "1830869234133",
+      "hire_date": "2021-10-21",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur assemblage",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 28,
+      "classification": "A2",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2100,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1200
+      }
+    },
+    {
+      "id": "MF-070",
+      "first_name": "Nicolas",
+      "last_name": "Gauthier",
+      "date_of_birth": "1991-11-23",
+      "social_security_number": "1911169234134",
+      "hire_date": "2019-05-24",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur assemblage",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 29,
+      "classification": "A2",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2150,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1300
+      }
+    },
+    {
+      "id": "MF-071",
+      "first_name": "Bernard",
+      "last_name": "Masson",
+      "date_of_birth": "1984-05-08",
+      "social_security_number": "1840569234135",
+      "hire_date": "2025-05-14",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur assemblage",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 25,
+      "classification": "A2",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2000,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1000
+      }
+    },
+    {
+      "id": "MF-072",
+      "first_name": "Joao",
+      "last_name": "Laurent",
+      "date_of_birth": "1995-10-14",
+      "social_security_number": "1951069234136",
+      "hire_date": "2024-09-16",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur assemblage",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 26,
+      "classification": "A2",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2050,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1050
+      }
+    },
+    {
+      "id": "MF-073",
+      "first_name": "Jean-Luc",
+      "last_name": "Bernard",
+      "date_of_birth": "1981-02-24",
+      "social_security_number": "1810269234137",
+      "hire_date": "2012-12-15",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur assemblage",
+      "department": "Production",
+      "manager_id": "MF-008",
+      "status": "non_cadre",
+      "coefficient": 34,
+      "classification": "B5",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2250,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1700
+      }
+    },
+    {
+      "id": "MF-074",
+      "first_name": "Carlos",
+      "last_name": "Simon",
+      "date_of_birth": "2002-06-02",
+      "social_security_number": "1020669234138",
+      "hire_date": "2020-10-10",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur contrôle / finition",
+      "department": "Production",
+      "manager_id": "MF-009",
+      "status": "non_cadre",
+      "coefficient": 33,
+      "classification": "B4",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2250,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1250
+      }
+    },
+    {
+      "id": "MF-075",
+      "first_name": "Philippe",
+      "last_name": "Gauthier",
+      "date_of_birth": "2001-03-08",
+      "social_security_number": "1010369234139",
+      "hire_date": "2019-07-04",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur contrôle / finition",
+      "department": "Production",
+      "manager_id": "MF-009",
+      "status": "non_cadre",
+      "coefficient": 34,
+      "classification": "B4",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2250,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1300
+      }
+    },
+    {
+      "id": "MF-076",
+      "first_name": "Amina",
+      "last_name": "Costa",
+      "date_of_birth": "1976-02-07",
+      "social_security_number": "2760269234140",
+      "hire_date": "2006-09-12",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur contrôle / finition",
+      "department": "Production",
+      "manager_id": "MF-009",
+      "status": "non_cadre",
+      "coefficient": 40,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2450,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
+    },
+    {
+      "id": "MF-077",
+      "first_name": "Carlos",
+      "last_name": "Popescu",
+      "date_of_birth": "1977-04-11",
+      "social_security_number": "1770469234141",
+      "hire_date": "2016-05-05",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur contrôle / finition",
+      "department": "Production",
+      "manager_id": "MF-009",
+      "status": "non_cadre",
+      "coefficient": 36,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2300,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1500
+      }
+    },
+    {
+      "id": "MF-078",
+      "first_name": "Bernard",
+      "last_name": "Haddad",
+      "date_of_birth": "1962-07-20",
+      "social_security_number": "1620769234142",
+      "hire_date": "2016-09-27",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Opérateur contrôle / finition",
+      "department": "Production",
+      "manager_id": "MF-009",
+      "status": "non_cadre",
+      "coefficient": 36,
+      "classification": "C6",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2300,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1500
+      }
+    },
+    {
+      "id": "MF-079",
+      "first_name": "Thierry",
+      "last_name": "Moreau",
+      "date_of_birth": "2001-07-10",
+      "social_security_number": "1010769234143",
+      "hire_date": "2021-11-11",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Manutentionnaire / cariste",
+      "department": "Logistique",
+      "manager_id": "MF-024",
+      "status": "non_cadre",
+      "coefficient": 27,
+      "classification": "A2",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2050,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1200
+      }
+    },
+    {
+      "id": "MF-080",
+      "first_name": "Mohamed",
+      "last_name": "Nguyen",
+      "date_of_birth": "1996-10-18",
+      "social_security_number": "1961069234144",
+      "hire_date": "2022-01-13",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Manutentionnaire / cariste",
+      "department": "Logistique",
+      "manager_id": "MF-024",
+      "status": "non_cadre",
+      "coefficient": 26,
+      "classification": "A2",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2050,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1150
+      }
+    },
+    {
+      "id": "MF-081",
+      "first_name": "Michel",
+      "last_name": "Alves",
+      "date_of_birth": "1973-06-23",
+      "social_security_number": "1730669234145",
+      "hire_date": "2012-03-26",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Manutentionnaire / cariste",
+      "department": "Logistique",
+      "manager_id": "MF-024",
+      "status": "non_cadre",
+      "coefficient": 31,
+      "classification": "B4",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2150,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1700
+      }
+    },
+    {
+      "id": "MF-082",
+      "first_name": "Alain",
+      "last_name": "Costa",
+      "date_of_birth": "1957-06-18",
+      "social_security_number": "1570669234146",
+      "hire_date": "2003-02-06",
+      "end_date": null,
+      "contract_type": "CDI",
+      "job_title": "Manutentionnaire / cariste",
+      "department": "Logistique",
+      "manager_id": "MF-024",
+      "status": "non_cadre",
+      "coefficient": 32,
+      "classification": "B4",
+      "working_time": "39h",
+      "heures_supp_structurelles": 4,
+      "base_salary_monthly": 2200,
+      "benefits": {
+        "mutuelle": {
+          "employer_pct": 60,
+          "monthly_total": 55
+        },
+        "tickets_restaurant": {
+          "face_value": 8,
+          "employer_pct": 60,
+          "days_per_month": 20
+        },
+        "transport": null,
+        "vehicle": null
+      },
+      "annual_bonus": {
+        "type": "prime_production",
+        "amount": 1800
+      }
     }
-  }
+  ]
 }

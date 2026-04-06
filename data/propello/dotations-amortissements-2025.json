@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "company": "Propello SAS",
+    "exercice": "2025",
+    "description": "Journal mensuel des dotations aux amortissements 2025 — ecritures comptables detaillees par immobilisation.",
+    "methode_generale": "Lineaire au prorata temporis mensuel",
+    "compte_dotation_principal": "681120",
+    "reference_registre": "immobilisations.json"
+  },
+  "dotations_mensuelles_par_immobilisation": [
+    {
+      "id_immobilisation": "IMM-002",
+      "label": "R&D activee — Propello v2.0",
+      "compte_amortissement": "280310",
+      "dotation_mensuelle": 5000.00,
+      "mois_amortis_en_2025": 12,
+      "dotation_annuelle_2025": 60000.00,
+      "statut_fin_2025": "totalement_amorti"
+    },
+    {
+      "id_immobilisation": "IMM-003",
+      "label": "R&D activee — Propello v3.0",
+      "compte_amortissement": "280310",
+      "dotation_mensuelle": 6111.11,
+      "mois_amortis_en_2025": 12,
+      "dotation_annuelle_2025": 73333.33,
+      "statut_fin_2025": "en_cours"
+    },
+    {
+      "id_immobilisation": "IMM-004",
+      "label": "R&D activee — Propello v4.0",
+      "compte_amortissement": "280310",
+      "dotation_mensuelle": 7222.22,
+      "mois_amortis_en_2025": 12,
+      "dotation_annuelle_2025": 86666.67,
+      "statut_fin_2025": "en_cours"
+    },
+    {
+      "id_immobilisation": "IMM-005",
+      "label": "MacBook Pro 14\" M2 Pro (lot de 5)",
+      "compte_amortissement": "281830",
+      "dotation_mensuelle": 415.28,
+      "mois_amortis_en_2025": 9,
+      "dotation_annuelle_2025": 3737.50,
+      "statut_fin_2025": "fin_amortissement_sept_2025",
+      "note": "Dotation stoppee fin septembre 2025 — duree d'amortissement atteinte."
+    },
+    {
+      "id_immobilisation": "IMM-006",
+      "label": "MacBook Pro 14\" M3 Pro (lot de 5)",
+      "compte_amortissement": "281830",
+      "dotation_mensuelle": 429.17,
+      "mois_amortis_en_2025": 12,
+      "dotation_annuelle_2025": 5150.00,
+      "statut_fin_2025": "en_cours"
+    },
+    {
+      "id_immobilisation": "IMM-007",
+      "label": "MacBook Pro 16\" M3 Max (lot de 3)",
+      "compte_amortissement": "281830",
+      "dotation_mensuelle": 315.83,
+      "mois_amortis_en_2025": 12,
+      "dotation_annuelle_2025": 3790.00,
+      "statut_fin_2025": "en_cours"
+    },
+    {
+      "id_immobilisation": "IMM-008",
+      "label": "Ecrans LG UltraFine 27\" 4K (lot de 10)",
+      "compte_amortissement": "281830",
+      "dotation_mensuelle": 152.50,
+      "mois_amortis_en_2025": 9,
+      "dotation_annuelle_2025": 1372.50,
+      "statut_fin_2025": "totalement_amorti_sept_2025"
+    },
+    {
+      "id_immobilisation": "IMM-009",
+      "label": "Ecrans Dell UltraSharp 27\" 4K (lot de 8)",
+      "compte_amortissement": "281830",
+      "dotation_mensuelle": 133.11,
+      "mois_amortis_en_2025": 12,
+      "dotation_annuelle_2025": 1597.33,
+      "statut_fin_2025": "en_cours"
+    },
+    {
+      "id_immobilisation": "IMM-010",
+      "label": "Mobilier coworking",
+      "compte_amortissement": "281840",
+      "dotation_mensuelle": 308.33,
+      "mois_amortis_en_2025": 12,
+      "dotation_annuelle_2025": 3700.00,
+      "statut_fin_2025": "en_cours"
+    },
+    {
+      "id_immobilisation": "IMM-011",
+      "label": "Mobilier complementaire 2024",
+      "compte_amortissement": "281840",
+      "dotation_mensuelle": 205.00,
+      "mois_amortis_en_2025": 12,
+      "dotation_annuelle_2025": 2460.00,
+      "statut_fin_2025": "en_cours"
+    },
+    {
+      "id_immobilisation": "IMM-012",
+      "label": "Licence perpetuelle Datadog Enterprise",
+      "compte_amortissement": "280510",
+      "dotation_mensuelle": 666.67,
+      "mois_amortis_en_2025": 12,
+      "dotation_annuelle_2025": 8000.00,
+      "statut_fin_2025": "en_cours"
+    }
+  ],
+  "journal_ecritures_mensuelles": [
+    {
+      "mois": "2025-01",
+      "libelle": "Dotations aux amortissements janvier 2025",
+      "ecritures": [
+        { "compte": "681120", "libelle": "DAP incorporelles 203", "debit": 18333.33, "credit": 0.00 },
+        { "compte": "681120", "libelle": "DAP logiciels 205", "debit": 666.67, "credit": 0.00 },
+        { "compte": "681120", "libelle": "DAP materiel info 2183", "debit": 1445.89, "credit": 0.00 },
+        { "compte": "681120", "libelle": "DAP mobilier 2184", "debit": 513.33, "credit": 0.00 },
+        { "compte": "280310", "libelle": "Amort. frais developpement", "debit": 0.00, "credit": 18333.33 },
+        { "compte": "280510", "libelle": "Amort. logiciels", "debit": 0.00, "credit": 666.67 },
+        { "compte": "281830", "libelle": "Amort. materiel info", "debit": 0.00, "credit": 1445.89 },
+        { "compte": "281840", "libelle": "Amort. mobilier", "debit": 0.00, "credit": 513.33 }
+      ],
+      "total_debit": 20959.22,
+      "total_credit": 20959.22
+    },
+    {
+      "mois": "2025-02",
+      "total_debit": 20959.22,
+      "total_credit": 20959.22,
+      "note": "Meme structure d'ecriture que janvier."
+    },
+    {
+      "mois": "2025-03",
+      "total_debit": 20959.22,
+      "total_credit": 20959.22
+    },
+    {
+      "mois": "2025-04",
+      "total_debit": 20959.22,
+      "total_credit": 20959.22
+    },
+    {
+      "mois": "2025-05",
+      "total_debit": 20959.22,
+      "total_credit": 20959.22
+    },
+    {
+      "mois": "2025-06",
+      "total_debit": 20959.22,
+      "total_credit": 20959.22
+    },
+    {
+      "mois": "2025-07",
+      "total_debit": 20959.22,
+      "total_credit": 20959.22
+    },
+    {
+      "mois": "2025-08",
+      "total_debit": 20959.22,
+      "total_credit": 20959.22
+    },
+    {
+      "mois": "2025-09",
+      "total_debit": 20959.22,
+      "total_credit": 20959.22,
+      "note": "Derniere dotation pour IMM-005 (MacBook M2) et IMM-008 (ecrans LG) — fin amortissement."
+    },
+    {
+      "mois": "2025-10",
+      "total_debit": 20391.44,
+      "total_credit": 20391.44,
+      "note": "Sortie des dotations IMM-005 (415.28 EUR) et IMM-008 (152.50 EUR)."
+    },
+    {
+      "mois": "2025-11",
+      "total_debit": 20391.44,
+      "total_credit": 20391.44
+    },
+    {
+      "mois": "2025-12",
+      "total_debit": 20391.44,
+      "total_credit": 20391.44
+    }
+  ],
+  "recap_annuel": {
+    "dotation_totale_2025": 249807.33,
+    "ventilation_par_categorie": {
+      "immobilisations_incorporelles_203": 220000.00,
+      "logiciels_205": 8000.00,
+      "materiel_informatique_2183": 15647.33,
+      "mobilier_2184": 6160.00
+    },
+    "ventilation_par_compte_amortissement": {
+      "280310": 220000.00,
+      "280510": 8000.00,
+      "281830": 15647.33,
+      "281840": 6160.00
+    },
+    "nombre_immobilisations_actives": 11,
+    "immobilisations_sorties_amortissement_2025": ["IMM-005", "IMM-008"],
+    "immobilisations_amortissement_complet_2025": ["IMM-002"]
+  },
+  "quote_part_rd_pour_cir": {
+    "note": "Les dotations R&D activee (compte 280310) ne sont pas integrees a l'assiette CIR pour eviter le doublon avec les depenses de personnel R&D. Seules les dotations sur materiels affectes R&D (MacBook + ecrans) sont integrees a l'assiette CIR a hauteur de 45% (quote-part usage R&D).",
+    "dotations_materiels_rd_eligible_cir": {
+      "IMM-006_quote_part_45pct": 2317.50,
+      "IMM-007_quote_part_45pct": 1705.50,
+      "IMM-009_quote_part_45pct": 718.80,
+      "total": 4741.80
+    },
+    "traitement_cir": "Ce montant (x 1.75 avec majoration forfaitaire) est repris dans cir-synthese-2025.json, ligne D."
+  }
+}

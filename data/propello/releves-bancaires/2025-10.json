@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "bank": "Qonto",
+    "iban": "FR7630006000011234567890125",
+    "bic": "QNTOFRP1XXX",
+    "compte": "Propello SAS — Compte courant principal",
+    "periode": "2025-10",
+    "devise": "EUR"
+  },
+  "solde_debut": 2839363.28,
+  "solde_fin": 2954912.31,
+  "mouvements": [
+    {
+      "date": "20251005",
+      "libelle": "Remboursement pret BPI Octobre",
+      "reference": "BQ-10-BPI",
+      "debit": 3750,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20251015",
+      "libelle": "Paiement URSSAF Septembre 2025",
+      "reference": "BQ-10-URSSAF",
+      "debit": 49624.27,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20251015",
+      "libelle": "Paiement AGIRC-ARRCO Septembre 2025",
+      "reference": "BQ-10-RET",
+      "debit": 13644.59,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20251015",
+      "libelle": "Paiement mutuelle/prevoyance Septembre 2025",
+      "reference": "BQ-10-PREV",
+      "debit": 4436,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20251015",
+      "libelle": "Paiement PAS Septembre 2025",
+      "reference": "BQ-10-PAS",
+      "debit": 8210.27,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20251020",
+      "libelle": "Encaissements clients Octobre 2025",
+      "reference": "BQ-10-ENC",
+      "debit": 0,
+      "credit": 358080,
+      "type": "credit",
+      "reconciled": true
+    },
+    {
+      "date": "20251020",
+      "libelle": "Paiement TVA Septembre 2025",
+      "reference": "BQ-10-TVA",
+      "debit": 53610,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20251025",
+      "libelle": "Paiement fournisseurs Octobre 2025",
+      "reference": "BQ-10-FRN",
+      "debit": 31040,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20251031",
+      "libelle": "Virement salaires Octobre 2025",
+      "reference": "BQ-10-SAL",
+      "debit": 78215.84,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    }
+  ],
+  "rapprochement": {
+    "total_mouvements": 9,
+    "mouvements_rapproches": 9,
+    "mouvements_non_rapproches": 0,
+    "ecart_rapprochement": 0
+  }
+}

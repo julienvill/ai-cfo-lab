@@ -1,0 +1,585 @@
+{
+  "metadata": {
+    "company": "Propello",
+    "generated_at": "2025-12-31",
+    "description": "Fichier clients principaux — top 20 comptes representant ~60% du MRR. Les ~175 autres clients sont des comptes Starter (199 EUR/mois) geres en portefeuille.",
+    "total_active_customers_dec_2025": 197,
+    "total_mrr_dec_2025": 305800
+  },
+  "clients": [
+    {
+      "id": "CLI-001",
+      "company_name": "Groupe Altimeo",
+      "legal_name": "Altimeo Conseil SAS",
+      "siren": "823456789",
+      "siret": "82345678900015",
+      "tva_number": "FR45823456789",
+      "address": {
+        "street": "15 avenue des Champs-Elysees",
+        "postal_code": "75008",
+        "city": "Paris",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Sophie Marchand",
+        "email": "sophie.marchand@altimeo.com",
+        "phone": "+33 1 42 65 89 01"
+      },
+      "plan": "Enterprise",
+      "mrr": 999,
+      "subscription_start": "2022-03-01",
+      "payment_terms_days": 30,
+      "payment_method": "virement",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411ALT",
+      "headcount_client": 450,
+      "sector": "Conseil en management"
+    },
+    {
+      "id": "CLI-002",
+      "company_name": "TechVision",
+      "legal_name": "TechVision SA",
+      "siren": "834567890",
+      "siret": "83456789000028",
+      "tva_number": "FR56834567890",
+      "address": {
+        "street": "8 rue de la Paix",
+        "postal_code": "69002",
+        "city": "Lyon",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Marc Dupont",
+        "email": "m.dupont@techvision.fr",
+        "phone": "+33 4 72 31 45 67"
+      },
+      "plan": "Enterprise",
+      "mrr": 999,
+      "subscription_start": "2022-06-01",
+      "payment_terms_days": 30,
+      "payment_method": "virement",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411TEC",
+      "headcount_client": 380,
+      "sector": "Edition de logiciels"
+    },
+    {
+      "id": "CLI-003",
+      "company_name": "BioNature Labs",
+      "legal_name": "BioNature Labs SAS",
+      "siren": "845678901",
+      "siret": "84567890100031",
+      "tva_number": "FR67845678901",
+      "address": {
+        "street": "22 boulevard Pasteur",
+        "postal_code": "33000",
+        "city": "Bordeaux",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Claire Fontaine",
+        "email": "c.fontaine@bionature-labs.com",
+        "phone": "+33 5 56 78 23 45"
+      },
+      "plan": "Enterprise",
+      "mrr": 999,
+      "subscription_start": "2023-01-01",
+      "payment_terms_days": 30,
+      "payment_method": "virement",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411BIO",
+      "headcount_client": 290,
+      "sector": "Pharmacie / Biotech"
+    },
+    {
+      "id": "CLI-004",
+      "company_name": "NordExpress Logistics",
+      "legal_name": "NordExpress Logistics SARL",
+      "siren": "856789012",
+      "siret": "85678901200044",
+      "tva_number": "FR78856789012",
+      "address": {
+        "street": "Zone Industrielle des Prés",
+        "postal_code": "59000",
+        "city": "Lille",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Antoine Lefevre",
+        "email": "a.lefevre@nordexpress.fr",
+        "phone": "+33 3 20 45 67 89"
+      },
+      "plan": "Enterprise",
+      "mrr": 999,
+      "subscription_start": "2023-04-01",
+      "payment_terms_days": 45,
+      "payment_method": "virement",
+      "payment_behavior": "retard_occasionnel",
+      "compte_auxiliaire": "411NOR",
+      "headcount_client": 520,
+      "sector": "Transport et logistique"
+    },
+    {
+      "id": "CLI-005",
+      "company_name": "Meridian Finance",
+      "legal_name": "Meridian Finance SA",
+      "siren": "867890123",
+      "siret": "86789012300057",
+      "tva_number": "FR89867890123",
+      "address": {
+        "street": "1 place de la Bourse",
+        "postal_code": "75002",
+        "city": "Paris",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Pierre Lemaitre",
+        "email": "p.lemaitre@meridian-finance.com",
+        "phone": "+33 1 40 26 78 90"
+      },
+      "plan": "Enterprise",
+      "mrr": 999,
+      "subscription_start": "2023-09-01",
+      "payment_terms_days": 30,
+      "payment_method": "prelevement",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411MER",
+      "headcount_client": 210,
+      "sector": "Services financiers"
+    },
+    {
+      "id": "CLI-006",
+      "company_name": "GreenTech Solutions",
+      "legal_name": "GreenTech Solutions SAS",
+      "siren": "878901234",
+      "siret": "87890123400060",
+      "tva_number": "FR90878901234",
+      "address": {
+        "street": "45 rue de l'Innovation",
+        "postal_code": "44000",
+        "city": "Nantes",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Julie Morvan",
+        "email": "j.morvan@greentech-solutions.fr",
+        "phone": "+33 2 40 12 34 56"
+      },
+      "plan": "Enterprise",
+      "mrr": 999,
+      "subscription_start": "2024-01-01",
+      "payment_terms_days": 30,
+      "payment_method": "virement",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411GRE",
+      "headcount_client": 175,
+      "sector": "EnergTech / Cleantech"
+    },
+    {
+      "id": "CLI-007",
+      "company_name": "Innov'RH",
+      "legal_name": "Innov'RH SAS",
+      "siren": "889012345",
+      "siret": "88901234500073",
+      "tva_number": "FR01889012345",
+      "address": {
+        "street": "10 quai de la Fosse",
+        "postal_code": "44000",
+        "city": "Nantes",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Benoit Girard",
+        "email": "b.girard@innovrh.fr",
+        "phone": "+33 2 40 56 78 90"
+      },
+      "plan": "Enterprise",
+      "mrr": 999,
+      "subscription_start": "2024-06-01",
+      "payment_terms_days": 30,
+      "payment_method": "prelevement",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411INN",
+      "headcount_client": 160,
+      "sector": "Conseil RH"
+    },
+    {
+      "id": "CLI-008",
+      "company_name": "DataPulse",
+      "legal_name": "DataPulse SAS",
+      "siren": "890123456",
+      "siret": "89012345600086",
+      "tva_number": "FR12890123456",
+      "address": {
+        "street": "5 rue Gaston Berger",
+        "postal_code": "35000",
+        "city": "Rennes",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Lucie Arnaud",
+        "email": "l.arnaud@datapulse.io",
+        "phone": "+33 2 99 12 34 56"
+      },
+      "plan": "Enterprise",
+      "mrr": 999,
+      "subscription_start": "2025-02-01",
+      "payment_terms_days": 30,
+      "payment_method": "carte",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411DAT",
+      "headcount_client": 140,
+      "sector": "Data / Analytics",
+      "notes": "Nouveau client Enterprise 2025"
+    },
+    {
+      "id": "CLI-009",
+      "company_name": "Axiome Consulting",
+      "legal_name": "Axiome Consulting SAS",
+      "siren": "901234567",
+      "siret": "90123456700099",
+      "tva_number": "FR23901234567",
+      "address": {
+        "street": "30 rue du Louvre",
+        "postal_code": "75001",
+        "city": "Paris",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Nicolas Faure",
+        "email": "n.faure@axiome-consulting.com",
+        "phone": "+33 1 42 33 44 55"
+      },
+      "plan": "Pro",
+      "mrr": 499,
+      "subscription_start": "2022-04-01",
+      "payment_terms_days": 30,
+      "payment_method": "prelevement",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411AXI",
+      "headcount_client": 85,
+      "sector": "Conseil en strategie"
+    },
+    {
+      "id": "CLI-010",
+      "company_name": "MediaSphere",
+      "legal_name": "MediaSphere SARL",
+      "siren": "912345670",
+      "siret": "91234567000102",
+      "tva_number": "FR34912345670",
+      "address": {
+        "street": "18 rue Oberkampf",
+        "postal_code": "75011",
+        "city": "Paris",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Elise Tran",
+        "email": "e.tran@mediasphere.fr",
+        "phone": "+33 1 43 57 89 01"
+      },
+      "plan": "Pro",
+      "mrr": 499,
+      "subscription_start": "2022-09-01",
+      "payment_terms_days": 30,
+      "payment_method": "carte",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411MED",
+      "headcount_client": 65,
+      "sector": "Communication / Media"
+    },
+    {
+      "id": "CLI-011",
+      "company_name": "Nexus Pharma",
+      "legal_name": "Nexus Pharma SA",
+      "siren": "923456781",
+      "siret": "92345678100115",
+      "tva_number": "FR45923456781",
+      "address": {
+        "street": "Parc scientifique Georges Besse",
+        "postal_code": "31000",
+        "city": "Toulouse",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Olivier Perrin",
+        "email": "o.perrin@nexus-pharma.com",
+        "phone": "+33 5 61 23 45 67"
+      },
+      "plan": "Pro",
+      "mrr": 499,
+      "subscription_start": "2023-03-01",
+      "payment_terms_days": 30,
+      "payment_method": "virement",
+      "payment_behavior": "retard_occasionnel",
+      "compte_auxiliaire": "411NEX",
+      "headcount_client": 120,
+      "sector": "Industrie pharmaceutique"
+    },
+    {
+      "id": "CLI-012",
+      "company_name": "UrbanCraft",
+      "legal_name": "UrbanCraft SAS",
+      "siren": "934567892",
+      "siret": "93456789200128",
+      "tva_number": "FR56934567892",
+      "address": {
+        "street": "25 cours Julien",
+        "postal_code": "13006",
+        "city": "Marseille",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Marion Blanc",
+        "email": "m.blanc@urbancraft.fr",
+        "phone": "+33 4 91 23 45 67"
+      },
+      "plan": "Pro",
+      "mrr": 499,
+      "subscription_start": "2023-07-01",
+      "payment_terms_days": 30,
+      "payment_method": "carte",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411URB",
+      "headcount_client": 55,
+      "sector": "Architecture / Design"
+    },
+    {
+      "id": "CLI-013",
+      "company_name": "Voltaire Education",
+      "legal_name": "Voltaire Education SAS",
+      "siren": "945678903",
+      "siret": "94567890300131",
+      "tva_number": "FR67945678903",
+      "address": {
+        "street": "12 rue Voltaire",
+        "postal_code": "75011",
+        "city": "Paris",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Aurelie Camus",
+        "email": "a.camus@voltaire-education.fr",
+        "phone": "+33 1 48 06 78 90"
+      },
+      "plan": "Pro",
+      "mrr": 499,
+      "subscription_start": "2024-02-01",
+      "payment_terms_days": 30,
+      "payment_method": "prelevement",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411VOL",
+      "headcount_client": 95,
+      "sector": "EdTech"
+    },
+    {
+      "id": "CLI-014",
+      "company_name": "Artisan Digital",
+      "legal_name": "Artisan Digital SARL",
+      "siren": "956789014",
+      "siret": "95678901400144",
+      "tva_number": "FR78956789014",
+      "address": {
+        "street": "7 place Bellecour",
+        "postal_code": "69002",
+        "city": "Lyon",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Thomas Leclerc",
+        "email": "t.leclerc@artisan-digital.fr",
+        "phone": "+33 4 78 42 56 78"
+      },
+      "plan": "Pro",
+      "mrr": 499,
+      "subscription_start": "2024-05-01",
+      "payment_terms_days": 30,
+      "payment_method": "carte",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411ART",
+      "headcount_client": 42,
+      "sector": "Agence digitale"
+    },
+    {
+      "id": "CLI-015",
+      "company_name": "Pragma Avocats",
+      "legal_name": "Pragma Avocats AARPI",
+      "siren": "967890125",
+      "siret": "96789012500157",
+      "tva_number": "FR89967890125",
+      "address": {
+        "street": "55 avenue Montaigne",
+        "postal_code": "75008",
+        "city": "Paris",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Isabelle Rousseau",
+        "email": "i.rousseau@pragma-avocats.fr",
+        "phone": "+33 1 45 63 78 90"
+      },
+      "plan": "Pro",
+      "mrr": 499,
+      "subscription_start": "2024-09-01",
+      "payment_terms_days": 30,
+      "payment_method": "virement",
+      "payment_behavior": "retard_occasionnel",
+      "compte_auxiliaire": "411PRA",
+      "headcount_client": 35,
+      "sector": "Cabinet d'avocats"
+    },
+    {
+      "id": "CLI-016",
+      "company_name": "CloudFactory",
+      "legal_name": "CloudFactory SAS",
+      "siren": "978901236",
+      "siret": "97890123600160",
+      "tva_number": "FR90978901236",
+      "address": {
+        "street": "3 rue de la Republique",
+        "postal_code": "13001",
+        "city": "Marseille",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Kevin Patel",
+        "email": "k.patel@cloudfactory.io",
+        "phone": "+33 4 91 56 78 01"
+      },
+      "plan": "Pro",
+      "mrr": 499,
+      "subscription_start": "2025-03-01",
+      "payment_terms_days": 30,
+      "payment_method": "carte",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411CLO",
+      "headcount_client": 70,
+      "sector": "Cloud / Infrastructure"
+    },
+    {
+      "id": "CLI-017",
+      "company_name": "Finastra Group",
+      "legal_name": "Finastra Group SAS",
+      "siren": "989012347",
+      "siret": "98901234700173",
+      "tva_number": "FR01989012347",
+      "address": {
+        "street": "Tour Montparnasse, 33 avenue du Maine",
+        "postal_code": "75015",
+        "city": "Paris",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Stephanie Morel",
+        "email": "s.morel@finastra-group.com",
+        "phone": "+33 1 56 78 90 12"
+      },
+      "plan": "Enterprise",
+      "mrr": 999,
+      "subscription_start": "2025-05-01",
+      "payment_terms_days": 45,
+      "payment_method": "virement",
+      "payment_behavior": "retard_occasionnel",
+      "compte_auxiliaire": "411FIN",
+      "headcount_client": 310,
+      "sector": "FinTech",
+      "notes": "Nouveau client Enterprise 2025, conditions negociees 45j"
+    },
+    {
+      "id": "CLI-018",
+      "company_name": "EcoMotion",
+      "legal_name": "EcoMotion SAS",
+      "siren": "890123458",
+      "siret": "89012345800186",
+      "tva_number": "FR12890123458",
+      "address": {
+        "street": "14 rue de la Gare",
+        "postal_code": "67000",
+        "city": "Strasbourg",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Laurent Meyer",
+        "email": "l.meyer@ecomotion.fr",
+        "phone": "+33 3 88 23 45 67"
+      },
+      "plan": "Starter",
+      "mrr": 199,
+      "subscription_start": "2023-11-01",
+      "payment_terms_days": 30,
+      "payment_method": "carte",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411ECO",
+      "headcount_client": 18,
+      "sector": "Mobilite durable"
+    },
+    {
+      "id": "CLI-019",
+      "company_name": "Atelier Gastronomique",
+      "legal_name": "Atelier Gastronomique SARL",
+      "siren": "801234569",
+      "siret": "80123456900199",
+      "tva_number": "FR23801234569",
+      "address": {
+        "street": "28 rue Saint-Honore",
+        "postal_code": "75001",
+        "city": "Paris",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Camille Desjardins",
+        "email": "c.desjardins@atelier-gastro.fr",
+        "phone": "+33 1 42 61 23 45"
+      },
+      "plan": "Starter",
+      "mrr": 199,
+      "subscription_start": "2024-08-01",
+      "payment_terms_days": 30,
+      "payment_method": "carte",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411ATG",
+      "headcount_client": 22,
+      "sector": "Restauration / FoodTech",
+      "notes": "Churne en octobre 2025"
+    },
+    {
+      "id": "CLI-020",
+      "company_name": "Sparkline Analytics",
+      "legal_name": "Sparkline Analytics SAS",
+      "siren": "812345670",
+      "siret": "81234567000202",
+      "tva_number": "FR34812345670",
+      "address": {
+        "street": "9 quai de Bacalan",
+        "postal_code": "33300",
+        "city": "Bordeaux",
+        "country": "France"
+      },
+      "contact": {
+        "name": "Alexandre Barbier",
+        "email": "a.barbier@sparkline.io",
+        "phone": "+33 5 56 89 01 23"
+      },
+      "plan": "Pro",
+      "mrr": 499,
+      "subscription_start": "2025-07-01",
+      "payment_terms_days": 30,
+      "payment_method": "carte",
+      "payment_behavior": "bon_payeur",
+      "compte_auxiliaire": "411SPA",
+      "headcount_client": 55,
+      "sector": "Data / BI",
+      "notes": "Nouveau client Pro S2 2025"
+    }
+  ],
+  "summary": {
+    "named_clients_count": 20,
+    "named_enterprise_count": 9,
+    "named_pro_count": 9,
+    "named_starter_count": 2,
+    "named_mrr_total": 12178,
+    "remaining_clients_count": 177,
+    "remaining_clients_description": "Portefeuille de ~177 comptes principalement Starter (199 EUR/mois) et quelques Pro (499 EUR/mois), geres par facturation automatique Stripe",
+    "remaining_mrr_estimate": 293622
+  }
+}

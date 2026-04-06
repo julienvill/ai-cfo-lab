@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "company": "Propello SAS",
+    "siren": "912345678",
+    "tva_number": "FR56912345678",
+    "periode": "2025-11",
+    "type": "CA3",
+    "date_depot": "2025-12-20"
+  },
+  "base_imposable": {
+    "ventes_france_20pct": 302500,
+    "acquisitions_intracommunautaires": 6900,
+    "importations_services": 10080
+  },
+  "tva_collectee": {
+    "ventes_20pct": 60500,
+    "autoliquidation_20pct": 3396,
+    "total": 63896
+  },
+  "tva_deductible": {
+    "biens_et_services_france": 3230,
+    "autoliquidation": 3396,
+    "total": 6626
+  },
+  "solde": {
+    "tva_a_payer": 57270,
+    "credit_tva": 0
+  }
+}

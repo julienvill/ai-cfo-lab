@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "bank": "Qonto",
+    "iban": "FR7630006000011234567890125",
+    "bic": "QNTOFRP1XXX",
+    "compte": "Propello SAS — Compte courant principal",
+    "periode": "2025-05",
+    "devise": "EUR"
+  },
+  "solde_debut": 1335523.86,
+  "solde_fin": 1410326.25,
+  "mouvements": [
+    {
+      "date": "20250505",
+      "libelle": "Remboursement pret BPI Mai",
+      "reference": "BQ-05-BPI",
+      "debit": 3750,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250515",
+      "libelle": "Paiement URSSAF Avril 2025",
+      "reference": "BQ-05-URSSAF",
+      "debit": 49016.39,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250515",
+      "libelle": "Paiement AGIRC-ARRCO Avril 2025",
+      "reference": "BQ-05-RET",
+      "debit": 13512.64,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250515",
+      "libelle": "Paiement mutuelle/prevoyance Avril 2025",
+      "reference": "BQ-05-PREV",
+      "debit": 4355,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250515",
+      "libelle": "Paiement PAS Avril 2025",
+      "reference": "BQ-05-PAS",
+      "debit": 8210.27,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250520",
+      "libelle": "Encaissements clients Mai 2025",
+      "reference": "BQ-05-ENC",
+      "debit": 0,
+      "credit": 310560,
+      "type": "credit",
+      "reconciled": true
+    },
+    {
+      "date": "20250520",
+      "libelle": "Paiement TVA Avril 2025",
+      "reference": "BQ-05-TVA",
+      "debit": 47430,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250525",
+      "libelle": "Paiement fournisseurs Mai 2025",
+      "reference": "BQ-05-FRN",
+      "debit": 32270,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    },
+    {
+      "date": "20250531",
+      "libelle": "Virement salaires Mai 2025",
+      "reference": "BQ-05-SAL",
+      "debit": 77213.31,
+      "credit": 0,
+      "type": "debit",
+      "reconciled": true
+    }
+  ],
+  "rapprochement": {
+    "total_mouvements": 9,
+    "mouvements_rapproches": 9,
+    "mouvements_non_rapproches": 0,
+    "ecart_rapprochement": 0
+  }
+}
