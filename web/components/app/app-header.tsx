@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation"
 import { useLocale } from "@/lib/locale-context"
 import { LocaleToggle } from "./locale-toggle"
+import { AskCfoButton } from "./ask-cfo-button"
 
 const pageKeys: Record<string, string> = {
   "/app/synthese": "synthese",
@@ -11,6 +12,9 @@ const pageKeys: Record<string, string> = {
   "/app/factures/fournisseurs": "facturesFournisseurs",
   "/app/kpis-saas": "kpisSaas",
   "/app/cloture": "cloture",
+  "/app/fec": "fec",
+  "/app/immobilisations": "immobilisations",
+  "/app/virtual-cfo": "virtualCfo",
 }
 
 export function AppHeader() {
@@ -28,6 +32,7 @@ export function AppHeader() {
         <p className="text-sm text-[#64748B]">{subtitle}</p>
       </div>
       <div className="flex items-center gap-3">
+        <AskCfoButton />
         <LocaleToggle />
         <kbd className="hidden sm:inline-flex items-center gap-1 px-2 py-1 text-xs text-[#64748B] bg-[#F1F5F9] border border-[#E2E8F0] rounded">
           ⌘K
