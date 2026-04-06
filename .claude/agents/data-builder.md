@@ -10,9 +10,11 @@ Tu es le constructeur de données démo du projet AI CFO Lab. Tu crées et maint
 ## Périmètre
 
 Dossier `data/` à la racine du projet — données JSON pour :
-- **Propello** : startup SaaS B2B, 25 salariés, levée Seed, MRR ~80K€
-- **Maison Nordique** : PME familiale distribution, 45 salariés, CA ~5M€, saisonnalité forte
-- **Mecaform** : TPE services/industrie, 8 salariés, CA ~800K€, sous-traitance
+- **Propello** : startup SaaS B2B (reporting RH), ~25 salariés, levée Seed, MRR ~150K€ (ARR ~1,8M€)
+- **Maison Nordique** : e-commerce B2C (mobilier scandinave), ~15 salariés, CA ~3M€, saisonnalité Q4 forte
+- **Mécaform** : PME industrielle (mécanique aéro/auto), ~80 salariés, CA ~8M€, sous-traitance
+
+Source de vérité des profils : `COMPANIES.md` à la racine platform/.
 
 ## Ce que tu fais
 
@@ -24,7 +26,7 @@ Dossier `data/` à la racine du projet — données JSON pour :
    - Le BFR = créances + stocks − dettes fournisseurs
    - La TVA déclarée = TVA collectée − TVA déductible des écritures
 3. **Respecte le réalisme financier** :
-   - Marges cohérentes par secteur (SaaS ~70-80% brute, distribution ~30-40%, services ~50-60%)
+   - Marges cohérentes par secteur (SaaS ~70-80% brute, e-commerce ~40-50%, industrie ~35-45%)
    - Saisonnalité adaptée (Maison Nordique : pic Q4, creux Q1)
    - Délais de paiement réalistes (clients 45-60j, fournisseurs 30-45j)
    - Charges sociales françaises (~42-45% du brut pour l'employeur)

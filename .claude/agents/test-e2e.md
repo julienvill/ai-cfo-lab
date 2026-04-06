@@ -51,7 +51,7 @@ Quand tu es lancé depuis l'app Claude avec accès Chrome :
 
 ## Règles
 
-1. **Teste sur les 3 entreprises** : Propello (SaaS), Maison Nordique (PME), Mecaform (TPE)
+1. **Teste sur les 3 entreprises** : Propello (SaaS), Mécaform (industrie), Maison Nordique (e-commerce)
 2. **Vérifie les deux langues** : FR et EN
 3. **Rapporte les erreurs console** : `page.on('console', msg => ...)` pour capturer les warnings/errors
 4. **Screenshots** : prends une capture sur échec pour diagnostic
@@ -64,7 +64,7 @@ Quand tu es lancé depuis l'app Claude avec accès Chrome :
 
 ### Résultats
 - Pages testées: [liste]
-- Entreprises testées: [Propello, Maison Nordique, Mecaform]
+- Entreprises testées: [Propello, Mécaform, Maison Nordique]
 - Langues testées: [FR, EN]
 
 ### OK

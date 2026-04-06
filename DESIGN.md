@@ -1,7 +1,7 @@
 # DESIGN.md — AI CFO Lab
 ## Spécifications de design — MVP (5 features)
 
-Dernière mise à jour : 2026-03-24
+Dernière mise à jour : 2026-04-05
 Auteur : Product Designer (rôle AI)
 Stack : Next.js 14 · TypeScript · Tailwind CSS v4 · shadcn/ui · Recharts · Lucide React
 
@@ -201,8 +201,8 @@ Pattern emprunté à Linear/Pennylane — navigation et actions rapides au clavi
 │                                              │
 │  SOCIÉTÉS                                    │
 │  ↳ Mécaform (PME Industrielle)              │
-│  ↳ NovaSaaS (Startup SaaS)                  │
-│  ↳ ShopExpress (E-commerce)                 │
+│  ↳ Propello (Startup SaaS)                  │
+│  ↳ Maison Nordique (E-commerce)             │
 └──────────────────────────────────────────────┘
 ```
 
@@ -319,11 +319,13 @@ Permet de switcher entre les 3 sociétés fictives lors d'une démo. Présent su
 
 ### Noms fictifs des sociétés (définitifs pour la démo)
 
-| ID | Nom | Secteur | Couleur |
-|----|-----|---------|---------|
-| `pme-industrielle` | **Acier Dupont SAS** | PME Industrielle — 80 sal. — 8M€ CA | `#1E3A5F` |
-| `startup-saas` | **NovaSaaS** | Startup SaaS B2B — 25 sal. — 150K€ MRR | `#7C3AED` |
-| `ecommerce` | **MaisonsClick** | E-commerce B2C — 15 sal. — 3M€ CA | `#059669` |
+Voir `COMPANIES.md` pour la fiche complète.
+
+| Slug | Nom | Secteur | Couleur |
+|------|-----|---------|---------|
+| `mecaform` | **Mécaform** | PME Industrielle (aéro/auto) — ~80 sal. — ~8M€ CA | `#1E3A5F` |
+| `propello` | **Propello** | Startup SaaS B2B (reporting RH) — ~25 sal. — MRR ~150K€ | `#7C3AED` |
+| `maison-nordique` | **Maison Nordique** | E-commerce B2C (mobilier scandinave) — ~15 sal. — ~3M€ CA | `#059669` |
 
 ---
 

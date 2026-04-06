@@ -85,7 +85,7 @@ Couche d'intégration qui normalise les données depuis les systèmes externes. 
 | Langage | **TypeScript strict** | Typage, refactoring safe, standard industrie |
 | CSS | **Tailwind CSS 4** | Utility-first, rapide, pas de CSS custom à maintenir |
 | Composants UI | **shadcn/ui** | Composants accessibles (Radix), copiés dans le projet, zéro dépendance runtime |
-| Charts | **Tremor** | Composants dashboard FP&A prêts à l'emploi, intégré Tailwind, basé sur Recharts (fallback possible) |
+| Charts | **Recharts** | Librairie de graphiques React composable, intégrée Tailwind, adaptée aux conventions FP&A |
 | Icônes | **Lucide React** | Léger, cohérent, intégré shadcn/ui |
 
 ### Backend
@@ -180,7 +180,7 @@ Couche d'intégration qui normalise les données depuis les systèmes externes. 
 ## Structure du projet
 
 ```
-AI-CFO-Lab/
+AI-CFO-Lab/platform/
 ├── web/                          ← Next.js 14 (frontend)
 │   ├── app/                      ← App Router (pages, layouts)
 │   ├── components/               ← Composants React
@@ -202,15 +202,19 @@ AI-CFO-Lab/
 │   └── ai/                       ← Client Claude, prompts, RAG
 │
 ├── data/                         ← Datasets fictifs JSON (MVP)
+│   ├── propello/
+│   ├── mecaform/
+│   └── maison-nordique/
 │
-├── docs/                         ← Documentation
-│   ├── PRD.md
-│   ├── DESIGN.md
-│   ├── ARCHITECTURE.md
-│   └── COMPANIES.md
+├── docs/                         ← Documentation de référence
+│   ├── data-inventory.md
+│   └── references/               ← Taxonomies, enrichissements, plans démo
 │
-├── README.md
-└── PROJECT.md
+├── PRD.md                        ← Specs fonctionnelles
+├── DESIGN.md                     ← Specs design
+├── ARCHITECTURE.md               ← Ce document
+├── COMPANIES.md                  ← Fiche des 3 sociétés fictives
+└── README.md
 ```
 
 ---

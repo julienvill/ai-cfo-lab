@@ -44,6 +44,13 @@ AI-CFO-Lab/
 
 ## Modules
 
+Deux numérotations coexistent, pour deux vues différentes :
+
+- **Vue business (ci-dessous)** : 9 modules fonctionnels, périmètre métier complet de la plateforme (cf. `PRD.md`).
+- **Vue UI** : 10 entrées de navigation dans la sidebar (5 MVP actifs + 5 V2 désactivés), cf. `DESIGN.md` §3. L'ordre et le découpage UI diffèrent car il reflète l'expérience utilisateur (ex : le module business « Comptabilité » est éclaté en Factures clients O2C / Factures fournisseurs P2P / Clôture mensuelle dans l'UI).
+
+### Vue business (9 modules)
+
 | # | Module | Périmètre |
 |---|--------|-----------|
 | 1 | Daily CFO | Briefing quotidien, KPIs héro, score de santé, alertes |
@@ -55,6 +62,20 @@ AI-CFO-Lab/
 | 7 | Juridique | Secrétariat juridique, cap table/BSPCE, contrats, assurances |
 | 8 | Audit & Compliance | Contrôle interne, relations CAC, data room, RGPD |
 | 9 | Virtual CFO | Chat RAG, financial memory, predictive risk, CFO Twin |
+
+### Mapping vers la vue UI (`DESIGN.md`)
+
+| Business | UI (MVP)                  | UI (V2)                                    |
+|----------|---------------------------|--------------------------------------------|
+| 1        | Synthèse du jour          | —                                          |
+| 2        | Trésorerie                | Scenario Planner                           |
+| 3        | KPIs SaaS                 | Scenario Planner                           |
+| 4        | Factures clients (O2C), Factures fournisseurs (P2P), Clôture mensuelle | — |
+| 5        | —                         | Connecteur SIRH, Reporting CSE             |
+| 6        | —                         | Crédit Impôt Recherche                     |
+| 7        | —                         | —                                          |
+| 8        | —                         | —                                          |
+| 9        | —                         | Conseiller IA                              |
 
 ## Développement local
 

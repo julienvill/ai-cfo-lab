@@ -1062,6 +1062,43 @@ Mapping automatique entre le plan comptable français (PCG) et les référentiel
 | Package de consolidation | 🟢 100% auto | Génération automatique au format cible |
 | Réconciliation intragroupe | 🟡 Auto + validation | Matching automatique, écarts signalés pour revue |
 
+#### Retraitements PCG → IFRS — Catalogue complet (V2/V3)
+
+Les retraitements ci-dessous couvrent l'ensemble des divergences entre les comptes sociaux PCG d'une filiale française et les comptes consolidés IFRS du groupe. Aucun n'est dans le périmètre MVP.
+
+##### Retraitements simples — règles déterministes (V2)
+
+| # | Thème | Norme IFRS | Traitement PCG | Traitement IFRS | Retraitement |
+|---|-------|------------|----------------|-----------------|-------------|
+| 1 | **Amortissements dérogatoires** | — | Amortissement fiscal > économique comptabilisé en 145/687/787 | N'existent pas | Extourne complète : annulation de la dotation/reprise dérogatoire, reclassement des capitaux propres |
+| 2 | **Subventions d'investissement** | IAS 20 | Comptabilisées en capitaux propres (131/138), reprises en 777 au rythme de l'amortissement | En déduction de la valeur de l'actif subventionné, ou en produit différé | Reclassement du bilan : sortie des capitaux propres, réduction de l'actif ou passif différé. Recalcul de l'amortissement |
+| 3 | **Frais d'émission d'emprunt** | IFRS 9 | Charges à répartir sur la durée de l'emprunt (compte 4816), amortissement linéaire | Intégrés dans le coût amorti de la dette (méthode du taux d'intérêt effectif — TIE) | Reclassement de l'actif vers la dette en déduction. Recalcul de la charge d'intérêt au TIE |
+| 4 | **Coûts d'emprunt sur actifs qualifiés** | IAS 23 | Option d'activation (compte 23x) ou charge immédiate | Activation obligatoire si actif qualifié (durée de construction/production significative) | Si non activé en PCG : capitalisation de la charge d'intérêt, amortissement sur la durée de l'actif |
+| 5 | **Présentation des états financiers** | IAS 1 | P&L par nature, bilan actif/passif sans classement courant/non-courant obligatoire | Résultat global (comprehensive income) avec OCI, classement courant/non-courant obligatoire | Reclassements de présentation, construction du tableau OCI |
+
+##### Retraitements moyens — paramétrage + calcul automatisé (V2)
+
+| # | Thème | Norme IFRS | Traitement PCG | Traitement IFRS | Retraitement |
+|---|-------|------------|----------------|-----------------|-------------|
+| 6 | **Contrats de location / leasing** | IFRS 16 | Location simple = charge de loyer (612/613). Crédit-bail = idem + mention hors bilan | Tous les contrats (sauf < 12 mois ou < 5K€) : actif droit d'utilisation (ROU) + dette de loyer actualisée. P&L = amortissement + intérêts | Capitalisation des contrats : création de l'actif ROU et de la dette, extourne du loyer, dotation amortissement + charge d'intérêt |
+| 7 | **Goodwill / écarts d'acquisition** | IFRS 3 | Amorti sur 5 à 20 ans (plan d'amortissement) | Non amorti, test d'impairment annuel (IAS 36). Option full goodwill ou goodwill partiel | Extourne de l'amortissement PCG. Calcul et comptabilisation de l'impairment si perte de valeur |
+| 8 | **Impôts différés** | IAS 12 | Rarement comptabilisés en comptes sociaux | Obligatoires sur toutes les différences temporelles (y compris celles générées par les retraitements IFRS). Taux de l'IS en vigueur ou substantivement adopté | Calcul des IDA/IDP sur chaque retraitement + différences temporelles propres. Effet en P&L ou OCI selon l'origine |
+| 9 | **Immeubles de placement** | IAS 40 | Coût historique, amortissement classique | Option juste valeur (variation en P&L, pas d'amortissement) ou modèle du coût | Si option juste valeur : extourne amortissement, réévaluation à la juste valeur, variation en résultat |
+| 10 | **Contrats à long terme** | IFRS 15 | Choix entre méthode à l'achèvement ou à l'avancement | Avancement obligatoire si les critères de transfert continu sont remplis (output ou input method) | Si méthode à l'achèvement en PCG : reconnaissance du CA et de la marge à l'avancement, ajustement des encours |
+| 11 | **Provisions** | IAS 37 | Comptabilisation dès que le risque est probable (interprétation large), pas d'actualisation obligatoire | Critères plus stricts (probable > 50%), actualisation obligatoire si effet temps significatif (désactualisation en charge financière) | Revue des provisions : annulation de celles ne remplissant pas les critères IAS 37, actualisation des provisions long terme |
+| 12 | **Écarts de conversion** | IAS 21 | Méthode du cours historique ou de clôture selon la nature. Écarts en résultat financier | Méthode du cours de clôture pour les filiales autonomes (monnaie fonctionnelle ≠ EUR). Écarts en OCI, recyclage en P&L à la cession | Reclassement des écarts de conversion du P&L vers l'OCI. Recalcul selon la méthode IFRS |
+
+##### Retraitements complexes — jugement humain requis (V3)
+
+| # | Thème | Norme IFRS | Traitement PCG | Traitement IFRS | Retraitement |
+|---|-------|------------|----------------|-----------------|-------------|
+| 13 | **Reconnaissance du revenu** | IFRS 15 | Comptabilisation à la livraison/facturation. Contrats multi-éléments = facturation globale | Modèle en 5 étapes : identification du contrat → obligations de performance → prix de transaction → allocation → reconnaissance. Séparation des composantes (licence, maintenance, services) | Réallocation du CA entre obligations de performance, étalement différent, ajustement du timing de reconnaissance |
+| 14 | **R&D / Immobilisations incorporelles** | IAS 38 | Option d'activation des frais de développement. Frais de recherche en charge ou activables. Amortissement dérogatoire possible | Recherche = charge obligatoire. Développement = activation obligatoire si 6 critères cumulatifs remplis (faisabilité technique, intention, capacité, marché, ressources, évaluation fiable). Pas d'amortissement dérogatoire | Revue de chaque projet : reclassification recherche/développement, activation ou désactivation selon les critères IAS 38, extourne des amortissements dérogatoires |
+| 15 | **Instruments financiers** | IFRS 9 | Coût historique (titres de participation en 26x, VMP en 50x). Provision pour dépréciation si perte durable | 3 catégories selon le business model : coût amorti, juste valeur par OCI (JVOCI), juste valeur par résultat (JVR). Modèle de pertes attendues (ECL) pour le risque de crédit | Reclassification des instruments, évaluation à la juste valeur, calcul des ECL sur les créances et prêts |
+| 16 | **Engagements retraite et avantages du personnel** | IAS 19 | IDR (indemnités de départ à la retraite) : provision facultative en comptes sociaux, souvent en engagement hors bilan. Autres avantages : pas de provision | Provision obligatoire au bilan pour tous les régimes à prestations définies (retraite, médailles du travail, etc.). Méthode actuarielle (PUC). Écarts actuariels en OCI | Calcul actuariel complet : provision au bilan, coût des services en P&L, écarts actuariels en OCI. Nécessite hypothèses (taux d'actualisation, turnover, table de mortalité) |
+| 17 | **Stock-options / BSPCE / Actions gratuites** | IFRS 2 | Aucune charge en P&L en comptes sociaux (mention en annexe uniquement) | Charge en P&L étalée sur la période d'acquisition des droits (vesting period). Juste valeur à la date d'octroi (Black-Scholes ou Monte Carlo) | Calcul de la juste valeur des instruments, étalement de la charge, contrepartie en capitaux propres. Nécessite un modèle de valorisation |
+| 18 | **Dépréciation d'actifs (impairment)** | IAS 36 | Test de dépréciation par actif individuel, valeur actuelle ou valeur de marché | Test par UGT (Unité Génératrice de Trésorerie). Valeur recouvrable = max(juste valeur nette des coûts de cession, valeur d'utilité par DCF). Reprise possible sauf goodwill | Définition des UGT, calcul de la valeur d'utilité (DCF avec WACC), allocation de la dépréciation. Forte composante de jugement |
+
 ---
 
 ## 7. Module 5 — RH
@@ -1946,6 +1983,220 @@ Gestion transversale de la conformité réglementaire et de la protection des do
 
 ---
 
+### 8e — Moteur de règles : cohérence inter-modules & détection de fraude
+
+#### Description
+
+Moteur transverse qui exécute en continu un catalogue de règles actionnables sur l'ensemble des données de la plateforme. Il produit (i) des contrôles de cohérence inter-modules qui garantissent l'intégrité des flux comptables, fiscaux, sociaux et de trésorerie, et (ii) des signaux de détection de fraude opérationnelle. Chaque règle possède un identifiant stable, une logique déterministe ou statistique, une sévérité et un niveau d'automatisation. Le moteur alimente le sous-module 8a (contrôle interne) pour l'orchestration des alertes et le workflow de traitement.
+
+**Stockage & exécution** : catalogue de règles versionné (YAML par domaine dans `config/rules/`, compilé en runtime JSON). Chaque règle expose `id`, `label`, `logic`, `severity`, `modules`, `automation`, `false_positive_hint`. Exécution déclenchée par événements (post-clôture, post-import FEC, post-paiement) ou par cron (nightly, mensuel). Les exceptions résolues sont tracées dans le journal d'audit (piste d'audit fiable — 8d).
+
+**Sévérités** : `INFO` (information) / `WARN` (à examiner) / `ERROR` (bloquant avant clôture) / `CRITICAL` (alerte immédiate direction financière).
+**Automatisation** : 🟢 auto / 🟡 auto + validation humaine / 🔴 humain requis.
+
+---
+
+#### Fonctionnalités — Validation de cohérence inter-modules
+
+| ID | Règle | Logique | Sévérité | Modules | Auto |
+|---|---|---|---|---|---|
+| VAL-001 | Équilibre du bilan | Total actif = Total passif + Capitaux propres (tolérance 0,01 €) | ERROR | 4g, 4h | 🟢 |
+| VAL-002 | Équilibre journal | Somme débits = somme crédits sur chaque écriture et journal | ERROR | 4, 4j | 🟢 |
+| VAL-003 | Balance vs grand livre | Soldes balance = somme mouvements grand livre par compte | ERROR | 4, 4g | 🟢 |
+| VAL-004 | FEC vs balance N | Totaux débits/crédits FEC = totaux balance générale période | ERROR | 4j, 4g | 🟢 |
+| VAL-005 | Paie DSN vs comptes 64x | Somme brut + charges patronales DSN = variation comptes 641/645/646 | ERROR | 4c, 5c | 🟡 |
+| VAL-006 | CA système vs 70x | Somme factures émises (module AR) = crédit comptes 70x sur période | ERROR | 4a, 4i, 3a | 🟡 |
+| VAL-007 | Stock physique vs 3x | Inventaire physique valorisé = soldes comptes 31/32/35/37 à l'arrêté | ERROR | 4g, 3e | 🟡 |
+| VAL-008 | TVA collectée vs 44571 | Base × taux déclaration CA3 = solde compte 44571 période | ERROR | 6a, 4 | 🟢 |
+| VAL-009 | TVA déductible vs 44566 | Somme TVA déductible achats = mouvements 44566 période | ERROR | 6a, 4b | 🟢 |
+| VAL-010 | Rapprochement bancaire | Solde comptable 512x = solde bancaire ± écritures en rapprochement datées < 30j | ERROR | 2b, 4 | 🟢 |
+| VAL-011 | Écritures en rapprochement anciennes | Aucun élément en rapprochement > 60 jours | WARN | 2b, 4 | 🟢 |
+| VAL-012 | Symétrie IC bilatérale | Pour chaque couple (A,B) : créance A sur B = dette B envers A (tolérance 0,01 €) | ERROR | 4k | 🟢 |
+| VAL-013 | Élimination produits/charges IC | Somme produits IC A→B = somme charges IC B←A sur période | ERROR | 4k | 🟢 |
+| VAL-014 | Cut-off CCA/PCA/FNP/FAE | (CCA + PCA + FNP + FAE) rattachés = factures hors période dans périmètre rattachement | WARN | 4g, 4a, 4b | 🟡 |
+| VAL-015 | Charges constatées d'avance cohérentes | Chaque ligne CCA a une facture source et une date fin > date clôture | ERROR | 4g, 4b | 🟢 |
+| VAL-016 | Dotations amortissements vs registre | Somme dotations comptabilisées 681x = somme calculée registre immobilisations | ERROR | 4e, 4 | 🟢 |
+| VAL-017 | VNC registre vs comptes 28x | VNC totale registre immos = (comptes 2x bruts − comptes 28x amortissements) | ERROR | 4e | 🟢 |
+| VAL-018 | Assiette CIR vs temps R&D + salaires | Assiette CIR déclarée = Σ(salaires chercheurs × % temps R&D) × (1 + taux forfait) + dépenses externes éligibles | ERROR | 6c, 4c, 5f | 🟡 |
+| VAL-019 | Participation heures R&D | Σ heures R&D saisies ≤ heures travaillées période (feuilles de temps) | WARN | 6c, 5f | 🟢 |
+| VAL-020 | NDF vs comptes 625x | Somme NDF validées et remboursées = mouvements comptes 625x période | WARN | 4f | 🟢 |
+| VAL-021 | Congés payés provision vs droits | Provision CP comptable = Σ(droits acquis salariés × coût journalier) | ERROR | 4d, 5c | 🟡 |
+| VAL-022 | Effectif DSN vs registre personnel | Effectif DSN mensuelle = effectif actif registre du personnel fin de mois | WARN | 5c, 4c | 🟢 |
+| VAL-023 | IS payé vs calculé | IS comptabilisé 695 = résultat fiscal × taux applicable ± crédits d'impôt | ERROR | 6d, 4g | 🟡 |
+| VAL-024 | Déficit reportable cohérent | Déficit N-1 reporté en liasse = déficit constaté tableau 2058-B année précédente | ERROR | 6d | 🟢 |
+| VAL-025 | Cap table vs capital comptable | Σ (nb titres × nominal) cap table = compte 101 capital social | ERROR | 7b, 4 | 🟢 |
+| VAL-026 | BSPCE attribués vs IFRS 2 | Charge IFRS 2 comptabilisée = valorisation BSCPE attribués × vesting période (consol IFRS) | WARN | 7b, 4k | 🟡 |
+| VAL-027 | Contrats actifs vs loyers comptabilisés | Σ loyers baux actifs = mouvements comptes 613x période | WARN | 7c, 4b | 🟡 |
+| VAL-028 | CFE/CVAE base vs valeur locative | Base CFE déclarée = Σ valeurs locatives immos éligibles registre | WARN | 6b, 4e | 🟡 |
+| VAL-029 | Cohérence DSN vs bulletins | Σ nets imposables DSN = Σ nets imposables bulletins édités mois | ERROR | 4c | 🟢 |
+| VAL-030 | Acompte IS vs IS N-1 | Σ acomptes IS payés ≥ (IS N-1 / 4) × trimestres échus | WARN | 6d, 2a | 🟢 |
+| VAL-031 | Affacturage solde vs 467 | Solde compte courant factor = relevé factor à date | ERROR | 2e, 4 | 🟢 |
+| VAL-032 | Emprunt échéancier vs 164/512 | Capital restant dû calculé échéancier = solde comptes 164x à date | ERROR | 2c, 4 | 🟢 |
+| VAL-033 | DADS2 vs comptes honoraires | Σ honoraires > 1 200 € par bénéficiaire = montants déclarés DAS2 | ERROR | 8d, 4b | 🟢 |
+| VAL-034 | TVA intracom vs DEB/DES | Montants DEB/DES = écritures 445662/445202 période | WARN | 6a | 🟡 |
+| VAL-035 | Clients débiteurs / créditeurs non compensés | Aucun tiers client avec solde débiteur ET créditeur simultané > 1 000 € | WARN | 4a | 🟢 |
+
+**Total : 35 règles de cohérence inter-modules.**
+
+---
+
+#### Fonctionnalités — Détection de fraude
+
+| ID | Règle | Signal / Algo | Sévérité | Modules | Auto |
+|---|---|---|---|---|---|
+| FRAUD-001 | Fournisseurs doublons SIREN | Même SIREN avec 2+ fiches fournisseurs actives | WARN | 4b | 🟡 |
+| FRAUD-002 | Fournisseurs doublons IBAN | Même IBAN associé à 2+ fournisseurs distincts | CRITICAL | 4b | 🔴 |
+| FRAUD-003 | Doublons par similarité nom | Distance Levenshtein < 3 sur raison sociale normalisée | WARN | 4b | 🟡 |
+| FRAUD-004 | Changement IBAN fournisseur | Modification IBAN d'un fournisseur existant (surtout J−7 avant paiement) | CRITICAL | 4b | 🔴 |
+| FRAUD-005 | IBAN hors SEPA / pays à risque | IBAN ou BIC pays hors UE ou liste grise GAFI | ERROR | 4b, 2b | 🔴 |
+| FRAUD-006 | Split de factures sous seuil | ≥ 3 factures d'un même fournisseur sur 30j chacune entre 90 % et 99,9 % d'un seuil d'approbation | ERROR | 4b, 8a | 🟡 |
+| FRAUD-007 | Paiements multiples sous seuil | ≥ 2 paiements même bénéficiaire même jour sous seuil validation | ERROR | 2b, 8a | 🟡 |
+| FRAUD-008 | Facture weekend / jour férié | Date saisie facture = samedi/dimanche/férié | INFO | 4b | 🟢 |
+| FRAUD-009 | Écritures manuelles hors ouvré | Écriture manuelle saisie entre 22h et 6h ou week-end | WARN | 4 | 🟢 |
+| FRAUD-010 | Loi de Benford sur montants | Test χ² distribution premier chiffre significatif montants HT factures (> 1 000 lignes) | WARN | 4a, 4b | 🔴 |
+| FRAUD-011 | Fournisseur one-shot gros montant | Fournisseur créé < 90j, 1 seule facture > 10 000 € ou > 5 % achats mensuels | ERROR | 4b | 🟡 |
+| FRAUD-012 | NDF dupliquées | Même salarié, même date, même montant, même justificatif hash | WARN | 4f | 🟡 |
+| FRAUD-013 | NDF sans justificatif > seuil | NDF > 25 € sans pièce jointe attachée | ERROR | 4f | 🟢 |
+| FRAUD-014 | NDF même justificatif 2 salariés | Hash/OCR justificatif identique entre 2 salariés | CRITICAL | 4f | 🔴 |
+| FRAUD-015 | Écart 3-way matching | BC ≠ BL ≠ facture (montant ou quantité > tolérance 2 %) | ERROR | 4b | 🟡 |
+| FRAUD-016 | Facture sans BC | Facture > 1 000 € sans bon de commande référencé | WARN | 4b, 8a | 🟡 |
+| FRAUD-017 | Comptes 471/472 anciens | Solde 471/472 > 30 jours non soldé | WARN | 4g | 🟢 |
+| FRAUD-018 | Comptes 471/472 gros montants | Ligne 471/472 > 5 000 € > 7 jours non soldée | ERROR | 4g | 🟡 |
+| FRAUD-019 | Montants ronds suspects | ≥ 5 factures fournisseur / mois avec montant rond > 1 000 € (finition 000,00) | WARN | 4b | 🔴 |
+| FRAUD-020 | Écritures juste sous seuil CAC | Écritures isolées entre 95 % et 99 % seuil révision CAC | INFO | 4, 8b | 🔴 |
+| FRAUD-021 | Circularité intercompagnie | Flux IC A→B→C→A détecté sur même période (graphe orienté) | CRITICAL | 4k | 🔴 |
+| FRAUD-022 | Encaissement client rétroactif | Règlement client rattaché à facture antérieure avec date valeur postérieure clôture | ERROR | 4a, 4g | 🟡 |
+| FRAUD-023 | Avoirs clients fin de période | Pic d'avoirs clients émis 5 derniers jours période > 3× moyenne mensuelle | WARN | 4a | 🔴 |
+| FRAUD-024 | Réémission facture annulée | Facture émise avec nouveau numéro mais mêmes ligne/client/montant qu'une facture annulée | ERROR | 4a, 4i | 🟡 |
+| FRAUD-025 | Fournisseur = salarié (IBAN) | IBAN fournisseur présent également dans table salariés | CRITICAL | 4b, 5c | 🔴 |
+| FRAUD-026 | Fournisseur adresse = salarié | Adresse fournisseur identique (fuzzy) à adresse salarié actif | WARN | 4b, 5c | 🔴 |
+| FRAUD-027 | Paiement hors workflow | Virement émis sans validation workflow matrice 8a | CRITICAL | 2b, 8a | 🟢 |
+| FRAUD-028 | Utilisateur unique valide+paie | Même user_id a saisi la facture ET validé le paiement (ségrégation) | CRITICAL | 8a, 4b | 🟢 |
+| FRAUD-029 | Extournes systématiques | Écriture extournée puis ré-enregistrée avec montant ≠ dans les 7j | WARN | 4 | 🟡 |
+| FRAUD-030 | Fournisseur sans TVA intracom UE | Facture UE > 500 € sans numéro TVA intracom valide (VIES) | ERROR | 4b, 6a | 🟢 |
+
+**Total : 30 règles de détection de fraude.**
+
+---
+
+#### Automatisation
+
+| Élément | Niveau | Détail |
+|---|---|---|
+| Exécution des règles | 🟢 100% auto | Triggers événements + cron nightly |
+| Priorisation des alertes | 🟢 100% auto | Tri par sévérité et score de risque |
+| Triage des faux-positifs | 🟡 Auto + humain | ML apprend des résolutions passées pour suppression auto des récurrents légitimes |
+| Décision blocage paiement | 🔴 Humain requis | Alertes CRITICAL bloquent le workflow 2b, validation humaine obligatoire |
+| Enrichissement catalogue | 🟡 Auto + expert | IA propose nouvelles règles depuis patterns détectés, expert-comptable valide |
+
+---
+
+### 8f — Cybersécurité applicative & infrastructure
+
+#### Description
+
+Sécurisation technique de la plateforme contre les menaces cyber. Complémentaire au module 8d (RGPD/conformité données) et 8e (détection de fraude métier), ce sous-module couvre la **surface d'attaque technique** : authentification, autorisation, protection des API, sécurité des flux IA, monitoring et réponse aux incidents. La plateforme manipule des données financières et personnelles hautement sensibles — un incident de sécurité impacterait directement la confiance client et la conformité réglementaire.
+
+**Principes fondateurs** :
+- **Defense in depth** : chaque couche (réseau, application, données, IA) a ses propres contrôles
+- **Zero trust** : aucune requête n'est implicitement fiable, même depuis le réseau interne
+- **Least privilege** : chaque composant et chaque utilisateur n'a accès qu'au strict nécessaire
+- **Secure by default** : la configuration par défaut est la plus restrictive possible
+
+---
+
+#### Fonctionnalités — Authentification & gestion des identités
+
+| Fonctionnalité | Description |
+|---|---|
+| **OAuth 2.0 / OIDC** | Authentification via fournisseur d'identité (Auth0, Clerk, ou Cognito). Pas d'auth propriétaire. SSO pour les clients enterprise |
+| **MFA obligatoire** | Authentification multi-facteurs obligatoire pour tous les comptes ayant accès à des données financières (TOTP, WebAuthn/passkeys) |
+| **RBAC (Role-Based Access Control)** | Rôles prédéfinis : `owner`, `admin`, `daf`, `comptable`, `auditeur`, `readonly`. Chaque rôle a un périmètre d'actions et de données défini |
+| **Gestion des sessions** | Tokens JWT signés (RS256), refresh token rotation, expiration courte (15 min access / 7 jours refresh), révocation immédiate |
+| **Audit des connexions** | Log de chaque connexion (IP, device, géolocalisation), alerte sur connexion suspecte (nouveau device, pays inhabituel, horaire anormal) |
+| **Provisioning / Deprovisioning** | API SCIM pour synchronisation annuaire (Azure AD, Google Workspace). Désactivation immédiate au départ d'un collaborateur |
+| **Politique de mots de passe** | Min 12 caractères, vérification contre base HaveIBeenPwned, pas de rotation forcée (NIST 800-63B) |
+
+---
+
+#### Fonctionnalités — Sécurité applicative (OWASP Top 10)
+
+| Fonctionnalité | Description |
+|---|---|
+| **Input validation** | Validation systématique de toutes les entrées utilisateur aux frontières API (schémas Zod côté serveur). Rejet par défaut de tout input non conforme |
+| **Output encoding** | Échappement contextuel de toutes les sorties (HTML, JSON, SQL, URL). React échappe par défaut ; interdiction de `dangerouslySetInnerHTML` sauf audit explicite |
+| **SQL injection prevention** | Requêtes paramétrées exclusivement (Prisma/Drizzle ORM). Aucune interpolation de chaîne dans les requêtes SQL |
+| **XSS prevention** | Content-Security-Policy strict (`script-src 'self'`), X-Content-Type-Options: nosniff, X-Frame-Options: DENY |
+| **CSRF protection** | Tokens CSRF sur les mutations (state-changing requests). SameSite=Strict sur les cookies de session |
+| **Security headers** | Strict-Transport-Security (HSTS, max-age 2 ans, includeSubDomains, preload), Referrer-Policy: strict-origin-when-cross-origin, Permissions-Policy restrictif |
+| **CORS** | Whitelist stricte d'origines autorisées. Pas de `Access-Control-Allow-Origin: *` en production |
+| **Rate limiting** | Limite par IP et par utilisateur : 10 req/min sur auth, 100 req/min sur API, 5 req/min sur endpoints IA. Réponse 429 avec Retry-After |
+| **File upload security** | Validation MIME type + magic bytes, scan antivirus (ClamAV), stockage hors webroot, nommage aléatoire, taille max configurable |
+| **Error handling** | Pas de stack traces en production. Erreurs génériques côté client, détails dans les logs internes. Pas de fuite d'information technique |
+
+---
+
+#### Fonctionnalités — Sécurité des flux IA (LLM Security)
+
+| Fonctionnalité | Description |
+|---|---|
+| **Prompt injection prevention** | Sanitization systématique des entrées utilisateur avant injection dans les prompts. Séparation stricte entre system prompt (trusted) et user input (untrusted). Détection de tentatives d'injection (patterns connus) |
+| **Data leakage prevention** | Aucune donnée client brute dans les prompts sans anonymisation/pseudonymisation préalable. Les données financières sensibles (RIB, IBAN, numéros SS) sont masquées avant envoi au LLM. Politique de rétention API : opt-out du training chez tous les fournisseurs (Anthropic, Mistral) |
+| **Output validation** | Chaque réponse LLM contenant des chiffres est vérifiée contre les données sources (cross-check calculator). Les recommandations IA incluent toujours la source traçable (`Traced<T>`) |
+| **Hallucination guardrails** | Si le LLM n'a pas de données suffisantes, il doit répondre "données insuffisantes" plutôt qu'inventer. Seuil de confiance configurable par type de tâche |
+| **EU AI Act compliance** | Classification du niveau de risque IA par fonctionnalité (art. 6-7). Documentation du modèle : fournisseur, version, finalité, limitations, biais connus. Droit à l'explication : chaque recommandation IA est accompagnée de sa justification |
+| **Model access control** | Clés API LLM stockées dans un vault (AWS Secrets Manager / Scaleway Secret Manager), jamais dans le code ni les variables d'environnement client-side. Rotation trimestrielle des clés |
+| **Cost & abuse monitoring** | Monitoring en temps réel de la consommation API par tenant. Alerte si usage anormal (> 3× la moyenne). Rate limit par client pour éviter l'abus |
+
+---
+
+#### Fonctionnalités — Sécurité infrastructure
+
+| Fonctionnalité | Description |
+|---|---|
+| **WAF (Web Application Firewall)** | Protection périmétrique (AWS WAF ou Cloudflare). Règles OWASP Core Rule Set activées. Géo-blocking configurable par client |
+| **DDoS protection** | Protection L3/L4 (AWS Shield / Cloudflare) + rate limiting applicatif L7 |
+| **Network segmentation** | Base de données non exposée à Internet. Communication inter-services via réseau privé (VPC). Pas d'accès SSH direct en production |
+| **Secrets management** | Tous les secrets (clés API, credentials DB, tokens) dans un vault managé (AWS Secrets Manager ou Scaleway Secret Manager). Rotation automatique. Aucun secret dans le code, les logs ou les variables d'environnement exposées côté client |
+| **Container security** | Images Docker minimales (distroless/Alpine), scan de vulnérabilités à chaque build (Trivy/Snyk), pas de `root` dans les containers |
+| **Dependency scanning** | Dependabot / Renovate activé. Alertes CVE critiques bloquantes sur la CI. Politique : patching < 72h pour CVE critiques, < 7 jours pour high |
+| **Logging sécurité centralisé** | Logs structurés (JSON) centralisés : accès auth, accès données sensibles, actions admin, modifications RBAC, appels API LLM. Rétention 12 mois. Immutabilité des logs (write-once) |
+| **Monitoring & alerting** | Détection d'anomalies : login brute force, export massif de données, accès hors heures ouvrées, pic d'erreurs 5xx. Alertes temps réel (PagerDuty / Opsgenie) |
+| **Backup & restauration** | Backups chiffrés (AES-256), réplication géo France (Scaleway Paris ↔ Scaleway Amsterdam ou AWS eu-west-3 ↔ eu-central-1). Test de restauration mensuel documenté. RTO : 4h / RPO : 1h (données financières) |
+
+---
+
+#### Fonctionnalités — Processus de sécurité (governance)
+
+| Fonctionnalité | Description |
+|---|---|
+| **Security review dans CI/CD** | Pipeline : SAST (analyse statique — ESLint security, Semgrep), secrets scanning (gitleaks/trufflehog), dependency audit (npm audit), DAST optionnel sur staging (OWASP ZAP). Merge bloqué si finding critique |
+| **Pentesting** | Test d'intrusion externe au moins 1×/an et avant chaque release majeure. Scope : application web, API, infrastructure. Résultats documentés, plan de remédiation < 30 jours pour critiques |
+| **Bug bounty** | Programme de signalement responsable (disclosure policy publique). Périmètre et récompenses à définir à partir de la Phase 3 |
+| **Incident response plan** | Procédure formalisée : détection → triage (P1/P2/P3) → containment → éradication → recovery → post-mortem. Notification CNIL < 72h si données personnelles (cf. 8d). Communication client sous 24h. Registre des incidents |
+| **Patch management** | Veille CVE quotidienne (Dependabot). Patching : critique < 72h, high < 7j, medium < 30j. Changelog sécurité |
+| **Security awareness** | Onboarding sécurité pour chaque nouveau développeur. Checklist sécurité intégrée dans chaque PR template |
+
+---
+
+#### Automatisation
+
+| Élément | Niveau | Détail |
+|---|---|---|
+| Auth & session management | 🟢 100% auto | Géré par le provider OIDC |
+| Security headers | 🟢 100% auto | Configuré dans le middleware Next.js |
+| Input validation | 🟢 100% auto | Schémas Zod sur chaque endpoint |
+| Prompt sanitization | 🟢 100% auto | Pipeline de nettoyage avant chaque appel LLM |
+| Output cross-check (IA → chiffres) | 🟢 100% auto | Calculator vérifie chaque valeur numérique citée par le LLM |
+| Dependency scanning | 🟢 100% auto | CI bloquante sur CVE critiques |
+| Secrets rotation | 🟢 100% auto | Rotation trimestrielle via vault managé |
+| Monitoring anomalies | 🟢 100% auto | Alertes temps réel |
+| Pentesting | 🔴 Humain requis | Prestataire externe |
+| Incident response | 🟡 Auto + humain | Détection auto, décision humaine sur communication et remédiation |
+| RBAC changes | 🟡 Auto + validation | L'admin configure, la plateforme applique et loggue |
+
+---
+
 ## 11. Module 9 — Virtual CFO
 
 ### Description
@@ -2570,7 +2821,16 @@ Chaque module consomme des données en entrée et produit des données en sortie
 | **Entrées** | Données personnelles de tous les modules, registre des traitements, consentements, sous-traitants (7c), violations détectées, réglementation en vigueur |
 | **Sorties** | Registre des traitements (article 30), notifications de violation (articles 33-34), rapports PIA/AIPD, tableau de bord conformité global, durées de conservation par catégorie, purge automatique, PAF |
 | **Dépendances** | Tous les modules (données personnelles et financières) |
-| **Consommateurs** | 7c (Contrats — obligations de vigilance), 8a (Contrôle interne) |
+| **Consommateurs** | 7c (Contrats — obligations de vigilance), 8a (Contrôle interne), 8f (Cybersécurité) |
+
+#### 8f — Cybersécurité applicative & infrastructure
+
+| | Détail |
+|---|---|
+| **Entrées** | Logs d'authentification, requêtes API, prompts LLM, résultats de scans (SAST/DAST/dépendances), alertes monitoring, configuration RBAC, headers HTTP |
+| **Sorties** | Alertes sécurité temps réel (brute force, export massif, anomalies), rapports d'audit, score de sécurité, registre des incidents, pipeline CI/CD security gates |
+| **Dépendances** | Tous les modules (surface d'attaque), 8d (RGPD — notification violations), infrastructure (WAF, vault, monitoring) |
+| **Consommateurs** | 8a (Contrôle interne — alertes sécurité), 8d (RGPD — incidents données personnelles), 1 (Daily CFO — alerte sécurité critique) |
 
 ---
 
