@@ -1,5 +1,8 @@
+const path = require("path")
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot: path.join(__dirname, ".."),
   env: {
     BASIC_AUTH_ENABLED: process.env.BASIC_AUTH_ENABLED,
     BASIC_AUTH_USER: process.env.BASIC_AUTH_USER,
